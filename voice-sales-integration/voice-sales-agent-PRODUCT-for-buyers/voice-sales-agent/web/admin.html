@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Agent dashboard</title>
+<style>
+  :root{--bg:#faf9f7;--ink:#1c1917;--muted:#57534e;--line:#e7e5e4;--accent:#b45309;--card:#fff;--ok:#15803d;--bad:#b91c1c}
+  @media (prefers-color-scheme:dark){:root{--bg:#1c1917;--ink:#fafaf9;--muted:#a8a29e;--line:#44403c;--accent:#f59e0b;--card:#292524;--ok:#4ade80;--bad:#f87171}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--line)}
+  h1{font-size:1.1rem;margin:0}
+  main{padding:20px;max-width:1100px;margin:0 auto}
+  input,button{font:inherit;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+  button{cursor:pointer;background:var(--accent);color:#fff;border:0}
+  button:focus-visible,input:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+  tr.call{cursor:pointer} tr.call:hover{background:var(--bg)}
+  .tag{padding:2px 8px;border-radius:99px;border:1px solid var(--line);font-size:.8rem}
+  .ok{color:var(--ok)} .bad{color:var(--bad)}
+  pre{white-space:pre-wrap;margin:0;font:inherit}
+  .detail td{background:var(--bg)}
+  #err{color:var(--bad);min-height:1.4em}
+  .table-wrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<header>
+  <h1>Agent dashboard</h1>
+  <div class="row">
+    <input id="tok" type="password" placeholder="Admin token" aria-label="Admin token">
+    <button id="load">Load calls</button>
+  </div>
+</header>
+<main>
+  <div id="err" role="alert"></div>
+  <div class="row" style="margin-bottom:16px">
+    <input id="to" placeholder="+15551234567" aria-label="Number to call (E.164)">
+    <button id="dial">Place outbound sales call</button>
+    <span id="dialmsg" role="status"></span>
+  </div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>When</th><th>Channel</th><th>Caller</th><th>Lead</th><th>Outcome</th><th>Email</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  </div>
+</main>
+<script>
+  var tok = document.getElementById('tok'), err = document.getElementById('err'), rows = document.getElementById('rows');
+  try { tok.value = sessionStorage.getItem('vsa-token') || ''; } catch (e) {}
+
+  function h(tag, text, cls){ var e = document.createElement(tag); if (text !== undefined) e.textContent = text; if (cls) e.className = cls; return e; }
+  function api(path, opts){
+    opts = opts || {}; opts.headers = Object.assign({'Authorization': 'Bearer ' + tok.value}, opts.headers || {});
+    return fetch(path, opts).then(function(r){ return r.json().then(function(j){ if (!r.ok) throw new Error(j.error || r.status); return j; }); });
+  }
+  function load(){
+    err.textContent = '';
+    try { sessionStorage.setItem('vsa-token', tok.value); } catch (e) {}
+    api('/api/calls').then(function(d){
+      rows.textContent = '';
+      if (!d.calls.length) { var r = h('tr'); var c = h('td', 'No calls yet.'); c.colSpan = 6; r.appendChild(c); rows.appendChild(r); }
+      d.calls.forEach(function(c){
+        var tr = h('tr', undefined, 'call');
+        var lead = c.lead || {}, n = c.notify || {};
+        var ok = Object.values(n).some(function(v){ return v === 'sent'; });
+        tr.appendChild(h('td', new Date(c.started * 1000).toLocaleString()));
+        tr.appendChild(h('td', c.channel));
+        tr.appendChild(h('td', c.caller || ''));
+        tr.appendChild(h('td', [lead.name, lead.email, lead.phone].filter(Boolean).join(' / ')));
+        var o = h('td'); o.appendChild(h('span', c.outcome || '', 'tag')); tr.appendChild(o);
+        tr.appendChild(h('td', ok ? 'sent' : (n.skipped ? 'skipped' : (n.outbox ? 'saved to outbox' : 'failed')), ok ? 'ok' : 'bad'));
+        var detail = h('tr', undefined, 'detail'); detail.hidden = true;
+        var dc = h('td'); dc.colSpan = 6;
+        dc.appendChild(h('pre', (c.summary || '') + '\n\n' + (c.transcript || []).map(function(t){ return (t.role === 'user' ? 'Caller: ' : 'Agent: ') + t.text; }).join('\n')));
+        detail.appendChild(dc);
+        tr.addEventListener('click', function(){ detail.hidden = !detail.hidden; });
+        rows.appendChild(tr); rows.appendChild(detail);
+      });
+    }).catch(function(e){ err.textContent = 'Could not load: ' + e.message; });
+  }
+  document.getElementById('load').addEventListener('click', load);
+  document.getElementById('dial').addEventListener('click', function(){
+    var m = document.getElementById('dialmsg'); m.textContent = 'Dialing...';
+    api('/api/outbound', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({to: document.getElementById('to').value.trim()})})
+      .then(function(){ m.textContent = 'Call started.'; })
+      .catch(function(e){ m.textContent = 'Failed: ' + e.message; });
+  });
+  if (tok.value) load();
+</script>
+</body>
+</html>

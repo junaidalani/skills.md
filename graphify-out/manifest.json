@@ -1,0 +1,2564 @@
+{
+  "voice-sales-integration/graph.json": {
+    "mtime": 1792917138.560743,
+    "seen": 1792926045.9218056,
+    "ast_hash": "fafe96941fdb3f2c5619ce4a4e02af3c",
+    "semantic_hash": "fafe96941fdb3f2c5619ce4a4e02af3c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/.mcp.json": {
+    "mtime": 1792876606.4521072,
+    "seen": 1792926045.9218118,
+    "ast_hash": "b90887783cd9f00d3fecb461fc55a1ff",
+    "semantic_hash": "b90887783cd9f00d3fecb461fc55a1ff"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/__init__.py": {
+    "mtime": 1792876606.4924784,
+    "seen": 1792926045.921814,
+    "ast_hash": "4724923c8a5a7793f6add5df9c0ac763",
+    "semantic_hash": "4724923c8a5a7793f6add5df9c0ac763"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/__main__.py": {
+    "mtime": 1792876606.540247,
+    "seen": 1792926045.9218154,
+    "ast_hash": "8990cf05260f5625a43fd571eef2e0cb",
+    "semantic_hash": "8990cf05260f5625a43fd571eef2e0cb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/audio.py": {
+    "mtime": 1792876606.4877517,
+    "seen": 1792926045.9218168,
+    "ast_hash": "af884b9b62cd8f4b616c2e15a047ddb0",
+    "semantic_hash": "af884b9b62cd8f4b616c2e15a047ddb0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/config.py": {
+    "mtime": 1792876606.4924784,
+    "seen": 1792926045.9218178,
+    "ast_hash": "e39fd223fca2e104d68ee1cc3e7af6ce",
+    "semantic_hash": "e39fd223fca2e104d68ee1cc3e7af6ce"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/leads.py": {
+    "mtime": 1792876606.512297,
+    "seen": 1792926045.9218194,
+    "ast_hash": "68e57fff081522c8e260337e5b5bc2c2",
+    "semantic_hash": "68e57fff081522c8e260337e5b5bc2c2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/main.py": {
+    "mtime": 1792876606.479833,
+    "seen": 1792926045.9218204,
+    "ast_hash": "d9f400c23988a8b3bd14ec1674e525e2",
+    "semantic_hash": "d9f400c23988a8b3bd14ec1674e525e2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/prompt.py": {
+    "mtime": 1792876606.5181508,
+    "seen": 1792926045.9218216,
+    "ast_hash": "244d8df149f45503b44cc0a963fd4280",
+    "semantic_hash": "244d8df149f45503b44cc0a963fd4280"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/providers.py": {
+    "mtime": 1792876606.4924784,
+    "seen": 1792926045.9218228,
+    "ast_hash": "1a6fdc2a95b4d2c20596ab154b99ca47",
+    "semantic_hash": "1a6fdc2a95b4d2c20596ab154b99ca47"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/s2s.py": {
+    "mtime": 1792876606.5242167,
+    "seen": 1792926045.921824,
+    "ast_hash": "06eb222e432a13cf9b532e3789b00d1f",
+    "semantic_hash": "06eb222e432a13cf9b532e3789b00d1f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/session.py": {
+    "mtime": 1792876606.5278409,
+    "seen": 1792926045.9218256,
+    "ast_hash": "8e71cec87956e83efb85b32acf374ef3",
+    "semantic_hash": "8e71cec87956e83efb85b32acf374ef3"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/app/telnyx.py": {
+    "mtime": 1792876606.5278409,
+    "seen": 1792926045.9218268,
+    "ast_hash": "0a61274c105b249f29d33a6fc9dd0401",
+    "semantic_hash": "0a61274c105b249f29d33a6fc9dd0401"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/n8n/lead-to-email.json": {
+    "mtime": 1792876609.0031557,
+    "seen": 1792926045.9218278,
+    "ast_hash": "e1ab18b7b22408fff898b9a5668dc4df",
+    "semantic_hash": "e1ab18b7b22408fff898b9a5668dc4df"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/scripts/check_config.py": {
+    "mtime": 1792876606.5560145,
+    "seen": 1792926045.9218287,
+    "ast_hash": "e1fed358f99d17859e13826c0433e648",
+    "semantic_hash": "e1fed358f99d17859e13826c0433e648"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/scripts/live_check.py": {
+    "mtime": 1792876606.5482607,
+    "seen": 1792926045.92183,
+    "ast_hash": "c60c87539a31e23e32c2bcb4a5642340",
+    "semantic_hash": "c60c87539a31e23e32c2bcb4a5642340"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/scripts/make_buyer_kit.py": {
+    "mtime": 1792876606.5580187,
+    "seen": 1792926045.921831,
+    "ast_hash": "7b3621ad79325c3f8c08377e1bb624f1",
+    "semantic_hash": "7b3621ad79325c3f8c08377e1bb624f1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/scripts/make_release.py": {
+    "mtime": 1792876606.5580187,
+    "seen": 1792926045.921832,
+    "ast_hash": "0e47187e5f2848f4d10b8b4cde4e6303",
+    "semantic_hash": "0e47187e5f2848f4d10b8b4cde4e6303"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/scripts/setup_telnyx.py": {
+    "mtime": 1792876606.5719905,
+    "seen": 1792926045.9218338,
+    "ast_hash": "c167ba594035dbccd69ac8923e4458ed",
+    "semantic_hash": "c167ba594035dbccd69ac8923e4458ed"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/scripts/simulate_call.py": {
+    "mtime": 1792876606.5719905,
+    "seen": 1792926045.921835,
+    "ast_hash": "0824b7de6c16dc91894de24b7a633b5d",
+    "semantic_hash": "0824b7de6c16dc91894de24b7a633b5d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/__init__.py": {
+    "mtime": 1792876606.6040454,
+    "seen": 1792926045.9218361,
+    "ast_hash": "41105851fcf7fc67fc6174644f38cf84",
+    "semantic_hash": "41105851fcf7fc67fc6174644f38cf84"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/fakes.py": {
+    "mtime": 1792876606.620036,
+    "seen": 1792926045.921837,
+    "ast_hash": "9ea9296747cde3bdd53c43e248a012d5",
+    "semantic_hash": "9ea9296747cde3bdd53c43e248a012d5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/test_audio_and_providers.py": {
+    "mtime": 1792876606.6359954,
+    "seen": 1792926045.9218385,
+    "ast_hash": "dbd17f6fa70f88ef620e4f79a48df8d8",
+    "semantic_hash": "dbd17f6fa70f88ef620e4f79a48df8d8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/test_calls.py": {
+    "mtime": 1792876606.620036,
+    "seen": 1792926045.92184,
+    "ast_hash": "119524119a9f15493be70f247ad61fd3",
+    "semantic_hash": "119524119a9f15493be70f247ad61fd3"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/test_config.py": {
+    "mtime": 1792876606.620036,
+    "seen": 1792926045.921841,
+    "ast_hash": "8877470a24aa6e8c227f9b2ae137afcf",
+    "semantic_hash": "8877470a24aa6e8c227f9b2ae137afcf"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/test_notify_telnyx.py": {
+    "mtime": 1792876606.5970552,
+    "seen": 1792926045.9218419,
+    "ast_hash": "0194d4917f02a14ccc0e60c74a94471c",
+    "semantic_hash": "0194d4917f02a14ccc0e60c74a94471c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/tests/test_scripts_and_n8n.py": {
+    "mtime": 1792876606.6040454,
+    "seen": 1792926045.9218435,
+    "ast_hash": "38169d4f259b0db73094dd5ad0d9f6ae",
+    "semantic_hash": "38169d4f259b0db73094dd5ad0d9f6ae"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/.github/scripts/star_history.py": {
+    "mtime": 1792876607.7570524,
+    "seen": 1792926045.9218445,
+    "ast_hash": "e3c8d3eecdcc94ea27d17e9aed548f28",
+    "semantic_hash": "e3c8d3eecdcc94ea27d17e9aed548f28"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/STT/__init__.py": {
+    "mtime": 1792876608.9552639,
+    "seen": 1792926045.9218454,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/STT/moonshine_handler.py": {
+    "mtime": 1792876608.9552639,
+    "seen": 1792926045.9218466,
+    "ast_hash": "7a78630e3b37b34c2533d25efab9be1c",
+    "semantic_hash": "7a78630e3b37b34c2533d25efab9be1c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/TTS/__init__.py": {
+    "mtime": 1792876609.0031557,
+    "seen": 1792926045.9218476,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/TTS/melo_handler.py": {
+    "mtime": 1792876609.0031557,
+    "seen": 1792926045.9218485,
+    "ast_hash": "5c18286c2e6564fb04238604d653016f",
+    "semantic_hash": "5c18286c2e6564fb04238604d653016f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/TTS/parler_handler.py": {
+    "mtime": 1792876608.9873257,
+    "seen": 1792926045.9218495,
+    "ast_hash": "1cddb77fc341355a4f6c5dc456059782",
+    "semantic_hash": "1cddb77fc341355a4f6c5dc456059782"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/__init__.py": {
+    "mtime": 1792876608.9394608,
+    "seen": 1792926045.921851,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/arguments_classes/__init__.py": {
+    "mtime": 1792876608.9713962,
+    "seen": 1792926045.9218519,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/arguments_classes/melo_tts_arguments.py": {
+    "mtime": 1792876608.9873257,
+    "seen": 1792926045.921853,
+    "ast_hash": "5bb4b92c6fcf79f84d3f34961c67ad6e",
+    "semantic_hash": "5bb4b92c6fcf79f84d3f34961c67ad6e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/arguments_classes/parler_tts_arguments.py": {
+    "mtime": 1792876608.9713962,
+    "seen": 1792926045.9218543,
+    "ast_hash": "874841ed6fc36f7d7647f92418599bb1",
+    "semantic_hash": "874841ed6fc36f7d7647f92418599bb1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/auth.py": {
+    "mtime": 1792876608.6539752,
+    "seen": 1792926045.9218552,
+    "ast_hash": "50d58fb45e93c0373fa41040a2a62721",
+    "semantic_hash": "50d58fb45e93c0373fa41040a2a62721"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/limiter.py": {
+    "mtime": 1792876608.6865761,
+    "seen": 1792926045.9218564,
+    "ast_hash": "1223b1bf5889911f61dcf33699be66bd",
+    "semantic_hash": "1223b1bf5889911f61dcf33699be66bd"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/livekit/agent.py": {
+    "mtime": 1792876608.860672,
+    "seen": 1792926045.9218576,
+    "ast_hash": "a3a1d5190950f3dbeac67e3b7c4b58f5",
+    "semantic_hash": "a3a1d5190950f3dbeac67e3b7c4b58f5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/main.js": {
+    "mtime": 1792876608.7344215,
+    "seen": 1792926045.9218588,
+    "ast_hash": "6ebfe5d46b5c60e9a3e6d0c40cb47013",
+    "semantic_hash": "6ebfe5d46b5c60e9a3e6d0c40cb47013"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/package.json": {
+    "mtime": 1792876608.7025757,
+    "seen": 1792926045.9218597,
+    "ast_hash": "5c4094edb5a322ea62932f4ce7dada6e",
+    "semantic_hash": "5c4094edb5a322ea62932f4ce7dada6e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/s2s-realtime-client.js": {
+    "mtime": 1792876608.6696448,
+    "seen": 1792926045.9218607,
+    "ast_hash": "b6cbbab467b4a0c900828ca242ec7f27",
+    "semantic_hash": "b6cbbab467b4a0c900828ca242ec7f27"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/server.py": {
+    "mtime": 1792876608.718635,
+    "seen": 1792926045.9218624,
+    "ast_hash": "1f588a62e5af1f8c74204b427b782322",
+    "semantic_hash": "1f588a62e5af1f8c74204b427b782322"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/agents-adapter.test.mjs": {
+    "mtime": 1792876608.7701313,
+    "seen": 1792926045.9218633,
+    "ast_hash": "53bac27181a46535c519c25b7c15f350",
+    "semantic_hash": "53bac27181a46535c519c25b7c15f350"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/agents-webrtc.test.mjs": {
+    "mtime": 1792876608.7975812,
+    "seen": 1792926045.9218645,
+    "ast_hash": "b9d6fbe1223a07046a6b06565a8169e2",
+    "semantic_hash": "b9d6fbe1223a07046a6b06565a8169e2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/agents-websocket.test.mjs": {
+    "mtime": 1792876608.7975812,
+    "seen": 1792926045.9218655,
+    "ast_hash": "78a84044e9437acb28c7528ff7d7827a",
+    "semantic_hash": "78a84044e9437acb28c7528ff7d7827a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/helpers.mjs": {
+    "mtime": 1792876608.8132777,
+    "seen": 1792926045.9218667,
+    "ast_hash": "a930e8a74810bad9125dfa29aacbc4a2",
+    "semantic_hash": "a930e8a74810bad9125dfa29aacbc4a2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/playback-helpers.mjs": {
+    "mtime": 1792876608.7819335,
+    "seen": 1792926045.9218678,
+    "ast_hash": "5100d88597cc03de33fc526cd31ead6d",
+    "semantic_hash": "5100d88597cc03de33fc526cd31ead6d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/playback-sdk.test.mjs": {
+    "mtime": 1792876608.7975812,
+    "seen": 1792926045.9218688,
+    "ast_hash": "94478d242f5842425e3545127ad9352e",
+    "semantic_hash": "94478d242f5842425e3545127ad9352e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/playback.test.mjs": {
+    "mtime": 1792876608.8132777,
+    "seen": 1792926045.9218698,
+    "ast_hash": "d358d04eeff0e6934246ac097c13b6ca",
+    "semantic_hash": "d358d04eeff0e6934246ac097c13b6ca"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/turn-latency-ui.test.mjs": {
+    "mtime": 1792876608.7819335,
+    "seen": 1792926045.921871,
+    "ast_hash": "10d5eb31aed2042526d0251740a9cd32",
+    "semantic_hash": "10d5eb31aed2042526d0251740a9cd32"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/turn-latency.test.mjs": {
+    "mtime": 1792876608.7975812,
+    "seen": 1792926045.921872,
+    "ast_hash": "3cc66784a7fdafbbdc680ed83213fa37",
+    "semantic_hash": "3cc66784a7fdafbbdc680ed83213fa37"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/tests/visemes.test.mjs": {
+    "mtime": 1792876608.7819335,
+    "seen": 1792926045.921873,
+    "ast_hash": "48d7c81b9915e1c8101972dd974d7673",
+    "semantic_hash": "48d7c81b9915e1c8101972dd974d7673"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/turn-latency.js": {
+    "mtime": 1792876608.718635,
+    "seen": 1792926045.9218743,
+    "ast_hash": "6060c16eb1351765353e1ef6c9fffde4",
+    "semantic_hash": "6060c16eb1351765353e1ef6c9fffde4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/ui/account.js": {
+    "mtime": 1792876608.750244,
+    "seen": 1792926045.9218755,
+    "ast_hash": "0d46833ce91357ac9aa67bb50341b594",
+    "semantic_hash": "0d46833ce91357ac9aa67bb50341b594"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/ui/chat.js": {
+    "mtime": 1792876608.750244,
+    "seen": 1792926045.9218764,
+    "ast_hash": "a139c9a2c02a5a62091f057fb594f37c",
+    "semantic_hash": "a139c9a2c02a5a62091f057fb594f37c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/ui/dom.js": {
+    "mtime": 1792876608.750244,
+    "seen": 1792926045.9218776,
+    "ast_hash": "aaf78698236cf0a25fa245d715353024",
+    "semantic_hash": "aaf78698236cf0a25fa245d715353024"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/worklets/audio-playback.js": {
+    "mtime": 1792876608.7661242,
+    "seen": 1792926045.9218786,
+    "ast_hash": "229790a68255e887199ce51a567b373a",
+    "semantic_hash": "229790a68255e887199ce51a567b373a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/worklets/mic-capture.js": {
+    "mtime": 1792876608.7701313,
+    "seen": 1792926045.9218795,
+    "ast_hash": "d01880e8d72bc724e07307c05338b425",
+    "semantic_hash": "d01880e8d72bc724e07307c05338b425"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/ws/codec.js": {
+    "mtime": 1792876608.832474,
+    "seen": 1792926045.9218805,
+    "ast_hash": "a330b0cf39b802c29c163cc3a4836b99",
+    "semantic_hash": "a330b0cf39b802c29c163cc3a4836b99"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/ws/orb-visualizer.js": {
+    "mtime": 1792876608.8290167,
+    "seen": 1792926045.9218817,
+    "ast_hash": "dd79b701ce6aa713ddc50e24b247dbbd",
+    "semantic_hash": "dd79b701ce6aa713ddc50e24b247dbbd"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/ws/user-audio-recorder.js": {
+    "mtime": 1792876608.832474,
+    "seen": 1792926045.9218826,
+    "ast_hash": "e53e6e11b555d7224df6a8500e53420a",
+    "semantic_hash": "e53e6e11b555d7224df6a8500e53420a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/examples/realtime_web_search_tool.py": {
+    "mtime": 1792876607.8044536,
+    "seen": 1792926045.9218836,
+    "ast_hash": "22b33bdd221bab8379557fd543b695df",
+    "semantic_hash": "22b33bdd221bab8379557fd543b695df"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/examples/realtime_youcom_search_tool.py": {
+    "mtime": 1792876607.8044536,
+    "seen": 1792926045.9218848,
+    "ast_hash": "e9fff4af95b3b4ef71916da7470aa28f",
+    "semantic_hash": "e9fff4af95b3b4ef71916da7470aa28f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/pyproject.toml": {
+    "mtime": 1792876606.699585,
+    "seen": 1792926045.9218857,
+    "ast_hash": "cbacce29f03e988262a45dbeff19d259",
+    "semantic_hash": "cbacce29f03e988262a45dbeff19d259"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/scripts/benchmark_stt.py": {
+    "mtime": 1792876607.788644,
+    "seen": 1792926045.9218867,
+    "ast_hash": "4e6f93581d241717f1e126e798ca882a",
+    "semantic_hash": "4e6f93581d241717f1e126e798ca882a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/scripts/benchmark_tts.py": {
+    "mtime": 1792876607.788644,
+    "seen": 1792926045.921888,
+    "ast_hash": "3ed353d0b12e0bbcdd65886a2aba01c5",
+    "semantic_hash": "3ed353d0b12e0bbcdd65886a2aba01c5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/scripts/check_pocket_tts_farsi.py": {
+    "mtime": 1792876607.772736,
+    "seen": 1792926045.921889,
+    "ast_hash": "9570c9fef9dd8342a65c8c528a7561eb",
+    "semantic_hash": "9570c9fef9dd8342a65c8c528a7561eb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/scripts/prepare_eval_space.py": {
+    "mtime": 1792876607.772736,
+    "seen": 1792926045.9218898,
+    "ast_hash": "b78c7b136b224416f362bb3b1143e9b6",
+    "semantic_hash": "b78c7b136b224416f362bb3b1143e9b6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/scripts/synthetic_conversation_realtime_client.py": {
+    "mtime": 1792876607.788644,
+    "seen": 1792926045.9218907,
+    "ast_hash": "c08a101795f74ace4216b862ed1a8395",
+    "semantic_hash": "c08a101795f74ace4216b862ed1a8395"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/__init__.py": {
+    "mtime": 1792876607.1284366,
+    "seen": 1792926045.921892,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/audio_input_notifier.py": {
+    "mtime": 1792876607.1601973,
+    "seen": 1792926045.921893,
+    "ast_hash": "f329b6cacb7bbab69a1403c33df87838",
+    "semantic_hash": "f329b6cacb7bbab69a1403c33df87838"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/base_openai_compatible_language_model.py": {
+    "mtime": 1792876607.176239,
+    "seen": 1792926045.9218938,
+    "ast_hash": "bbf013380e7e972711cbb3480ccb1ebe",
+    "semantic_hash": "bbf013380e7e972711cbb3480ccb1ebe"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/chat.py": {
+    "mtime": 1792876607.1441822,
+    "seen": 1792926045.9218953,
+    "ast_hash": "f703da3fe3cf5821afbcc26bf1172025",
+    "semantic_hash": "f703da3fe3cf5821afbcc26bf1172025"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/chat_completions_language_model.py": {
+    "mtime": 1792876607.1601973,
+    "seen": 1792926045.9218962,
+    "ast_hash": "5cb9168b2d0261e5f440c588a53a2554",
+    "semantic_hash": "5cb9168b2d0261e5f440c588a53a2554"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/compaction_prompt.py": {
+    "mtime": 1792876607.1284366,
+    "seen": 1792926045.9218972,
+    "ast_hash": "2ef6eea850d44f9f1aa75199b7cc5209",
+    "semantic_hash": "2ef6eea850d44f9f1aa75199b7cc5209"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/language_model.py": {
+    "mtime": 1792876607.176239,
+    "seen": 1792926045.9218981,
+    "ast_hash": "4a9bef68b499953b1381d8af3fedb79d",
+    "semantic_hash": "4a9bef68b499953b1381d8af3fedb79d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/lm_output_processor.py": {
+    "mtime": 1792876607.11262,
+    "seen": 1792926045.9218996,
+    "ast_hash": "d444e6d85192a4c00ae854857b5ca10f",
+    "semantic_hash": "d444e6d85192a4c00ae854857b5ca10f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/responses_api_language_model.py": {
+    "mtime": 1792876607.1601973,
+    "seen": 1792926045.9219005,
+    "ast_hash": "77dbbcbc5c4302269bfa0fc4daf5e749",
+    "semantic_hash": "77dbbcbc5c4302269bfa0fc4daf5e749"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/text_prompt.py": {
+    "mtime": 1792876607.1441822,
+    "seen": 1792926045.9219015,
+    "ast_hash": "f1a0a6944a3a0cd5132895320db230bf",
+    "semantic_hash": "f1a0a6944a3a0cd5132895320db230bf"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/tool_call/function_call.py": {
+    "mtime": 1792876607.1923563,
+    "seen": 1792926045.9219027,
+    "ast_hash": "ea78f7ec7bdf2cc761aeacb2bf85023c",
+    "semantic_hash": "ea78f7ec7bdf2cc761aeacb2bf85023c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/tool_call/function_tool.py": {
+    "mtime": 1792876607.2084758,
+    "seen": 1792926045.9219036,
+    "ast_hash": "1821efbc6cd63ab5a648e0dbac042310",
+    "semantic_hash": "1821efbc6cd63ab5a648e0dbac042310"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/tool_call/signature_from_schema.py": {
+    "mtime": 1792876607.2084758,
+    "seen": 1792926045.9219072,
+    "ast_hash": "15599e4093ec2f321c4cd1084668b0a6",
+    "semantic_hash": "15599e4093ec2f321c4cd1084668b0a6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/tool_call/tool_prompt.py": {
+    "mtime": 1792876607.1923563,
+    "seen": 1792926045.9219081,
+    "ast_hash": "1194b2fa0b962f0c7310a180ee557263",
+    "semantic_hash": "1194b2fa0b962f0c7310a180ee557263"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/utils.py": {
+    "mtime": 1792876607.176239,
+    "seen": 1792926045.9219093,
+    "ast_hash": "589c195afebf30349b06f790e9778cdd",
+    "semantic_hash": "589c195afebf30349b06f790e9778cdd"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/voice_prompt.py": {
+    "mtime": 1792876607.11262,
+    "seen": 1792926045.9219112,
+    "ast_hash": "f4a7c3d7c24e1ded8f811017519ea7f9",
+    "semantic_hash": "f4a7c3d7c24e1ded8f811017519ea7f9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/__init__.py": {
+    "mtime": 1792876606.8267026,
+    "seen": 1792926045.9219127,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/base_stt_handler.py": {
+    "mtime": 1792876606.7948675,
+    "seen": 1792926045.9219136,
+    "ast_hash": "38176e22dd31fcbc7ce294f0f2eb5621",
+    "semantic_hash": "38176e22dd31fcbc7ce294f0f2eb5621"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/faster_whisper_handler.py": {
+    "mtime": 1792876606.878755,
+    "seen": 1792926045.9219146,
+    "ast_hash": "8a5abcb968e9beff4c01a259d2a81457",
+    "semantic_hash": "8a5abcb968e9beff4c01a259d2a81457"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/lightning_whisper_mlx_handler.py": {
+    "mtime": 1792876606.8106744,
+    "seen": 1792926045.9219155,
+    "ast_hash": "82caee6a356d91c6856f301b0c45384c",
+    "semantic_hash": "82caee6a356d91c6856f301b0c45384c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/mlx_audio_whisper_handler.py": {
+    "mtime": 1792876606.8330677,
+    "seen": 1792926045.9219167,
+    "ast_hash": "305d8217107a683ddfec6596f54ac5e2",
+    "semantic_hash": "305d8217107a683ddfec6596f54ac5e2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/nemo_asr_handler.py": {
+    "mtime": 1792876606.8615909,
+    "seen": 1792926045.9219174,
+    "ast_hash": "59117cc3bf430f97c72f52ee671eb192",
+    "semantic_hash": "59117cc3bf430f97c72f52ee671eb192"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/openai_compatible_handler.py": {
+    "mtime": 1792876606.8330677,
+    "seen": 1792926045.9219184,
+    "ast_hash": "ce4a65bee1bd7e33b34f8e658139fac2",
+    "semantic_hash": "ce4a65bee1bd7e33b34f8e658139fac2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/paraformer_handler.py": {
+    "mtime": 1792876606.8726566,
+    "seen": 1792926045.9219196,
+    "ast_hash": "c0a26d7313c73e003f415022b1971348",
+    "semantic_hash": "c0a26d7313c73e003f415022b1971348"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/parakeet_tdt_handler.py": {
+    "mtime": 1792876606.8776782,
+    "seen": 1792926045.9219205,
+    "ast_hash": "aba534f59b1f2f2cdaae190448edf9f8",
+    "semantic_hash": "aba534f59b1f2f2cdaae190448edf9f8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/qwen3_asr_handler.py": {
+    "mtime": 1792876606.8463907,
+    "seen": 1792926045.9219215,
+    "ast_hash": "a10114913ff96befec6294ebe332be7b",
+    "semantic_hash": "a10114913ff96befec6294ebe332be7b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/sense_voice_handler.py": {
+    "mtime": 1792876606.8615909,
+    "seen": 1792926045.9219222,
+    "ast_hash": "e77f3379facbe49d9091a9c68f5fbeca",
+    "semantic_hash": "e77f3379facbe49d9091a9c68f5fbeca"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/smart_progressive_streaming.py": {
+    "mtime": 1792876606.878755,
+    "seen": 1792926045.9219234,
+    "ast_hash": "30c6e291c66c2c428922860509cb0154",
+    "semantic_hash": "30c6e291c66c2c428922860509cb0154"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/streaming_handler.py": {
+    "mtime": 1792876606.8106744,
+    "seen": 1792926045.9219244,
+    "ast_hash": "fa2a8e1d4f81c2a5202a2f567fda7fbc",
+    "semantic_hash": "fa2a8e1d4f81c2a5202a2f567fda7fbc"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/transcription_notifier.py": {
+    "mtime": 1792876606.8463907,
+    "seen": 1792926045.9219253,
+    "ast_hash": "3fb4c87ee83f9f0733ba5181d8adaef0",
+    "semantic_hash": "3fb4c87ee83f9f0733ba5181d8adaef0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/whisper_stt_handler.py": {
+    "mtime": 1792876606.8106744,
+    "seen": 1792926045.9219265,
+    "ast_hash": "e80dca2d0fd3f145fffb1417f0327c16",
+    "semantic_hash": "e80dca2d0fd3f145fffb1417f0327c16"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STV/__init__.py": {
+    "mtime": 1792876607.0809255,
+    "seen": 1792926045.9219275,
+    "ast_hash": "4c739021c8df7e3bd87e2bbf13dc3fce",
+    "semantic_hash": "4c739021c8df7e3bd87e2bbf13dc3fce"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STV/phoneme_viseme_map.json": {
+    "mtime": 1792876607.0999787,
+    "seen": 1792926045.9219284,
+    "ast_hash": "29db63bcb941ba3fa6ab9484528b480d",
+    "semantic_hash": "29db63bcb941ba3fa6ab9484528b480d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STV/w2v_stv_handler.py": {
+    "mtime": 1792876607.0999787,
+    "seen": 1792926045.9219294,
+    "ast_hash": "e2bba72e0f2bb6f116531c0438a602b0",
+    "semantic_hash": "e2bba72e0f2bb6f116531c0438a602b0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/__init__.py": {
+    "mtime": 1792876607.2486997,
+    "seen": 1792926045.9219306,
+    "ast_hash": "e212a287b8d527f3eb75b68480b3c13b",
+    "semantic_hash": "e212a287b8d527f3eb75b68480b3c13b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/chatTTS_handler.py": {
+    "mtime": 1792876607.3034976,
+    "seen": 1792926045.9219315,
+    "ast_hash": "dc2cc42634ce82cb5ab2305da37927cd",
+    "semantic_hash": "dc2cc42634ce82cb5ab2305da37927cd"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/drama3_handler.py": {
+    "mtime": 1792876607.2241547,
+    "seen": 1792926045.9219322,
+    "ast_hash": "ef112bc18ea61a6edc4760c0c1ff612f",
+    "semantic_hash": "ef112bc18ea61a6edc4760c0c1ff612f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/facebookmms_handler.py": {
+    "mtime": 1792876607.3034976,
+    "seen": 1792926045.9219337,
+    "ast_hash": "d1f30253ecfffab1a9cc4325fdc1a280",
+    "semantic_hash": "d1f30253ecfffab1a9cc4325fdc1a280"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/kitten_tts_handler.py": {
+    "mtime": 1792876607.2808862,
+    "seen": 1792926045.9219346,
+    "ast_hash": "799f3dba8f3c93049e83224ab029e0fc",
+    "semantic_hash": "799f3dba8f3c93049e83224ab029e0fc"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/kokoro_handler.py": {
+    "mtime": 1792876607.2717304,
+    "seen": 1792926045.9219353,
+    "ast_hash": "27cbf748df0367f60dfe0553f7284315",
+    "semantic_hash": "27cbf748df0367f60dfe0553f7284315"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/minimax_tts_handler.py": {
+    "mtime": 1792876607.2874653,
+    "seen": 1792926045.9219363,
+    "ast_hash": "c09190ae871ee946641d333d18abb5f8",
+    "semantic_hash": "c09190ae871ee946641d333d18abb5f8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/omnivoice_handler.py": {
+    "mtime": 1792876607.2874653,
+    "seen": 1792926045.9219375,
+    "ast_hash": "477a96bd8914275b393d61167b89dd2d",
+    "semantic_hash": "477a96bd8914275b393d61167b89dd2d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/openai_compatible_handler.py": {
+    "mtime": 1792876607.2639694,
+    "seen": 1792926045.9219382,
+    "ast_hash": "1e55887e910a0b174c7510a07fe50761",
+    "semantic_hash": "1e55887e910a0b174c7510a07fe50761"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/persian_normalization.py": {
+    "mtime": 1792876607.2460134,
+    "seen": 1792926045.9219391,
+    "ast_hash": "caf8dd5e232f396de9234e6861f19b12",
+    "semantic_hash": "caf8dd5e232f396de9234e6861f19b12"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/pocket_tts_farsi.py": {
+    "mtime": 1792876607.2874653,
+    "seen": 1792926045.9219403,
+    "ast_hash": "cb355bbe9ab77e698249e357ec909ed0",
+    "semantic_hash": "cb355bbe9ab77e698249e357ec909ed0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/pocket_tts_handler.py": {
+    "mtime": 1792876607.2399528,
+    "seen": 1792926045.9219413,
+    "ast_hash": "3875c17d7220d4167e5c8f9a01b0a820",
+    "semantic_hash": "3875c17d7220d4167e5c8f9a01b0a820"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/qwen3_tts_handler.py": {
+    "mtime": 1792876607.2241547,
+    "seen": 1792926045.9219422,
+    "ast_hash": "ed47a299d262ebb920034c85a78b508d",
+    "semantic_hash": "ed47a299d262ebb920034c85a78b508d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/supertonic_tts_handler.py": {
+    "mtime": 1792876607.2241547,
+    "seen": 1792926045.9219432,
+    "ast_hash": "9beb9d806e4c9813088b9ceb06e9b19c",
+    "semantic_hash": "9beb9d806e4c9813088b9ceb06e9b19c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/VAD/__init__.py": {
+    "mtime": 1792876607.6826842,
+    "seen": 1792926045.9219444,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/VAD/firered_vad_iterator.py": {
+    "mtime": 1792876607.6826842,
+    "seen": 1792926045.9219453,
+    "ast_hash": "625ea196f2c7054c8cf5245a2eaabd30",
+    "semantic_hash": "625ea196f2c7054c8cf5245a2eaabd30"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/VAD/smart_turn.py": {
+    "mtime": 1792876607.709563,
+    "seen": 1792926045.9219463,
+    "ast_hash": "74e8fb76696bcc0337e849dad9a483f1",
+    "semantic_hash": "74e8fb76696bcc0337e849dad9a483f1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/VAD/vad_handler.py": {
+    "mtime": 1792876607.6934872,
+    "seen": 1792926045.9219475,
+    "ast_hash": "65b82eea0de8d46925b2b302769a9664",
+    "semantic_hash": "65b82eea0de8d46925b2b302769a9664"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/VAD/vad_iterator.py": {
+    "mtime": 1792876607.6934872,
+    "seen": 1792926045.9219484,
+    "ast_hash": "28c6a037b58e221faf06337cd8e8e5e1",
+    "semantic_hash": "28c6a037b58e221faf06337cd8e8e5e1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/__init__.py": {
+    "mtime": 1792876606.7313294,
+    "seen": 1792926045.9219496,
+    "ast_hash": "d5f61bd5182da5d7a7b429335d4d3cdf",
+    "semantic_hash": "d5f61bd5182da5d7a7b429335d4d3cdf"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/_config_yaml.py": {
+    "mtime": 1792876606.762826,
+    "seen": 1792926045.9219508,
+    "ast_hash": "502f3e08c1ca65d164c4dcdb58ae3416",
+    "semantic_hash": "502f3e08c1ca65d164c4dcdb58ae3416"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/__init__.py": {
+    "mtime": 1792876607.4263518,
+    "seen": 1792926045.9219515,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/__init__.py": {
+    "mtime": 1792876607.449613,
+    "seen": 1792926045.9219527,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/audio_client.py": {
+    "mtime": 1792876607.5044496,
+    "seen": 1792926045.9219534,
+    "ast_hash": "f85b11382c6be18a015a4915a7226ce5",
+    "semantic_hash": "f85b11382c6be18a015a4915a7226ce5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/__init__.py": {
+    "mtime": 1792876607.5471263,
+    "seen": 1792926045.9219549,
+    "ast_hash": "9adc809d9f5a0b17a52b966a48828f6e",
+    "semantic_hash": "9adc809d9f5a0b17a52b966a48828f6e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/audio.py": {
+    "mtime": 1792876607.5356967,
+    "seen": 1792926045.9219556,
+    "ast_hash": "0888ced1ced45d14a5847ba3f01729b6",
+    "semantic_hash": "0888ced1ced45d14a5847ba3f01729b6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/base.py": {
+    "mtime": 1792876607.5356967,
+    "seen": 1792926045.9219565,
+    "ast_hash": "d2a21cb1b2905d7a7bcad7b1e9b41d80",
+    "semantic_hash": "d2a21cb1b2905d7a7bcad7b1e9b41d80"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/conversation.py": {
+    "mtime": 1792876607.5674362,
+    "seen": 1792926045.9219577,
+    "ast_hash": "db2dd1ada118bd34e88b159b83547ea0",
+    "semantic_hash": "db2dd1ada118bd34e88b159b83547ea0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/history.py": {
+    "mtime": 1792876607.5291348,
+    "seen": 1792926045.9219587,
+    "ast_hash": "48f52a40965e525b25472cf0df98b1b8",
+    "semantic_hash": "48f52a40965e525b25472cf0df98b1b8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/response.py": {
+    "mtime": 1792876607.5516624,
+    "seen": 1792926045.9219596,
+    "ast_hash": "dfd141dbd915dfb6d6c92ce392e58236",
+    "semantic_hash": "dfd141dbd915dfb6d6c92ce392e58236"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/handlers/session.py": {
+    "mtime": 1792876607.5516624,
+    "seen": 1792926045.9219606,
+    "ast_hash": "76fd32711f61d826950b048b617f9fa1",
+    "semantic_hash": "76fd32711f61d826950b048b617f9fa1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/input_state.py": {
+    "mtime": 1792876607.4886458,
+    "seen": 1792926045.9219618,
+    "ast_hash": "7e148b779802a0a89d557b9d7ad184fa",
+    "semantic_hash": "7e148b779802a0a89d557b9d7ad184fa"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/llm_proxy.py": {
+    "mtime": 1792876607.4812,
+    "seen": 1792926045.9219627,
+    "ast_hash": "45b080b1e739bcd0118f815c486f574b",
+    "semantic_hash": "45b080b1e739bcd0118f815c486f574b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/pipeline_unit.py": {
+    "mtime": 1792876607.4301112,
+    "seen": 1792926045.9219637,
+    "ast_hash": "d060d9e3cc569a12f634be3ff56d8b74",
+    "semantic_hash": "d060d9e3cc569a12f634be3ff56d8b74"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/runtime_config.py": {
+    "mtime": 1792876607.465008,
+    "seen": 1792926045.921965,
+    "ast_hash": "d3b0e4fe370919017fb3618f564b06ac",
+    "semantic_hash": "d3b0e4fe370919017fb3618f564b06ac"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/server.py": {
+    "mtime": 1792876607.5044496,
+    "seen": 1792926045.9219658,
+    "ast_hash": "384f699dbedbed239b2e4c6a94524f26",
+    "semantic_hash": "384f699dbedbed239b2e4c6a94524f26"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/service.py": {
+    "mtime": 1792876607.4485407,
+    "seen": 1792926045.9219668,
+    "ast_hash": "c110142a5e44a6813a985061259a85fb",
+    "semantic_hash": "c110142a5e44a6813a985061259a85fb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/tool_followup.py": {
+    "mtime": 1792876607.4301112,
+    "seen": 1792926045.921968,
+    "ast_hash": "1d6c399c5f68377c806af96400cc3aa7",
+    "semantic_hash": "1d6c399c5f68377c806af96400cc3aa7"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/transports.py": {
+    "mtime": 1792876607.4886458,
+    "seen": 1792926045.921969,
+    "ast_hash": "8c3226e895a57ade3046ac713239f1d5",
+    "semantic_hash": "8c3226e895a57ade3046ac713239f1d5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/utils.py": {
+    "mtime": 1792876607.5200386,
+    "seen": 1792926045.92197,
+    "ast_hash": "d87e9417cfb17500b006c1f2be493e88",
+    "semantic_hash": "d87e9417cfb17500b006c1f2be493e88"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/visemes.py": {
+    "mtime": 1792876607.473272,
+    "seen": 1792926045.9219708,
+    "ast_hash": "ab2e4ee3ae866b950801c31cad7e71a8",
+    "semantic_hash": "ab2e4ee3ae866b950801c31cad7e71a8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/webrtc_session.py": {
+    "mtime": 1792876607.473272,
+    "seen": 1792926045.921972,
+    "ast_hash": "9e40faa2c51e304b89f958c29ecaf301",
+    "semantic_hash": "9e40faa2c51e304b89f958c29ecaf301"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/websocket_router.py": {
+    "mtime": 1792876607.4886458,
+    "seen": 1792926045.921973,
+    "ast_hash": "81468a5e71962dc139e748cbc33ff06c",
+    "semantic_hash": "81468a5e71962dc139e748cbc33ff06c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/__init__.py": {
+    "mtime": 1792876606.9380043,
+    "seen": 1792926045.921974,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/chat_completions_language_model_arguments.py": {
+    "mtime": 1792876607.0014777,
+    "seen": 1792926045.9219751,
+    "ast_hash": "758786d0be49569c05b8f67ea3eb2437",
+    "semantic_hash": "758786d0be49569c05b8f67ea3eb2437"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/chat_tts_arguments.py": {
+    "mtime": 1792876607.0172205,
+    "seen": 1792926045.921976,
+    "ast_hash": "ccf223fcbb4c788bcb47b0d295192352",
+    "semantic_hash": "ccf223fcbb4c788bcb47b0d295192352"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/drama3_tts_arguments.py": {
+    "mtime": 1792876606.92188,
+    "seen": 1792926045.9219768,
+    "ast_hash": "c92157ba5ca401ce0ad2816bd5a44d32",
+    "semantic_hash": "c92157ba5ca401ce0ad2816bd5a44d32"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/facebookmms_tts_arguments.py": {
+    "mtime": 1792876606.985796,
+    "seen": 1792926045.9219778,
+    "ast_hash": "7829d84facdfeff1ae5dbb819727ed47",
+    "semantic_hash": "7829d84facdfeff1ae5dbb819727ed47"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/faster_whisper_stt_arguments.py": {
+    "mtime": 1792876606.953865,
+    "seen": 1792926045.921979,
+    "ast_hash": "6ce9ddf258731c4bedeb484f4c57389e",
+    "semantic_hash": "6ce9ddf258731c4bedeb484f4c57389e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/kitten_tts_arguments.py": {
+    "mtime": 1792876607.0651662,
+    "seen": 1792926045.92198,
+    "ast_hash": "ae0cb38e083f8b88a537c357f4399256",
+    "semantic_hash": "ae0cb38e083f8b88a537c357f4399256"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/kokoro_tts_arguments.py": {
+    "mtime": 1792876606.985796,
+    "seen": 1792926045.9219809,
+    "ast_hash": "006897c2731aa7cb8bb1aae2f6f088c8",
+    "semantic_hash": "006897c2731aa7cb8bb1aae2f6f088c8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/language_model_arguments.py": {
+    "mtime": 1792876607.0651662,
+    "seen": 1792926045.921982,
+    "ast_hash": "69213d363ef0e4e66d88d284c14e589b",
+    "semantic_hash": "69213d363ef0e4e66d88d284c14e589b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/language_model_base_arguments.py": {
+    "mtime": 1792876606.953865,
+    "seen": 1792926045.921983,
+    "ast_hash": "d052a43a6906ca1f5d4c9370c9ecfc9c",
+    "semantic_hash": "d052a43a6906ca1f5d4c9370c9ecfc9c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/local_audio_arguments.py": {
+    "mtime": 1792876606.9380043,
+    "seen": 1792926045.921984,
+    "ast_hash": "9a78aa40fd4ee6c366f75f2f7af97c25",
+    "semantic_hash": "9a78aa40fd4ee6c366f75f2f7af97c25"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/minimax_tts_arguments.py": {
+    "mtime": 1792876607.0809255,
+    "seen": 1792926045.921985,
+    "ast_hash": "637a2baa28ad13c1cc10983fc82c73b4",
+    "semantic_hash": "637a2baa28ad13c1cc10983fc82c73b4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/mlx_audio_whisper_arguments.py": {
+    "mtime": 1792876606.9697309,
+    "seen": 1792926045.921986,
+    "ast_hash": "0f49a435f7f5780980a0a3da60daf952",
+    "semantic_hash": "0f49a435f7f5780980a0a3da60daf952"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/module_arguments.py": {
+    "mtime": 1792876606.906079,
+    "seen": 1792926045.921987,
+    "ast_hash": "e96c672f24703c11badc8ad5c339392e",
+    "semantic_hash": "e96c672f24703c11badc8ad5c339392e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/nemotron_streaming_stt_arguments.py": {
+    "mtime": 1792876606.92188,
+    "seen": 1792926045.921988,
+    "ast_hash": "7ca4b72c9663d6e216df56f9f4cd93b6",
+    "semantic_hash": "7ca4b72c9663d6e216df56f9f4cd93b6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/omnivoice_tts_arguments.py": {
+    "mtime": 1792876607.049052,
+    "seen": 1792926045.9219892,
+    "ast_hash": "cd1f76a7ac3a2d0f0b73b90e7e4efaaa",
+    "semantic_hash": "cd1f76a7ac3a2d0f0b73b90e7e4efaaa"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/openai_realtime_stt_arguments.py": {
+    "mtime": 1792876607.049052,
+    "seen": 1792926045.9219902,
+    "ast_hash": "ff4068cf30e9d866b8e21f0d031ff935",
+    "semantic_hash": "ff4068cf30e9d866b8e21f0d031ff935"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/openai_stt_arguments.py": {
+    "mtime": 1792876607.0333607,
+    "seen": 1792926045.921991,
+    "ast_hash": "6aec7fc2530bdb6bcdba34c2946c950e",
+    "semantic_hash": "6aec7fc2530bdb6bcdba34c2946c950e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/openai_tts_arguments.py": {
+    "mtime": 1792876607.0172205,
+    "seen": 1792926045.9219923,
+    "ast_hash": "c52d4c8f796e2037bf5b882099219cfb",
+    "semantic_hash": "c52d4c8f796e2037bf5b882099219cfb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/orukeet_stt_arguments.py": {
+    "mtime": 1792876607.0172205,
+    "seen": 1792926045.921993,
+    "ast_hash": "9c93dd88ef23d4bd263541d7c9ed50a9",
+    "semantic_hash": "9c93dd88ef23d4bd263541d7c9ed50a9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/paraformer_stt_arguments.py": {
+    "mtime": 1792876606.9697309,
+    "seen": 1792926045.921994,
+    "ast_hash": "2cb151750c5c61b6ba17460c8e0ec393",
+    "semantic_hash": "2cb151750c5c61b6ba17460c8e0ec393"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/parakeet_tdt_arguments.py": {
+    "mtime": 1792876607.0809255,
+    "seen": 1792926045.921995,
+    "ast_hash": "88be9807c20c5e249b89fe5e61f7a12e",
+    "semantic_hash": "88be9807c20c5e249b89fe5e61f7a12e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/parakeet_unified_stt_arguments.py": {
+    "mtime": 1792876607.0014777,
+    "seen": 1792926045.921996,
+    "ast_hash": "40feb7091ec643685c0784fd77a62ef2",
+    "semantic_hash": "40feb7091ec643685c0784fd77a62ef2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/pocket_tts_arguments.py": {
+    "mtime": 1792876607.0465183,
+    "seen": 1792926045.9219997,
+    "ast_hash": "e6e1c77232de801f7e202db635cfacd5",
+    "semantic_hash": "e6e1c77232de801f7e202db635cfacd5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/qwen3_asr_stt_arguments.py": {
+    "mtime": 1792876607.0014777,
+    "seen": 1792926045.9220006,
+    "ast_hash": "1d71385740a636d077599a8cb7848b13",
+    "semantic_hash": "1d71385740a636d077599a8cb7848b13"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/qwen3_tts_arguments.py": {
+    "mtime": 1792876606.9186327,
+    "seen": 1792926045.9220016,
+    "ast_hash": "03e6875590ce54ccf915ecb8ea481770",
+    "semantic_hash": "03e6875590ce54ccf915ecb8ea481770"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/realtime_server_arguments.py": {
+    "mtime": 1792876606.953865,
+    "seen": 1792926045.9220023,
+    "ast_hash": "f3584594673ec02c172814c9779bf9f7",
+    "semantic_hash": "f3584594673ec02c172814c9779bf9f7"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/responses_api_language_model_arguments.py": {
+    "mtime": 1792876606.9380043,
+    "seen": 1792926045.9220037,
+    "ast_hash": "31aa476c8d491e69caffe46580feb09f",
+    "semantic_hash": "31aa476c8d491e69caffe46580feb09f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/sense_voice_stt_arguments.py": {
+    "mtime": 1792876606.8976789,
+    "seen": 1792926045.9220045,
+    "ast_hash": "944ffe4b6d30089715c49b692075fd43",
+    "semantic_hash": "944ffe4b6d30089715c49b692075fd43"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/supertonic_tts_arguments.py": {
+    "mtime": 1792876607.0651662,
+    "seen": 1792926045.9220057,
+    "ast_hash": "730f07aaa60a7f38339ab52e683f3b8c",
+    "semantic_hash": "730f07aaa60a7f38339ab52e683f3b8c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/vad_arguments.py": {
+    "mtime": 1792876606.906079,
+    "seen": 1792926045.9220068,
+    "ast_hash": "52c7980e3b5d2fd5b519b6d58c0addc1",
+    "semantic_hash": "52c7980e3b5d2fd5b519b6d58c0addc1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/vllm_realtime_stt_arguments.py": {
+    "mtime": 1792876607.0333607,
+    "seen": 1792926045.9220076,
+    "ast_hash": "8ea3940c73a5f04273f1a4f3ca0a8bce",
+    "semantic_hash": "8ea3940c73a5f04273f1a4f3ca0a8bce"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/w2v_stv_arguments.py": {
+    "mtime": 1792876606.9697309,
+    "seen": 1792926045.9220085,
+    "ast_hash": "55f01b42060023ec09555ca7f946a479",
+    "semantic_hash": "55f01b42060023ec09555ca7f946a479"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/arguments_classes/whisper_stt_arguments.py": {
+    "mtime": 1792876606.8976789,
+    "seen": 1792926045.9220097,
+    "ast_hash": "1716bdcdf4a13d7a3770d0abfd33b88f",
+    "semantic_hash": "1716bdcdf4a13d7a3770d0abfd33b88f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/backend_registry.py": {
+    "mtime": 1792876606.7313294,
+    "seen": 1792926045.9220107,
+    "ast_hash": "1471271e787d4f50284f8f8a49ead080",
+    "semantic_hash": "1471271e787d4f50284f8f8a49ead080"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/baseHandler.py": {
+    "mtime": 1792876606.7471218,
+    "seen": 1792926045.9220116,
+    "ast_hash": "521cb8955c77234636615d320d0d4096",
+    "semantic_hash": "521cb8955c77234636615d320d0d4096"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/cli.py": {
+    "mtime": 1792876606.7253282,
+    "seen": 1792926045.9220126,
+    "ast_hash": "5cfd77c0ec7b71e36e0f941d68a6fd77",
+    "semantic_hash": "5cfd77c0ec7b71e36e0f941d68a6fd77"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/config.py": {
+    "mtime": 1792876606.7313294,
+    "seen": 1792926045.922014,
+    "ast_hash": "43f889db37be1be63a8b1b9d9992591d",
+    "semantic_hash": "43f889db37be1be63a8b1b9d9992591d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/configured_runtime.py": {
+    "mtime": 1792876606.7471218,
+    "seen": 1792926045.922015,
+    "ast_hash": "0057217efda684928e618b7b4ffa8e94",
+    "semantic_hash": "0057217efda684928e618b7b4ffa8e94"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/diarization/__init__.py": {
+    "mtime": 1792876606.7788696,
+    "seen": 1792926045.922016,
+    "ast_hash": "ee4bb717f740c7255dba94ba1872c27b",
+    "semantic_hash": "ee4bb717f740c7255dba94ba1872c27b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/diarization/streaming.py": {
+    "mtime": 1792876606.7948675,
+    "seen": 1792926045.922017,
+    "ast_hash": "93fd88e077b8d3926229fb30fd2fc16e",
+    "semantic_hash": "93fd88e077b8d3926229fb30fd2fc16e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/diarization/worker.py": {
+    "mtime": 1792876606.7788696,
+    "seen": 1792926045.922018,
+    "ast_hash": "997f4e678b7c970467ffa5a9e1fce01d",
+    "semantic_hash": "997f4e678b7c970467ffa5a9e1fce01d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/__init__.py": {
+    "mtime": 1792876607.5801213,
+    "seen": 1792926045.922019,
+    "ast_hash": "f1c1777c05021bfaada8d5891ee8ef20",
+    "semantic_hash": "f1c1777c05021bfaada8d5891ee8ef20"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/__init__.py": {
+    "mtime": 1792876607.6041238,
+    "seen": 1792926045.9220202,
+    "ast_hash": "8100fa83f1b89531f389a46e5a9ba138",
+    "semantic_hash": "8100fa83f1b89531f389a46e5a9ba138"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/__main__.py": {
+    "mtime": 1792876607.6462145,
+    "seen": 1792926045.922021,
+    "ast_hash": "77cf3679e8a9b4b25215952eefff3b5f",
+    "semantic_hash": "77cf3679e8a9b4b25215952eefff3b5f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/big-bench-audio-entrypoint.sh": {
+    "mtime": 1792876607.630486,
+    "seen": 1792926045.9220219,
+    "ast_hash": "49d269dceb45a1138814fbaaf6989ecf",
+    "semantic_hash": "49d269dceb45a1138814fbaaf6989ecf"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/dataset.py": {
+    "mtime": 1792876607.591208,
+    "seen": 1792926045.9220228,
+    "ast_hash": "88569f1312ba666949f94e5ff2762159",
+    "semantic_hash": "88569f1312ba666949f94e5ff2762159"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/hub.py": {
+    "mtime": 1792876607.6145718,
+    "seen": 1792926045.922024,
+    "ast_hash": "89451a952222c581fedd23e84d39999c",
+    "semantic_hash": "89451a952222c581fedd23e84d39999c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/job.py": {
+    "mtime": 1792876607.630486,
+    "seen": 1792926045.922025,
+    "ast_hash": "86e79f351f9ba1bda3830e2dd4d899fa",
+    "semantic_hash": "86e79f351f9ba1bda3830e2dd4d899fa"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/judge.py": {
+    "mtime": 1792876607.6145718,
+    "seen": 1792926045.922026,
+    "ast_hash": "dc27dfeb0775936b0f2bac7526c21fda",
+    "semantic_hash": "dc27dfeb0775936b0f2bac7526c21fda"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/report.py": {
+    "mtime": 1792876607.5986857,
+    "seen": 1792926045.922027,
+    "ast_hash": "553f553efcd7ef227c457c50f7e776a3",
+    "semantic_hash": "553f553efcd7ef227c457c50f7e776a3"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/runner.py": {
+    "mtime": 1792876607.6079235,
+    "seen": 1792926045.9220278,
+    "ast_hash": "bbdf3220750c3452f876f356774fc131",
+    "semantic_hash": "bbdf3220750c3452f876f356774fc131"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/evals/big_bench_audio/scoring.py": {
+    "mtime": 1792876607.6145718,
+    "seen": 1792926045.9220288,
+    "ast_hash": "74ab63d27590c1c8b18754193d22edde",
+    "semantic_hash": "74ab63d27590c1c8b18754193d22edde"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/__init__.py": {
+    "mtime": 1792876607.3353713,
+    "seen": 1792926045.9220297,
+    "ast_hash": "0ee6129894a547919870c82f3d033b2f",
+    "semantic_hash": "0ee6129894a547919870c82f3d033b2f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/cancel_scope.py": {
+    "mtime": 1792876607.3986065,
+    "seen": 1792926045.9220312,
+    "ast_hash": "307a8f9cda1f9474d98f9ea332ccadb0",
+    "semantic_hash": "307a8f9cda1f9474d98f9ea332ccadb0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/control.py": {
+    "mtime": 1792876607.3986065,
+    "seen": 1792926045.922032,
+    "ast_hash": "4d29ba9b4251db4f8e0850e2fb17ba3f",
+    "semantic_hash": "4d29ba9b4251db4f8e0850e2fb17ba3f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/events.py": {
+    "mtime": 1792876607.4133458,
+    "seen": 1792926045.9220328,
+    "ast_hash": "8f258688e54b69009892f3f9c5d03f90",
+    "semantic_hash": "8f258688e54b69009892f3f9c5d03f90"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/handler_types.py": {
+    "mtime": 1792876607.3667722,
+    "seen": 1792926045.922034,
+    "ast_hash": "6dfa15270e250d277bd6ed2d904e3e63",
+    "semantic_hash": "6dfa15270e250d277bd6ed2d904e3e63"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/history.py": {
+    "mtime": 1792876607.319204,
+    "seen": 1792926045.922035,
+    "ast_hash": "4283400fec40fe9c0bf98211ad7167fa",
+    "semantic_hash": "4283400fec40fe9c0bf98211ad7167fa"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/language_detection.py": {
+    "mtime": 1792876607.3560057,
+    "seen": 1792926045.9220362,
+    "ast_hash": "07eb94d7ed77b1bb720fbe242c1cae1d",
+    "semantic_hash": "07eb94d7ed77b1bb720fbe242c1cae1d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/log_context.py": {
+    "mtime": 1792876607.3667722,
+    "seen": 1792926045.922037,
+    "ast_hash": "c5c1d418de30986a9ce2378629a14b41",
+    "semantic_hash": "c5c1d418de30986a9ce2378629a14b41"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/messages.py": {
+    "mtime": 1792876607.319204,
+    "seen": 1792926045.922038,
+    "ast_hash": "f622602059b45d1548968c8a281fd414",
+    "semantic_hash": "f622602059b45d1548968c8a281fd414"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/queue_types.py": {
+    "mtime": 1792876607.319204,
+    "seen": 1792926045.9220393,
+    "ast_hash": "b6c0eb3b1ba161b6abb2e03e5c26c035",
+    "semantic_hash": "b6c0eb3b1ba161b6abb2e03e5c26c035"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/speaker_metadata.py": {
+    "mtime": 1792876607.3825514,
+    "seen": 1792926045.9220402,
+    "ast_hash": "6862df49be6a46b8f247afd30e87316e",
+    "semantic_hash": "6862df49be6a46b8f247afd30e87316e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/speculative_turns.py": {
+    "mtime": 1792876607.3353713,
+    "seen": 1792926045.9220412,
+    "ast_hash": "41081f9e44ee8b128b96b1336fb98218",
+    "semantic_hash": "41081f9e44ee8b128b96b1336fb98218"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/transcript_logging.py": {
+    "mtime": 1792876607.3825514,
+    "seen": 1792926045.9220421,
+    "ast_hash": "62b8ad828519eb676a340e0ea74be807",
+    "semantic_hash": "62b8ad828519eb676a340e0ea74be807"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/turn_latency.py": {
+    "mtime": 1792876607.3560057,
+    "seen": 1792926045.922043,
+    "ast_hash": "62607cb054fe5b464c959923f1912e8b",
+    "semantic_hash": "62607cb054fe5b464c959923f1912e8b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/pipeline/visemes.py": {
+    "mtime": 1792876607.3825514,
+    "seen": 1792926045.9220443,
+    "ast_hash": "9c66931e5f07ff00b4440163f6cc12d8",
+    "semantic_hash": "9c66931e5f07ff00b4440163f6cc12d8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/s2s_pipeline.py": {
+    "mtime": 1792876606.7714272,
+    "seen": 1792926045.9220452,
+    "ast_hash": "b80cdf7368e4296ea5e30208c2028293",
+    "semantic_hash": "b80cdf7368e4296ea5e30208c2028293"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/utils/__init__.py": {
+    "mtime": 1792876607.6658313,
+    "seen": 1792926045.9220462,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/utils/mlx_lock.py": {
+    "mtime": 1792876607.650421,
+    "seen": 1792926045.9220474,
+    "ast_hash": "af5b8fe1eff93be5bf6b525001e8bbca",
+    "semantic_hash": "af5b8fe1eff93be5bf6b525001e8bbca"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/utils/thread_manager.py": {
+    "mtime": 1792876607.6641285,
+    "seen": 1792926045.9220486,
+    "ast_hash": "1c2a43ad4155a10b0842c8ecd24c05e4",
+    "semantic_hash": "1c2a43ad4155a10b0842c8ecd24c05e4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/utils/utils.py": {
+    "mtime": 1792876607.6658313,
+    "seen": 1792926045.9220493,
+    "ast_hash": "8e2ea97edd3c0306cebc3875f107655e",
+    "semantic_hash": "8e2ea97edd3c0306cebc3875f107655e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/__init__.py": {
+    "mtime": 1792876607.9782531,
+    "seen": 1792926045.9220505,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/__init__.py": {
+    "mtime": 1792876608.566549,
+    "seen": 1792926045.9220517,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/conftest.py": {
+    "mtime": 1792876608.6104865,
+    "seen": 1792926045.9220526,
+    "ast_hash": "35b72dfe303a1e80fa4a081af3a867a7",
+    "semantic_hash": "35b72dfe303a1e80fa4a081af3a867a7"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_cli.py": {
+    "mtime": 1792876608.623639,
+    "seen": 1792926045.9220538,
+    "ast_hash": "324874341f850111cba70de1ba31fe99",
+    "semantic_hash": "324874341f850111cba70de1ba31fe99"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_dataset.py": {
+    "mtime": 1792876608.555514,
+    "seen": 1792926045.922055,
+    "ast_hash": "62cf4899e8584669ca8542e9354043f9",
+    "semantic_hash": "62cf4899e8584669ca8542e9354043f9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_hub.py": {
+    "mtime": 1792876608.5764244,
+    "seen": 1792926045.922056,
+    "ast_hash": "6fe0072d3c0dd11ead498eab0ccf93e8",
+    "semantic_hash": "6fe0072d3c0dd11ead498eab0ccf93e8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_job.py": {
+    "mtime": 1792876608.5448403,
+    "seen": 1792926045.9220567,
+    "ast_hash": "d84489d4bd9ee1c117d3d41b06638dd1",
+    "semantic_hash": "d84489d4bd9ee1c117d3d41b06638dd1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_judge.py": {
+    "mtime": 1792876608.5981326,
+    "seen": 1792926045.9220576,
+    "ast_hash": "ffda044169c8f8593ddf2c909b24cdcb",
+    "semantic_hash": "ffda044169c8f8593ddf2c909b24cdcb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_report.py": {
+    "mtime": 1792876608.6058483,
+    "seen": 1792926045.9220588,
+    "ast_hash": "8cb5c4d5c1390a69e6c75de4a1292699",
+    "semantic_hash": "8cb5c4d5c1390a69e6c75de4a1292699"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_runner.py": {
+    "mtime": 1792876608.5725763,
+    "seen": 1792926045.9220598,
+    "ast_hash": "404212e24479da9126a9926e073e559f",
+    "semantic_hash": "404212e24479da9126a9926e073e559f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_big_bench_audio_scoring.py": {
+    "mtime": 1792876608.6104865,
+    "seen": 1792926045.9220607,
+    "ast_hash": "c35e44c392562450682e465c6c87a3f5",
+    "semantic_hash": "c35e44c392562450682e465c6c87a3f5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/evals/test_prepare_eval_space.py": {
+    "mtime": 1792876608.5764244,
+    "seen": 1792926045.922062,
+    "ast_hash": "2ee7ecf14acf2037147cbfc05e58665f",
+    "semantic_hash": "2ee7ecf14acf2037147cbfc05e58665f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/install_smoke.py": {
+    "mtime": 1792876608.1367872,
+    "seen": 1792926045.9220629,
+    "ast_hash": "33d757d87d0a7774e889b5452772a709",
+    "semantic_hash": "33d757d87d0a7774e889b5452772a709"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/llm_history.py": {
+    "mtime": 1792876608.2952805,
+    "seen": 1792926045.9220638,
+    "ast_hash": "a727f521c683ade35b57276f1318133a",
+    "semantic_hash": "a727f521c683ade35b57276f1318133a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/__init__.py": {
+    "mtime": 1792876608.4061918,
+    "seen": 1792926045.9220648,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/agents_sdk_server.py": {
+    "mtime": 1792876608.4974997,
+    "seen": 1792926045.922066,
+    "ast_hash": "11a8c04ecde267710c96778b0bb17181",
+    "semantic_hash": "11a8c04ecde267710c96778b0bb17181"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/conftest.py": {
+    "mtime": 1792876608.485856,
+    "seen": 1792926045.922067,
+    "ast_hash": "a5aefef8ba4cc4a4d626875d90dba556",
+    "semantic_hash": "a5aefef8ba4cc4a4d626875d90dba556"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/realtime_contract.py": {
+    "mtime": 1792876608.4383228,
+    "seen": 1792926045.9220679,
+    "ast_hash": "ddeb0e4e2f9a3c1cdc4e6576dd0026a6",
+    "semantic_hash": "ddeb0e4e2f9a3c1cdc4e6576dd0026a6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_audio_client.py": {
+    "mtime": 1792876608.374429,
+    "seen": 1792926045.92207,
+    "ast_hash": "08eefcbf1155a3940acb7ca62b26fd17",
+    "semantic_hash": "08eefcbf1155a3940acb7ca62b26fd17"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_conversation_delete.py": {
+    "mtime": 1792876608.454342,
+    "seen": 1792926045.922071,
+    "ast_hash": "9bcb2546aa8f8dad2cfd997cf51331d4",
+    "semantic_hash": "9bcb2546aa8f8dad2cfd997cf51331d4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_create_response.py": {
+    "mtime": 1792876608.520897,
+    "seen": 1792926045.9220717,
+    "ast_hash": "c2a41783b91877f72c3a55997f27f1ab",
+    "semantic_hash": "c2a41783b91877f72c3a55997f27f1ab"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_llm_proxy.py": {
+    "mtime": 1792876608.4002082,
+    "seen": 1792926045.922073,
+    "ast_hash": "bb22c7d6ec7d8c2f8b2c1e15bff66e74",
+    "semantic_hash": "bb22c7d6ec7d8c2f8b2c1e15bff66e74"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_openai_client.py": {
+    "mtime": 1792876608.3901072,
+    "seen": 1792926045.922074,
+    "ast_hash": "658a1946f0fa718b59e3c27086a87eb2",
+    "semantic_hash": "658a1946f0fa718b59e3c27086a87eb2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_output_resampling.py": {
+    "mtime": 1792876608.4061918,
+    "seen": 1792926045.9220748,
+    "ast_hash": "1d3e059d7b2e9670d50b7df318f5aafd",
+    "semantic_hash": "1d3e059d7b2e9670d50b7df318f5aafd"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_pipeline_builder.py": {
+    "mtime": 1792876608.3901072,
+    "seen": 1792926045.922076,
+    "ast_hash": "2c4c1601bb0148dcacb9c509368de150",
+    "semantic_hash": "2c4c1601bb0148dcacb9c509368de150"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_realtime_protocol_contract.py": {
+    "mtime": 1792876608.4061918,
+    "seen": 1792926045.922077,
+    "ast_hash": "adb424e97bb28a9c0b0311da209b7d73",
+    "semantic_hash": "adb424e97bb28a9c0b0311da209b7d73"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_realtime_service.py": {
+    "mtime": 1792876608.454342,
+    "seen": 1792926045.9220781,
+    "ast_hash": "4357f3d8e36085bf974c653fce76bb0f",
+    "semantic_hash": "4357f3d8e36085bf974c653fce76bb0f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_response_input_identity.py": {
+    "mtime": 1792876608.4974997,
+    "seen": 1792926045.922079,
+    "ast_hash": "5fb446d91fe89d972e2e43ef8500438d",
+    "semantic_hash": "5fb446d91fe89d972e2e43ef8500438d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_runtime_config.py": {
+    "mtime": 1792876608.4223037,
+    "seen": 1792926045.92208,
+    "ast_hash": "75497a1a9822ee2a071d3dbea2dabd3c",
+    "semantic_hash": "75497a1a9822ee2a071d3dbea2dabd3c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_server_turn_latency.py": {
+    "mtime": 1792876608.495045,
+    "seen": 1792926045.922081,
+    "ast_hash": "bb2f032b79b60e3e01d1e97141932ec2",
+    "semantic_hash": "bb2f032b79b60e3e01d1e97141932ec2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_speaker_conversation.py": {
+    "mtime": 1792876608.4519484,
+    "seen": 1792926045.922082,
+    "ast_hash": "a22c02f4ace34ac1cd5ea8cb8f00a4fb",
+    "semantic_hash": "a22c02f4ace34ac1cd5ea8cb8f00a4fb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_speculative_turn_protocol.py": {
+    "mtime": 1792876608.4703386,
+    "seen": 1792926045.922083,
+    "ast_hash": "ffa4f44ececc582c9ebb63482495232b",
+    "semantic_hash": "ffa4f44ececc582c9ebb63482495232b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_speech_latency_attribution.py": {
+    "mtime": 1792876608.374429,
+    "seen": 1792926045.9220843,
+    "ast_hash": "e111912802d02c79bbcbe69fcb4fb50f",
+    "semantic_hash": "e111912802d02c79bbcbe69fcb4fb50f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_turn_latency.py": {
+    "mtime": 1792876608.4703386,
+    "seen": 1792926045.9220855,
+    "ast_hash": "09653a51a13ded5ef6600ff9411f81fc",
+    "semantic_hash": "09653a51a13ded5ef6600ff9411f81fc"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_web_search_tool_example.py": {
+    "mtime": 1792876608.4703386,
+    "seen": 1792926045.9220867,
+    "ast_hash": "3ae25ccc6eaee6b92cf0a0f724c74e18",
+    "semantic_hash": "3ae25ccc6eaee6b92cf0a0f724c74e18"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_webrtc.py": {
+    "mtime": 1792876608.4383228,
+    "seen": 1792926045.9220877,
+    "ast_hash": "81e27372c85784c9c86b53785ff074b4",
+    "semantic_hash": "81e27372c85784c9c86b53785ff074b4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_websocket_router.py": {
+    "mtime": 1792876608.5129087,
+    "seen": 1792926045.9220886,
+    "ast_hash": "eb730daba9d71f357cdc0042e05ed4b9",
+    "semantic_hash": "eb730daba9d71f357cdc0042e05ed4b9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/openai_realtime/test_youcom_search_tool_example.py": {
+    "mtime": 1792876608.4223037,
+    "seen": 1792926045.9220896,
+    "ast_hash": "4ce0fab1b76060bf2f97c7c22ea5a65c",
+    "semantic_hash": "4ce0fab1b76060bf2f97c7c22ea5a65c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/reopen_dispatch.py": {
+    "mtime": 1792876607.8834748,
+    "seen": 1792926045.9220905,
+    "ast_hash": "8f7766a5812fc8dfe78e0c40d5a21d51",
+    "semantic_hash": "8f7766a5812fc8dfe78e0c40d5a21d51"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_audio_input_notifier.py": {
+    "mtime": 1792876607.9198482,
+    "seen": 1792926045.9220915,
+    "ast_hash": "c49962287e622e9b7c986285c815e318",
+    "semantic_hash": "c49962287e622e9b7c986285c815e318"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_auto_language_spelling.py": {
+    "mtime": 1792876608.3150868,
+    "seen": 1792926045.9220924,
+    "ast_hash": "cb14353494e5d194d2717f4c8b12f00d",
+    "semantic_hash": "cb14353494e5d194d2717f4c8b12f00d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_backend_registry.py": {
+    "mtime": 1792876608.1209452,
+    "seen": 1792926045.9220936,
+    "ast_hash": "28e903540025a161a1c0bb128120809b",
+    "semantic_hash": "28e903540025a161a1c0bb128120809b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_chat.py": {
+    "mtime": 1792876608.1689143,
+    "seen": 1792926045.9220946,
+    "ast_hash": "a76c66c1d74ac8f05d8e85ef87c7a992",
+    "semantic_hash": "a76c66c1d74ac8f05d8e85ef87c7a992"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_chat_completions_backend.py": {
+    "mtime": 1792876608.073138,
+    "seen": 1792926045.9220955,
+    "ast_hash": "e65155a5c5f8806239a35d3a2418d564",
+    "semantic_hash": "e65155a5c5f8806239a35d3a2418d564"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_chat_turn_order.py": {
+    "mtime": 1792876608.0891356,
+    "seen": 1792926045.9220967,
+    "ast_hash": "1b92851b3d8735ff493e37c48e3a696b",
+    "semantic_hash": "1b92851b3d8735ff493e37c48e3a696b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_chattts_streaming.py": {
+    "mtime": 1792876608.273229,
+    "seen": 1792926045.9220977,
+    "ast_hash": "d0bf83ae4906502fef672b14f03b972e",
+    "semantic_hash": "d0bf83ae4906502fef672b14f03b972e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_chattts_tts_latency.py": {
+    "mtime": 1792876608.1847823,
+    "seen": 1792926045.9220986,
+    "ast_hash": "0ebc98dc8f816861a6d8d07bfec3a8e4",
+    "semantic_hash": "0ebc98dc8f816861a6d8d07bfec3a8e4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_cli_defaults.py": {
+    "mtime": 1792876608.2164803,
+    "seen": 1792926045.9220998,
+    "ast_hash": "76d184b61dae1f2b15ab8d7d8de75ae1",
+    "semantic_hash": "76d184b61dae1f2b15ab8d7d8de75ae1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_config.py": {
+    "mtime": 1792876608.0254214,
+    "seen": 1792926045.9221005,
+    "ast_hash": "7e6843ff50b98a081858974d10366169",
+    "semantic_hash": "7e6843ff50b98a081858974d10366169"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_configured_runtime.py": {
+    "mtime": 1792876607.9624395,
+    "seen": 1792926045.9221017,
+    "ast_hash": "8b6bdca96369ab14835f70d5302e4532",
+    "semantic_hash": "8b6bdca96369ab14835f70d5302e4532"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_demo_agents_adapter.py": {
+    "mtime": 1792876607.9465976,
+    "seen": 1792926045.922104,
+    "ast_hash": "286d9def20c5afe19a00216d934bc5a6",
+    "semantic_hash": "286d9def20c5afe19a00216d934bc5a6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_demo_input_transcription.py": {
+    "mtime": 1792876608.1209452,
+    "seen": 1792926045.9221046,
+    "ast_hash": "35ca3f5cb3d667e3f873a0c8bbad465d",
+    "semantic_hash": "35ca3f5cb3d667e3f873a0c8bbad465d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_demo_server.py": {
+    "mtime": 1792876608.0891356,
+    "seen": 1792926045.9221056,
+    "ast_hash": "967db3d57494cafc2acdd00d010f68cf",
+    "semantic_hash": "967db3d57494cafc2acdd00d010f68cf"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_demo_user_audio.py": {
+    "mtime": 1792876607.9979439,
+    "seen": 1792926045.922107,
+    "ast_hash": "d25f3e378c95bfc39f9a56d0093cb5d2",
+    "semantic_hash": "d25f3e378c95bfc39f9a56d0093cb5d2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_device.py": {
+    "mtime": 1792876608.0455992,
+    "seen": 1792926045.9221077,
+    "ast_hash": "197a122dbdbf2f8954c9f19753b186c5",
+    "semantic_hash": "197a122dbdbf2f8954c9f19753b186c5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_diarization_transformers.py": {
+    "mtime": 1792876608.2324803,
+    "seen": 1792926045.9221087,
+    "ast_hash": "50eb602b327730c440392fa359832b13",
+    "semantic_hash": "50eb602b327730c440392fa359832b13"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_diarization_worker.py": {
+    "mtime": 1792876607.9782531,
+    "seen": 1792926045.9221096,
+    "ast_hash": "f0643f8455c3d9af35530cfe2477fd0d",
+    "semantic_hash": "f0643f8455c3d9af35530cfe2477fd0d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_drama3_tts_handler.py": {
+    "mtime": 1792876608.2008214,
+    "seen": 1792926045.9221108,
+    "ast_hash": "b47fdb8e6d9c08cde916c066e99ddd0b",
+    "semantic_hash": "b47fdb8e6d9c08cde916c066e99ddd0b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_facebookmms_language_map.py": {
+    "mtime": 1792876608.1689143,
+    "seen": 1792926045.9221117,
+    "ast_hash": "aa24c7396059d8cfc80df61831a4a6b4",
+    "semantic_hash": "aa24c7396059d8cfc80df61831a4a6b4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_facebookmms_tts_latency.py": {
+    "mtime": 1792876607.8834748,
+    "seen": 1792926045.9221127,
+    "ast_hash": "4892f7c72d0fcd352c44dd1bb903c1de",
+    "semantic_hash": "4892f7c72d0fcd352c44dd1bb903c1de"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_faster_whisper_gen_kwargs_adaptation.py": {
+    "mtime": 1792876607.8731995,
+    "seen": 1792926045.922114,
+    "ast_hash": "bd09f170da92d14570581b47ef5135a0",
+    "semantic_hash": "bd09f170da92d14570581b47ef5135a0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_faster_whisper_language_reporting.py": {
+    "mtime": 1792876608.3425465,
+    "seen": 1792926045.9221148,
+    "ast_hash": "dec98cf3a9c3c468a217a70a98a28e1a",
+    "semantic_hash": "dec98cf3a9c3c468a217a70a98a28e1a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_firered_vad_iterator.py": {
+    "mtime": 1792876608.2008214,
+    "seen": 1792926045.9221158,
+    "ast_hash": "2488d044fcc20369e083c8ce8db9c2ea",
+    "semantic_hash": "2488d044fcc20369e083c8ce8db9c2ea"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_generated_ids.py": {
+    "mtime": 1792876608.2008214,
+    "seen": 1792926045.9221165,
+    "ast_hash": "2f4cd513ae41a90064500b8473242696",
+    "semantic_hash": "2f4cd513ae41a90064500b8473242696"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_handler_logging_hygiene.py": {
+    "mtime": 1792876607.8521173,
+    "seen": 1792926045.9221177,
+    "ast_hash": "1341c62cfab0b2ae6edb744bb32ae8ff",
+    "semantic_hash": "1341c62cfab0b2ae6edb744bb32ae8ff"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_kitten_tts_handler.py": {
+    "mtime": 1792876608.252249,
+    "seen": 1792926045.9221187,
+    "ast_hash": "682a72e87a49c74e8a5ef419094af9d5",
+    "semantic_hash": "682a72e87a49c74e8a5ef419094af9d5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_kokoro_device.py": {
+    "mtime": 1792876608.2481425,
+    "seen": 1792926045.9221196,
+    "ast_hash": "57c6414bba7d62aae0b9a1b3e145ba5c",
+    "semantic_hash": "57c6414bba7d62aae0b9a1b3e145ba5c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_kokoro_language_voice.py": {
+    "mtime": 1792876607.9307451,
+    "seen": 1792926045.9221208,
+    "ast_hash": "4658fdc6e47cd1243edb76418ce9dbe1",
+    "semantic_hash": "4658fdc6e47cd1243edb76418ce9dbe1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_kokoro_tts_latency.py": {
+    "mtime": 1792876608.0117238,
+    "seen": 1792926045.9221218,
+    "ast_hash": "2d8f1e307ff15c451b619a29e47f7588",
+    "semantic_hash": "2d8f1e307ff15c451b619a29e47f7588"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_language_prompt.py": {
+    "mtime": 1792876608.0680482,
+    "seen": 1792926045.9221225,
+    "ast_hash": "0c82a750c1868354e957e7e0d98c7454",
+    "semantic_hash": "0c82a750c1868354e957e7e0d98c7454"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_llm_utils.py": {
+    "mtime": 1792876608.0511186,
+    "seen": 1792926045.9221234,
+    "ast_hash": "808a59f6e32571895c6daea236621228",
+    "semantic_hash": "808a59f6e32571895c6daea236621228"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_lm_output_processor.py": {
+    "mtime": 1792876608.3269007,
+    "seen": 1792926045.9221246,
+    "ast_hash": "389e83a3219ed0c2fc579dc75344f538",
+    "semantic_hash": "389e83a3219ed0c2fc579dc75344f538"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_local_llm_latency.py": {
+    "mtime": 1792876608.105241,
+    "seen": 1792926045.9221256,
+    "ast_hash": "989622a0483a14bb55d59ac0c6a0de29",
+    "semantic_hash": "989622a0483a14bb55d59ac0c6a0de29"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_minimax_tts_handler.py": {
+    "mtime": 1792876607.9782531,
+    "seen": 1792926045.9221265,
+    "ast_hash": "7b8f231abeda3c1a58ca33ba15a35644",
+    "semantic_hash": "7b8f231abeda3c1a58ca33ba15a35644"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_mlx_audio_whisper_handler.py": {
+    "mtime": 1792876608.2324803,
+    "seen": 1792926045.9221277,
+    "ast_hash": "cd3c7cfca2c290b978bfbef19778e28d",
+    "semantic_hash": "cd3c7cfca2c290b978bfbef19778e28d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_nemo_asr_handler.py": {
+    "mtime": 1792876608.2855463,
+    "seen": 1792926045.9221287,
+    "ast_hash": "4e54b13006f48b69304f85b3cc0405d8",
+    "semantic_hash": "4e54b13006f48b69304f85b3cc0405d8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_nemo_asr_stt_latency.py": {
+    "mtime": 1792876608.1367872,
+    "seen": 1792926045.9221296,
+    "ast_hash": "5a6497a10907ff127dec7b770eebf3a5",
+    "semantic_hash": "5a6497a10907ff127dec7b770eebf3a5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_nemotron_farsi_integration.py": {
+    "mtime": 1792876608.0254214,
+    "seen": 1792926045.9221306,
+    "ast_hash": "796cfd869bae803c000dc58bddedace1",
+    "semantic_hash": "796cfd869bae803c000dc58bddedace1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_nemotron_farsi_stt.py": {
+    "mtime": 1792876608.2164803,
+    "seen": 1792926045.9221318,
+    "ast_hash": "442ba95cc8ef61c1acfca0c72d144a14",
+    "semantic_hash": "442ba95cc8ef61c1acfca0c72d144a14"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_nemotron_streaming_stt.py": {
+    "mtime": 1792876608.1209452,
+    "seen": 1792926045.9221325,
+    "ast_hash": "46b7ec1aa51f1f36a8ce2054c91783b3",
+    "semantic_hash": "46b7ec1aa51f1f36a8ce2054c91783b3"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_omnivoice_tts_handler.py": {
+    "mtime": 1792876608.15279,
+    "seen": 1792926045.9221334,
+    "ast_hash": "8de640b76e9234188a2f2f3a6568d61c",
+    "semantic_hash": "8de640b76e9234188a2f2f3a6568d61c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_openai_stt_handler.py": {
+    "mtime": 1792876608.2952805,
+    "seen": 1792926045.9221349,
+    "ast_hash": "9a42c5d4627eacdc31a387fd0ac92e9b",
+    "semantic_hash": "9a42c5d4627eacdc31a387fd0ac92e9b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_openai_stt_lifecycle.py": {
+    "mtime": 1792876608.3194873,
+    "seen": 1792926045.922146,
+    "ast_hash": "19fbe08ead86a9eec2246f5df224e29c",
+    "semantic_hash": "19fbe08ead86a9eec2246f5df224e29c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_openai_stt_windows.py": {
+    "mtime": 1792876608.0039659,
+    "seen": 1792926045.9221473,
+    "ast_hash": "fe11e577d269671d9d7a5b14297b9388",
+    "semantic_hash": "fe11e577d269671d9d7a5b14297b9388"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_openai_tts_handler.py": {
+    "mtime": 1792876607.9624395,
+    "seen": 1792926045.922148,
+    "ast_hash": "71241c8a69f31a3fd4990bb5c7deede6",
+    "semantic_hash": "71241c8a69f31a3fd4990bb5c7deede6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_orukeet_stt.py": {
+    "mtime": 1792876608.0847237,
+    "seen": 1792926045.9221492,
+    "ast_hash": "3b3fbb672792dbe2a4e9d1ea039c0323",
+    "semantic_hash": "3b3fbb672792dbe2a4e9d1ea039c0323"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_paraformer_sensevoice_stt_latency.py": {
+    "mtime": 1792876607.9198482,
+    "seen": 1792926045.9221501,
+    "ast_hash": "341b31682b87685659c2617f61861e6b",
+    "semantic_hash": "341b31682b87685659c2617f61861e6b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_paraformer_transcription_events.py": {
+    "mtime": 1792876607.9465976,
+    "seen": 1792926045.9221513,
+    "ast_hash": "30d9fb3beac5c7435adce78f410a1bcf",
+    "semantic_hash": "30d9fb3beac5c7435adce78f410a1bcf"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_parakeet_language_detection.py": {
+    "mtime": 1792876608.1847823,
+    "seen": 1792926045.9221523,
+    "ast_hash": "85c3c2c51fb28e0c5975980ac0880a81",
+    "semantic_hash": "85c3c2c51fb28e0c5975980ac0880a81"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_parakeet_language_reporting.py": {
+    "mtime": 1792876607.8521173,
+    "seen": 1792926045.9221532,
+    "ast_hash": "fbf2859ede962a9cb027d5cada8cbfda",
+    "semantic_hash": "fbf2859ede962a9cb027d5cada8cbfda"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_parakeet_transcription_events.py": {
+    "mtime": 1792876608.3269007,
+    "seen": 1792926045.9221542,
+    "ast_hash": "7636bd6698e7252f49760cdb084f67b4",
+    "semantic_hash": "7636bd6698e7252f49760cdb084f67b4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_pipeline_messages.py": {
+    "mtime": 1792876608.0891356,
+    "seen": 1792926045.9221554,
+    "ast_hash": "54f810e383508f2c4ab2031776b2f9c5",
+    "semantic_hash": "54f810e383508f2c4ab2031776b2f9c5"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_pocket_tts_handler.py": {
+    "mtime": 1792876607.836236,
+    "seen": 1792926045.9221563,
+    "ast_hash": "903cc55a6c7560d00907eaee02d47adb",
+    "semantic_hash": "903cc55a6c7560d00907eaee02d47adb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_provider_response_status.py": {
+    "mtime": 1792876608.2792475,
+    "seen": 1792926045.9221573,
+    "ast_hash": "d0be38379c2f2736df3e1ac836095c09",
+    "semantic_hash": "d0be38379c2f2736df3e1ac836095c09"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_qwen3_asr_transcription_events.py": {
+    "mtime": 1792876608.15279,
+    "seen": 1792926045.9221582,
+    "ast_hash": "9a67092a68151036f731c4986ec02953",
+    "semantic_hash": "9a67092a68151036f731c4986ec02953"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_qwen3_tts_handler_backend.py": {
+    "mtime": 1792876608.3425465,
+    "seen": 1792926045.9221597,
+    "ast_hash": "eb415fdd36344a18a0e4884f558ba75f",
+    "semantic_hash": "eb415fdd36344a18a0e4884f558ba75f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_response_overrides.py": {
+    "mtime": 1792876608.0117238,
+    "seen": 1792926045.9221606,
+    "ast_hash": "d770230b87cfd7e9c3091487c9644fe7",
+    "semantic_hash": "d770230b87cfd7e9c3091487c9644fe7"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_responses_api_language_model.py": {
+    "mtime": 1792876607.9307451,
+    "seen": 1792926045.9221616,
+    "ast_hash": "5859255f6a352101e59c5a6d38bef712",
+    "semantic_hash": "5859255f6a352101e59c5a6d38bef712"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_responses_reasoning.py": {
+    "mtime": 1792876608.3584943,
+    "seen": 1792926045.9221628,
+    "ast_hash": "f4d71c682c395dc8127bcaa70b346e2b",
+    "semantic_hash": "f4d71c682c395dc8127bcaa70b346e2b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_sense_voice_transcription_events.py": {
+    "mtime": 1792876608.105241,
+    "seen": 1792926045.9221637,
+    "ast_hash": "23c6fc8503a491bb2547d492e38a143d",
+    "semantic_hash": "23c6fc8503a491bb2547d492e38a143d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_smart_turn.py": {
+    "mtime": 1792876608.15279,
+    "seen": 1792926045.9221647,
+    "ast_hash": "cba64176ec1aa175064734739defe8ae",
+    "semantic_hash": "cba64176ec1aa175064734739defe8ae"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_speculative_turns.py": {
+    "mtime": 1792876607.9624395,
+    "seen": 1792926045.9221659,
+    "ast_hash": "ee797dbf0156ef51bdd2fbd4d2354511",
+    "semantic_hash": "ee797dbf0156ef51bdd2fbd4d2354511"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_streaming_diarization.py": {
+    "mtime": 1792876607.8834748,
+    "seen": 1792926045.9221668,
+    "ast_hash": "95ecbf01cf85c5a971a788043ec04671",
+    "semantic_hash": "95ecbf01cf85c5a971a788043ec04671"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_streaming_stt_handler.py": {
+    "mtime": 1792876608.1847823,
+    "seen": 1792926045.922275,
+    "ast_hash": "26efd965c7434a2b79288fd11644e4dc",
+    "semantic_hash": "26efd965c7434a2b79288fd11644e4dc"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_stt_session_language_reset.py": {
+    "mtime": 1792876607.9417944,
+    "seen": 1792926045.922276,
+    "ast_hash": "b395cffc4f49082dd8add1166fdcb2f3",
+    "semantic_hash": "b395cffc4f49082dd8add1166fdcb2f3"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_stt_stale_filter.py": {
+    "mtime": 1792876608.265892,
+    "seen": 1792926045.9222772,
+    "ast_hash": "e13ffbf1589ae0b9a9e74a40c31952b9",
+    "semantic_hash": "e13ffbf1589ae0b9a9e74a40c31952b9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_supertonic_tts_handler.py": {
+    "mtime": 1792876608.252249,
+    "seen": 1792926045.9222782,
+    "ast_hash": "38224eca13314d278f849696b28a85f7",
+    "semantic_hash": "38224eca13314d278f849696b28a85f7"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_text_prompt.py": {
+    "mtime": 1792876608.009719,
+    "seen": 1792926045.9222794,
+    "ast_hash": "f8872ced90c33887aa3682664c763664",
+    "semantic_hash": "f8872ced90c33887aa3682664c763664"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_torch_num_threads.py": {
+    "mtime": 1792876608.073138,
+    "seen": 1792926045.92228,
+    "ast_hash": "b51761f0c8c47115ad5b43780416eceb",
+    "semantic_hash": "b51761f0c8c47115ad5b43780416eceb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_transcript_log_hygiene.py": {
+    "mtime": 1792876608.3269007,
+    "seen": 1792926045.9222813,
+    "ast_hash": "aac3cf97bc1d96b92b38710876dea7d8",
+    "semantic_hash": "aac3cf97bc1d96b92b38710876dea7d8"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_transcription_notifier.py": {
+    "mtime": 1792876608.0570164,
+    "seen": 1792926045.9222822,
+    "ast_hash": "3499ffaea0391eeeaacfc1e053cba1ab",
+    "semantic_hash": "3499ffaea0391eeeaacfc1e053cba1ab"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_tts_auto_reset.py": {
+    "mtime": 1792876608.1367872,
+    "seen": 1792926045.9222834,
+    "ast_hash": "af5c3b3acf919a469e55566492ac9d14",
+    "semantic_hash": "af5c3b3acf919a469e55566492ac9d14"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_tts_input_coalescing.py": {
+    "mtime": 1792876607.8988502,
+    "seen": 1792926045.9222844,
+    "ast_hash": "180775a93ece2485bcad0036b6e99240",
+    "semantic_hash": "180775a93ece2485bcad0036b6e99240"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_turn_latency.py": {
+    "mtime": 1792876608.2952805,
+    "seen": 1792926045.9222853,
+    "ast_hash": "81ab2076566074fbf96003a68f17d44d",
+    "semantic_hash": "81ab2076566074fbf96003a68f17d44d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_vad_iterator.py": {
+    "mtime": 1792876607.8652158,
+    "seen": 1792926045.9222865,
+    "ast_hash": "ffcf8762f144353c0f5b26ff9f21bd87",
+    "semantic_hash": "ffcf8762f144353c0f5b26ff9f21bd87"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_vad_model_state.py": {
+    "mtime": 1792876608.2855463,
+    "seen": 1792926045.922288,
+    "ast_hash": "651f9da0e1dab64b3d99a4841781efb2",
+    "semantic_hash": "651f9da0e1dab64b3d99a4841781efb2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_vad_progressive_snapshots.py": {
+    "mtime": 1792876607.8988502,
+    "seen": 1792926045.922289,
+    "ast_hash": "078f15e2bf26858607b337adff73180e",
+    "semantic_hash": "078f15e2bf26858607b337adff73180e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_vad_session_reset.py": {
+    "mtime": 1792876608.3425465,
+    "seen": 1792926045.9222898,
+    "ast_hash": "9e3bd56af8369823b89a18482c452399",
+    "semantic_hash": "9e3bd56af8369823b89a18482c452399"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_visemes.py": {
+    "mtime": 1792876607.8988502,
+    "seen": 1792926045.922291,
+    "ast_hash": "a74981b17950986ef7c4312837b29662",
+    "semantic_hash": "a74981b17950986ef7c4312837b29662"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_voice_prompt.py": {
+    "mtime": 1792876608.3584943,
+    "seen": 1792926045.922292,
+    "ast_hash": "006985bc991dc9a55d66971dfdec0024",
+    "semantic_hash": "006985bc991dc9a55d66971dfdec0024"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_whisper_language_detection.py": {
+    "mtime": 1792876608.0570164,
+    "seen": 1792926045.922293,
+    "ast_hash": "bb1171f232ee64d972aae4a50fb46cb2",
+    "semantic_hash": "bb1171f232ee64d972aae4a50fb46cb2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_whisper_progressive_transcription.py": {
+    "mtime": 1792876607.8679678,
+    "seen": 1792926045.9223008,
+    "ast_hash": "fea791e457b4a974a343d73c4c3c22e0",
+    "semantic_hash": "fea791e457b4a974a343d73c4c3c22e0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/test_whisper_stt_gen_kwargs_isolation.py": {
+    "mtime": 1792876608.0254214,
+    "seen": 1792926045.922302,
+    "ast_hash": "1442a737585f8c519932ec66092afecb",
+    "semantic_hash": "1442a737585f8c519932ec66092afecb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/tool_call/__init__.py": {
+    "mtime": 1792876608.5304613,
+    "seen": 1792926045.922303,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/tool_call/test_function_parser.py": {
+    "mtime": 1792876608.5334814,
+    "seen": 1792926045.922304,
+    "ast_hash": "07c859419c62a1051c6303b1fc817eb6",
+    "semantic_hash": "07c859419c62a1051c6303b1fc817eb6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/tool_call/test_signature_from_schema.py": {
+    "mtime": 1792876608.5334814,
+    "seen": 1792926045.922305,
+    "ast_hash": "553e004d2feaac90dff9289d919e63b9",
+    "semantic_hash": "553e004d2feaac90dff9289d919e63b9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/tests/turns.py": {
+    "mtime": 1792876608.2164803,
+    "seen": 1792926045.9223063,
+    "ast_hash": "3bbf015f4cc0267c291911f8527becf6",
+    "semantic_hash": "3bbf015f4cc0267c291911f8527becf6"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/web/widget.js": {
+    "mtime": 1792876606.463714,
+    "seen": 1792926045.922307,
+    "ast_hash": "b2dbe316d545dac632f90529c1681a27",
+    "semantic_hash": "b2dbe316d545dac632f90529c1681a27"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/.mcp.json": {
+    "mtime": 1792876488.8515103,
+    "seen": 1792926045.9223082,
+    "ast_hash": "b90887783cd9f00d3fecb461fc55a1ff",
+    "semantic_hash": "b90887783cd9f00d3fecb461fc55a1ff"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/__init__.py": {
+    "mtime": 1792876488.8986058,
+    "seen": 1792926045.9223092,
+    "ast_hash": "4724923c8a5a7793f6add5df9c0ac763",
+    "semantic_hash": "4724923c8a5a7793f6add5df9c0ac763"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/__main__.py": {
+    "mtime": 1792876488.8986058,
+    "seen": 1792926045.92231,
+    "ast_hash": "8990cf05260f5625a43fd571eef2e0cb",
+    "semantic_hash": "8990cf05260f5625a43fd571eef2e0cb"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/audio.py": {
+    "mtime": 1792876488.9144163,
+    "seen": 1792926045.9223118,
+    "ast_hash": "af884b9b62cd8f4b616c2e15a047ddb0",
+    "semantic_hash": "af884b9b62cd8f4b616c2e15a047ddb0"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/config.py": {
+    "mtime": 1792876488.9144163,
+    "seen": 1792926045.9223127,
+    "ast_hash": "e39fd223fca2e104d68ee1cc3e7af6ce",
+    "semantic_hash": "e39fd223fca2e104d68ee1cc3e7af6ce"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/leads.py": {
+    "mtime": 1792876488.9300508,
+    "seen": 1792926045.9223137,
+    "ast_hash": "68e57fff081522c8e260337e5b5bc2c2",
+    "semantic_hash": "68e57fff081522c8e260337e5b5bc2c2"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/main.py": {
+    "mtime": 1792876488.9300508,
+    "seen": 1792926045.9223146,
+    "ast_hash": "d9f400c23988a8b3bd14ec1674e525e2",
+    "semantic_hash": "d9f400c23988a8b3bd14ec1674e525e2"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/prompt.py": {
+    "mtime": 1792876488.9300508,
+    "seen": 1792926045.9223158,
+    "ast_hash": "244d8df149f45503b44cc0a963fd4280",
+    "semantic_hash": "244d8df149f45503b44cc0a963fd4280"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/providers.py": {
+    "mtime": 1792876488.9461296,
+    "seen": 1792926045.9223166,
+    "ast_hash": "1a6fdc2a95b4d2c20596ab154b99ca47",
+    "semantic_hash": "1a6fdc2a95b4d2c20596ab154b99ca47"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/s2s.py": {
+    "mtime": 1792876488.9461296,
+    "seen": 1792926045.9223175,
+    "ast_hash": "06eb222e432a13cf9b532e3789b00d1f",
+    "semantic_hash": "06eb222e432a13cf9b532e3789b00d1f"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/session.py": {
+    "mtime": 1792876488.9461296,
+    "seen": 1792926045.9223187,
+    "ast_hash": "8e71cec87956e83efb85b32acf374ef3",
+    "semantic_hash": "8e71cec87956e83efb85b32acf374ef3"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/app/telnyx.py": {
+    "mtime": 1792876488.9616692,
+    "seen": 1792926045.9223197,
+    "ast_hash": "0a61274c105b249f29d33a6fc9dd0401",
+    "semantic_hash": "0a61274c105b249f29d33a6fc9dd0401"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/n8n/lead-to-email.json": {
+    "mtime": 1792876488.9616692,
+    "seen": 1792926045.9223206,
+    "ast_hash": "e1ab18b7b22408fff898b9a5668dc4df",
+    "semantic_hash": "e1ab18b7b22408fff898b9a5668dc4df"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/scripts/check_config.py": {
+    "mtime": 1792876488.9788628,
+    "seen": 1792926045.9223216,
+    "ast_hash": "e1fed358f99d17859e13826c0433e648",
+    "semantic_hash": "e1fed358f99d17859e13826c0433e648"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/scripts/live_check.py": {
+    "mtime": 1792876488.9788628,
+    "seen": 1792926045.9223228,
+    "ast_hash": "c60c87539a31e23e32c2bcb4a5642340",
+    "semantic_hash": "c60c87539a31e23e32c2bcb4a5642340"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/scripts/make_buyer_kit.py": {
+    "mtime": 1792876488.989072,
+    "seen": 1792926045.9223237,
+    "ast_hash": "7b3621ad79325c3f8c08377e1bb624f1",
+    "semantic_hash": "7b3621ad79325c3f8c08377e1bb624f1"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/scripts/make_release.py": {
+    "mtime": 1792876488.99321,
+    "seen": 1792926045.9223247,
+    "ast_hash": "0e47187e5f2848f4d10b8b4cde4e6303",
+    "semantic_hash": "0e47187e5f2848f4d10b8b4cde4e6303"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/scripts/setup_telnyx.py": {
+    "mtime": 1792876488.99321,
+    "seen": 1792926045.9223258,
+    "ast_hash": "c167ba594035dbccd69ac8923e4458ed",
+    "semantic_hash": "c167ba594035dbccd69ac8923e4458ed"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/scripts/simulate_call.py": {
+    "mtime": 1792876488.99321,
+    "seen": 1792926045.9223268,
+    "ast_hash": "0824b7de6c16dc91894de24b7a633b5d",
+    "semantic_hash": "0824b7de6c16dc91894de24b7a633b5d"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/__init__.py": {
+    "mtime": 1792876489.009359,
+    "seen": 1792926045.9223278,
+    "ast_hash": "41105851fcf7fc67fc6174644f38cf84",
+    "semantic_hash": "41105851fcf7fc67fc6174644f38cf84"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/fakes.py": {
+    "mtime": 1792876489.009359,
+    "seen": 1792926045.922329,
+    "ast_hash": "9ea9296747cde3bdd53c43e248a012d5",
+    "semantic_hash": "9ea9296747cde3bdd53c43e248a012d5"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/test_audio_and_providers.py": {
+    "mtime": 1792876489.009359,
+    "seen": 1792926045.92233,
+    "ast_hash": "dbd17f6fa70f88ef620e4f79a48df8d8",
+    "semantic_hash": "dbd17f6fa70f88ef620e4f79a48df8d8"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/test_calls.py": {
+    "mtime": 1792876489.0254915,
+    "seen": 1792926045.9223309,
+    "ast_hash": "119524119a9f15493be70f247ad61fd3",
+    "semantic_hash": "119524119a9f15493be70f247ad61fd3"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/test_config.py": {
+    "mtime": 1792876489.0254915,
+    "seen": 1792926045.9223318,
+    "ast_hash": "8877470a24aa6e8c227f9b2ae137afcf",
+    "semantic_hash": "8877470a24aa6e8c227f9b2ae137afcf"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/test_notify_telnyx.py": {
+    "mtime": 1792876489.0254915,
+    "seen": 1792926045.922333,
+    "ast_hash": "0194d4917f02a14ccc0e60c74a94471c",
+    "semantic_hash": "0194d4917f02a14ccc0e60c74a94471c"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/tests/test_scripts_and_n8n.py": {
+    "mtime": 1792876489.0458627,
+    "seen": 1792926045.9223342,
+    "ast_hash": "38169d4f259b0db73094dd5ad0d9f6ae",
+    "semantic_hash": "38169d4f259b0db73094dd5ad0d9f6ae"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/web/widget.js": {
+    "mtime": 1792876489.0568812,
+    "seen": 1792926045.922335,
+    "ast_hash": "b2dbe316d545dac632f90529c1681a27",
+    "semantic_hash": "b2dbe316d545dac632f90529c1681a27"
+  },
+  "voice-sales-integration/GRAPH_REPORT.md": {
+    "mtime": 1792917138.4633317,
+    "seen": 1792926045.922336,
+    "ast_hash": "4fd64165d3bce0e8123a39696ba8fc46",
+    "semantic_hash": "4fd64165d3bce0e8123a39696ba8fc46"
+  },
+  "voice-sales-integration/INTEGRATION_PLAN.md": {
+    "mtime": 1792917138.2373445,
+    "seen": 1792926045.922337,
+    "ast_hash": "7332e32984abe7e432e438bb0c11a63d",
+    "semantic_hash": "7332e32984abe7e432e438bb0c11a63d"
+  },
+  "voice-sales-integration/agent.yaml": {
+    "mtime": 1792876456.0275939,
+    "seen": 1792926045.922338,
+    "ast_hash": "c1df7ce323fb25d41e1772c21fc28f2c",
+    "semantic_hash": "c1df7ce323fb25d41e1772c21fc28f2c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/BUYER_GUIDE.md": {
+    "mtime": 1792876606.4521072,
+    "seen": 1792926045.922339,
+    "ast_hash": "50bef701217916041c9fc17cc23b553c",
+    "semantic_hash": "50bef701217916041c9fc17cc23b553c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/README.md": {
+    "mtime": 1792876606.4164975,
+    "seen": 1792926045.9223402,
+    "ast_hash": "d43f675141006642197a7dfb070c312b",
+    "semantic_hash": "d43f675141006642197a7dfb070c312b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/agent.yaml": {
+    "mtime": 1792876606.4444294,
+    "seen": 1792926045.922341,
+    "ast_hash": "7f72fc9ccf72a5e1b53e3ca696aa8af4",
+    "semantic_hash": "7f72fc9ccf72a5e1b53e3ca696aa8af4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/docker-compose.yml": {
+    "mtime": 1792876606.4164975,
+    "seen": 1792926045.922342,
+    "ast_hash": "8b2e90d588a16e5ff63f2f2351c7df2a",
+    "semantic_hash": "8b2e90d588a16e5ff63f2f2351c7df2a"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/requirements.txt": {
+    "mtime": 1792876606.4164975,
+    "seen": 1792926045.9223433,
+    "ast_hash": "b3d4e56b15ca61a3d9b06e0c066d0883",
+    "semantic_hash": "b3d4e56b15ca61a3d9b06e0c066d0883"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/.github/dependabot.yml": {
+    "mtime": 1792876607.7253728,
+    "seen": 1792926045.9223442,
+    "ast_hash": "1f3d65173d9acea6240e15dda80f3005",
+    "semantic_hash": "1f3d65173d9acea6240e15dda80f3005"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/.github/workflows/ci.yml": {
+    "mtime": 1792876607.732802,
+    "seen": 1792926045.9223452,
+    "ast_hash": "7fca77990c0eb8a9921b82100e2d5cfb",
+    "semantic_hash": "7fca77990c0eb8a9921b82100e2d5cfb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/.github/workflows/omnivoice.yml": {
+    "mtime": 1792876607.7410703,
+    "seen": 1792926045.9223464,
+    "ast_hash": "9705ae18a35f21e8077e82c0d0cf3c5b",
+    "semantic_hash": "9705ae18a35f21e8077e82c0d0cf3c5b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/.github/workflows/publish.yml": {
+    "mtime": 1792876607.732802,
+    "seen": 1792926045.922347,
+    "ast_hash": "f13487c7b3e24dd0506206f0154c7480",
+    "semantic_hash": "f13487c7b3e24dd0506206f0154c7480"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/.github/workflows/star-history.yml": {
+    "mtime": 1792876607.7410703,
+    "seen": 1792926045.922348,
+    "ast_hash": "212a205e5fef96f60d6ad81b61a8c634",
+    "semantic_hash": "212a205e5fef96f60d6ad81b61a8c634"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/AGENTS.md": {
+    "mtime": 1792876606.6838374,
+    "seen": 1792926045.9223492,
+    "ast_hash": "bd30e36849167a275b87f6bc6445279d",
+    "semantic_hash": "bd30e36849167a275b87f6bc6445279d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/README.md": {
+    "mtime": 1792876606.667786,
+    "seen": 1792926045.9223502,
+    "ast_hash": "9ed1450722661c7d5751544e922e3ce9",
+    "semantic_hash": "9ed1450722661c7d5751544e922e3ce9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/archive/README.md": {
+    "mtime": 1792876608.9394608,
+    "seen": 1792926045.9223511,
+    "ast_hash": "95a77b13535a6a815d1c10968110f21c",
+    "semantic_hash": "95a77b13535a6a815d1c10968110f21c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/CONTEXT.md": {
+    "mtime": 1792876608.7344215,
+    "seen": 1792926045.9223523,
+    "ast_hash": "787d36268d869980fe5c4205f09a1f80",
+    "semantic_hash": "787d36268d869980fe5c4205f09a1f80"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/DESIGN.md": {
+    "mtime": 1792876608.718635,
+    "seen": 1792926045.9223533,
+    "ast_hash": "f64740a399a53e89d665935457632ae1",
+    "semantic_hash": "f64740a399a53e89d665935457632ae1"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/README.md": {
+    "mtime": 1792876608.6713586,
+    "seen": 1792926045.9223542,
+    "ast_hash": "58b3c33c0df461c6ecadeafc5e48cb7f",
+    "semantic_hash": "58b3c33c0df461c6ecadeafc5e48cb7f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/docs/adr/0001-docker-space-with-search-proxy.md": {
+    "mtime": 1792876608.8750315,
+    "seen": 1792926045.9223552,
+    "ast_hash": "f9c472eac783042c56cd184bc03a0f4f",
+    "semantic_hash": "f9c472eac783042c56cd184bc03a0f4f"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/index.html": {
+    "mtime": 1792876608.6713586,
+    "seen": 1792926045.9223561,
+    "ast_hash": "e2401379d5c623b3a2a08721b1af30b9",
+    "semantic_hash": "e2401379d5c623b3a2a08721b1af30b9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/livekit/README.md": {
+    "mtime": 1792876608.8532844,
+    "seen": 1792926045.9223573,
+    "ast_hash": "e4cc48c3c1608b22157f209eb5406be2",
+    "semantic_hash": "e4cc48c3c1608b22157f209eb5406be2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/livekit/requirements.txt": {
+    "mtime": 1792876608.844812,
+    "seen": 1792926045.9223583,
+    "ast_hash": "42c36bca3b7749891c3048af9a17d744",
+    "semantic_hash": "42c36bca3b7749891c3048af9a17d744"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/demo/requirements.txt": {
+    "mtime": 1792876608.63933,
+    "seen": 1792926045.9223592,
+    "ast_hash": "fbc6797e1d0edb7c56ed381abf36cd6d",
+    "semantic_hash": "fbc6797e1d0edb7c56ed381abf36cd6d"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docker-compose.yml": {
+    "mtime": 1792876606.676172,
+    "seen": 1792926045.9223602,
+    "ast_hash": "cd601f5d1c2f430097770c64db39333c",
+    "semantic_hash": "cd601f5d1c2f430097770c64db39333c"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docs/configuration.md": {
+    "mtime": 1792876608.8926685,
+    "seen": 1792926045.9223611,
+    "ast_hash": "93aef1c9f8645ada8d5d8568e385cee0",
+    "semantic_hash": "93aef1c9f8645ada8d5d8568e385cee0"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docs/openai-compatible-stt.md": {
+    "mtime": 1792876608.8865016,
+    "seen": 1792926045.9223623,
+    "ast_hash": "e68e757fcc0a5a6be241a3a1ad898bdb",
+    "semantic_hash": "e68e757fcc0a5a6be241a3a1ad898bdb"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docs/openai-compatible-tts.md": {
+    "mtime": 1792876608.908513,
+    "seen": 1792926045.9223633,
+    "ast_hash": "63191f263dffb0a1f462e802838344bc",
+    "semantic_hash": "63191f263dffb0a1f462e802838344bc"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docs/releases/v1.0.0.md": {
+    "mtime": 1792876608.9237587,
+    "seen": 1792926045.9223645,
+    "ast_hash": "c9422586513c034c3d5b9e262c736dd9",
+    "semantic_hash": "c9422586513c034c3d5b9e262c736dd9"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docs/response-latency.md": {
+    "mtime": 1792876608.8926685,
+    "seen": 1792926045.9223654,
+    "ast_hash": "27dfd37dbfe26947561afa20fc7f7646",
+    "semantic_hash": "27dfd37dbfe26947561afa20fc7f7646"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/docs/vibe-checks.md": {
+    "mtime": 1792876608.9015446,
+    "seen": 1792926045.9223664,
+    "ast_hash": "470e0f2ac79bf28d221b8f80d6cbddd3",
+    "semantic_hash": "470e0f2ac79bf28d221b8f80d6cbddd3"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/example_configs/mac.yaml": {
+    "mtime": 1792876607.7570524,
+    "seen": 1792926045.9223676,
+    "ast_hash": "6cf54d7968cd26d29375ed870e0fb440",
+    "semantic_hash": "6cf54d7968cd26d29375ed870e0fb440"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/examples/gemma4-12b-macos/README.md": {
+    "mtime": 1792876607.8202443,
+    "seen": 1792926045.9223685,
+    "ast_hash": "c1133e9054afd13449c4be2db58cf771",
+    "semantic_hash": "c1133e9054afd13449c4be2db58cf771"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/examples/streaming-diarization/README.md": {
+    "mtime": 1792876607.836236,
+    "seen": 1792926045.9223695,
+    "ast_hash": "23eab73cc4f92c448a4adf947285456b",
+    "semantic_hash": "23eab73cc4f92c448a4adf947285456b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/LLM/README.md": {
+    "mtime": 1792876607.1441822,
+    "seen": 1792926045.9223707,
+    "ast_hash": "09c42d7ef6a2508404274714ef43e830",
+    "semantic_hash": "09c42d7ef6a2508404274714ef43e830"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STT/README.md": {
+    "mtime": 1792876606.8453255,
+    "seen": 1792926045.9223716,
+    "ast_hash": "0d17a99aaec451597a9d78afb2de82e2",
+    "semantic_hash": "0d17a99aaec451597a9d78afb2de82e2"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/STV/README.md": {
+    "mtime": 1792876607.0999787,
+    "seen": 1792926045.9223726,
+    "ast_hash": "a9e5f2fdc11016924f26ae5e94821d7b",
+    "semantic_hash": "a9e5f2fdc11016924f26ae5e94821d7b"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/README.md": {
+    "mtime": 1792876607.2717304,
+    "seen": 1792926045.9223735,
+    "ast_hash": "e00446dac915652f98cc7f87648cb6a4",
+    "semantic_hash": "e00446dac915652f98cc7f87648cb6a4"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/VAD/README.md": {
+    "mtime": 1792876607.6934872,
+    "seen": 1792926045.9223745,
+    "ast_hash": "15e0812df63e8904c836ffa48d5d6031",
+    "semantic_hash": "15e0812df63e8904c836ffa48d5d6031"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/api/openai_realtime/README.md": {
+    "mtime": 1792876607.449613,
+    "seen": 1792926045.9223754,
+    "ast_hash": "2e10fadc83cfb803721eb0b0ccff7258",
+    "semantic_hash": "2e10fadc83cfb803721eb0b0ccff7258"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/web/admin.html": {
+    "mtime": 1792876606.463714,
+    "seen": 1792926045.9223764,
+    "ast_hash": "d4975d9a1bd24047154cfc46e7fa3710",
+    "semantic_hash": "d4975d9a1bd24047154cfc46e7fa3710"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/web/demo.html": {
+    "mtime": 1792876606.463714,
+    "seen": 1792926045.9223776,
+    "ast_hash": "dad43bc2282b4b96e689d497a49f3987",
+    "semantic_hash": "dad43bc2282b4b96e689d497a49f3987"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/BUYER_GUIDE.md": {
+    "mtime": 1792876488.8675563,
+    "seen": 1792926045.9223783,
+    "ast_hash": "50bef701217916041c9fc17cc23b553c",
+    "semantic_hash": "50bef701217916041c9fc17cc23b553c"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/README.md": {
+    "mtime": 1792876488.8675563,
+    "seen": 1792926045.9223793,
+    "ast_hash": "d43f675141006642197a7dfb070c312b",
+    "semantic_hash": "d43f675141006642197a7dfb070c312b"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/agent.yaml": {
+    "mtime": 1792876488.883466,
+    "seen": 1792926045.9223802,
+    "ast_hash": "c1df7ce323fb25d41e1772c21fc28f2c",
+    "semantic_hash": "c1df7ce323fb25d41e1772c21fc28f2c"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/docker-compose.yml": {
+    "mtime": 1792876488.883466,
+    "seen": 1792926045.9223814,
+    "ast_hash": "8b2e90d588a16e5ff63f2f2351c7df2a",
+    "semantic_hash": "8b2e90d588a16e5ff63f2f2351c7df2a"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/requirements.txt": {
+    "mtime": 1792876488.897522,
+    "seen": 1792926045.922382,
+    "ast_hash": "b3d4e56b15ca61a3d9b06e0c066d0883",
+    "semantic_hash": "b3d4e56b15ca61a3d9b06e0c066d0883"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/web/admin.html": {
+    "mtime": 1792876489.0458627,
+    "seen": 1792926045.922383,
+    "ast_hash": "d4975d9a1bd24047154cfc46e7fa3710",
+    "semantic_hash": "d4975d9a1bd24047154cfc46e7fa3710"
+  },
+  "voice-sales-integration/voice-sales-agent-PRODUCT-for-buyers/voice-sales-agent/web/demo.html": {
+    "mtime": 1792876489.0568812,
+    "seen": 1792926045.922384,
+    "ast_hash": "dad43bc2282b4b96e689d497a49f3987",
+    "semantic_hash": "dad43bc2282b4b96e689d497a49f3987"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/assets/star-history.svg": {
+    "mtime": 1792876607.709563,
+    "seen": 1792926045.9223855,
+    "ast_hash": "54fef986a11fee69f353b4518c2b3d26",
+    "semantic_hash": "54fef986a11fee69f353b4518c2b3d26"
+  },
+  "voice-sales-integration/voice-sales-agent-FULL-with-your-keys/voice-sales-agent/vendor/speech-to-speech/src/speech_to_speech/TTS/ref_audio.wav": {
+    "mtime": 1792876607.255989,
+    "seen": 1792926045.9223862,
+    "ast_hash": "fdc3c34c302193887f96b5a4aa8bf71c",
+    "semantic_hash": "fdc3c34c302193887f96b5a4aa8bf71c"
+  }
+}

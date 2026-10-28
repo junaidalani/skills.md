@@ -1,0 +1,68 @@
+﻿.venv\Scripts\python.exe : C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voice-sale
+s-agent-FULL-with-your-keys\voice-sales-agent\tests\test_calls.py:9: StarletteDeprecationWarning: Using `httpx` with 
+`starlette.testclient` is deprecated; install `httpx2` instead.
+At line:4 char:1
++ .venv\Scripts\python.exe -m unittest discover -s tests -t . 2>&1 | Ou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\junai\...ttpx2` instead.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  from starlette.testclient import TestClient
+.....................C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voice-sales-agen
+t-FULL-with-your-keys\voice-sales-agent\.venv\Lib\site-packages\anyio\_backends\_asyncio.py:862: ResourceWarning: 
+unclosed database in <sqlite3.Connection object at 0x000001A0FA593C40>
+  def _spawn(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.LLM failed: LLM failed on all models; last: backup/model: HTTP 500 {"error": "boom"}
+LLM failed: LLM failed on all models; last: backup/model: HTTP 500 {"error": "boom"}
+lead extraction failed (LLM failed on all models; last: backup/model: HTTP 500 {"error": "boom"}); using regex fallback
+..C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voice-sales-agent-FULL-with-your-ke
+ys\voice-sales-agent\.venv\Lib\site-packages\yaml\error.py:6: ResourceWarning: unclosed database in 
+<sqlite3.Connection object at 0x000001A080402F20>
+  def __init__(self, name, index, line, column, buffer, pointer):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voice-sales-agent-FULL-with-your-keys
+\voice-sales-agent\.venv\Lib\site-packages\yaml\error.py:6: ResourceWarning: unclosed database in <sqlite3.Connection 
+object at 0x000001A080402C50>
+  def __init__(self, name, index, line, column, buffer, pointer):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.......C:\Users\junai\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\email\_header_value_parser.py:132:
+ ResourceWarning: unclosed database in <sqlite3.Connection object at 0x000001A080403C40>
+  super().__init__(*args, **kw)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+............C:\Users\junai\AppData\Roaming\uv\python\cpython-3.14-windows-x86_64-none\Lib\pathlib\__init__.py:640: 
+ResourceWarning: unclosed database in <sqlite3.Connection object at 0x000001A080596F20>
+  return object.__new__(cls)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.................................C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voic
+e-sales-agent-FULL-with-your-keys\voice-sales-agent\.venv\Lib\site-packages\yaml\scanner.py:286: ResourceWarning: 
+unclosed database in <sqlite3.Connection object at 0x000001A0805967A0>
+  for level in list(self.possible_simple_keys):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voice-sales-agent-FULL-with-your-keys
+\voice-sales-agent\.venv\Lib\site-packages\yaml\scanner.py:286: ResourceWarning: unclosed database in 
+<sqlite3.Connection object at 0x000001A0806A73D0>
+  for level in list(self.possible_simple_keys):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+........C:\Users\junai\Downloads\build-multitenant-voice-platform\voice-sales-integration\voice-sales-agent-FULL-with-y
+our-keys\voice-sales-agent\.venv\Lib\site-packages\yaml\tokens.py:3: ResourceWarning: unclosed database in 
+<sqlite3.Connection object at 0x000001A0806A4D60>
+  def __init__(self, start_mark, end_mark):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+....
+----------------------------------------------------------------------
+Ran 88 tests in 48.001s
+
+OK
+Created Call Control application app-1
+Number +15519007793 -> application app-1: OK
+
+Webhook: https://abc.trycloudflare.com/telnyx/webhook
+Now call +15519007793 from any phone.
+Updated Call Control application app-1
+Number +15519007793 -> application app-1: OK
+
+Webhook: https://new.example.com/telnyx/webhook
+Now call +15519007793 from any phone.
+ERROR: need --public-url https://... (Telnyx only calls https webhooks)
+ERROR: TELNYX_API_KEY and TELNYX_PHONE_NUMBER must be set in .env

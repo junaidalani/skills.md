@@ -1,0 +1,6454 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {
+  "generator": "scripts/build_graph.py (graphify-compatible stand-in; not the real graphify tool)",
+  "community_labels": {
+   "0": "README, config",
+   "1": "test_config",
+   "2": "INTEGRATION_PLAN, agent",
+   "3": "test_calls",
+   "4": "main, telnyx",
+   "5": "providers, audio",
+   "6": "test_scripts_and_n8n, fakes",
+   "7": "test_audio_and_providers",
+   "8": "s2s, audio",
+   "9": "leads, prompt",
+   "10": "session, audio",
+   "11": "test_notify_telnyx",
+   "12": "test_config",
+   "13": "config",
+   "14": "build_graph"
+  }
+ },
+ "nodes": [
+  {
+   "label": "__main__.py",
+   "file_type": "code",
+   "source_file": "app/__main__.py",
+   "kind": "module",
+   "community": 4,
+   "id": "app/__main__.py"
+  },
+  {
+   "label": "main()",
+   "file_type": "code",
+   "source_file": "app/__main__.py",
+   "kind": "function",
+   "line": 11,
+   "community": 4,
+   "id": "app/__main__.py::main"
+  },
+  {
+   "label": "audio.py",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "module",
+   "community": 8,
+   "id": "app/audio.py"
+  },
+  {
+   "label": "_build_ulaw_decode()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 19,
+   "community": 8,
+   "id": "app/audio.py::_build_ulaw_decode"
+  },
+  {
+   "label": "ulaw_decode()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 34,
+   "community": 8,
+   "id": "app/audio.py::ulaw_decode"
+  },
+  {
+   "label": "ulaw_encode()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 38,
+   "community": 8,
+   "id": "app/audio.py::ulaw_encode"
+  },
+  {
+   "label": "resample()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 49,
+   "community": 8,
+   "id": "app/audio.py::resample"
+  },
+  {
+   "label": "Up2",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "class",
+   "line": 58,
+   "community": 8,
+   "id": "app/audio.py::Up2"
+  },
+  {
+   "label": "Up2.process()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "method",
+   "line": 64,
+   "community": 8,
+   "id": "app/audio.py::Up2.process"
+  },
+  {
+   "label": "pcm_array()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 76,
+   "community": 8,
+   "id": "app/audio.py::pcm_array"
+  },
+  {
+   "label": "to_wav()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 80,
+   "community": 5,
+   "id": "app/audio.py::to_wav"
+  },
+  {
+   "label": "decode_with_ffmpeg()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 90,
+   "community": 8,
+   "id": "app/audio.py::decode_with_ffmpeg"
+  },
+  {
+   "label": "VAD",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "class",
+   "line": 104,
+   "community": 10,
+   "id": "app/audio.py::VAD"
+  },
+  {
+   "label": "VAD.reset()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "method",
+   "line": 139,
+   "community": 10,
+   "id": "app/audio.py::VAD.reset"
+  },
+  {
+   "label": "VAD.feed()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "method",
+   "line": 146,
+   "community": 10,
+   "id": "app/audio.py::VAD.feed"
+  },
+  {
+   "label": "normalize_spoken_email()",
+   "file_type": "code",
+   "source_file": "app/audio.py",
+   "kind": "function",
+   "line": 190,
+   "community": 9,
+   "id": "app/audio.py::normalize_spoken_email"
+  },
+  {
+   "label": "config.py",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "module",
+   "community": 0,
+   "id": "app/config.py"
+  },
+  {
+   "label": "ConfigError",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "class",
+   "line": 24,
+   "community": 0,
+   "id": "app/config.py::ConfigError"
+  },
+  {
+   "label": "_norm()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 82,
+   "community": 0,
+   "id": "app/config.py::_norm"
+  },
+  {
+   "label": "_env()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 87,
+   "community": 0,
+   "id": "app/config.py::_env"
+  },
+  {
+   "label": "_truthy()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 91,
+   "community": 0,
+   "id": "app/config.py::_truthy"
+  },
+  {
+   "label": "_read_yaml()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 96,
+   "community": 0,
+   "id": "app/config.py::_read_yaml"
+  },
+  {
+   "label": "_dig()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 109,
+   "community": 0,
+   "id": "app/config.py::_dig"
+  },
+  {
+   "label": "Settings",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "class",
+   "line": 118,
+   "community": 13,
+   "id": "app/config.py::Settings"
+  },
+  {
+   "label": "Settings.load()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 184,
+   "community": 13,
+   "id": "app/config.py::Settings.load"
+  },
+  {
+   "label": "Settings.from_raw()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 189,
+   "community": 13,
+   "id": "app/config.py::Settings.from_raw"
+  },
+  {
+   "label": "Settings.smtp_login()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 307,
+   "community": 13,
+   "id": "app/config.py::Settings.smtp_login"
+  },
+  {
+   "label": "Settings.smtp_configured()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 316,
+   "community": 13,
+   "id": "app/config.py::Settings.smtp_configured"
+  },
+  {
+   "label": "Settings.ws_secret()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 320,
+   "community": 13,
+   "id": "app/config.py::Settings.ws_secret"
+  },
+  {
+   "label": "Settings.media_ws_url()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 326,
+   "community": 13,
+   "id": "app/config.py::Settings.media_ws_url"
+  },
+  {
+   "label": "Settings.webhook_url()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 335,
+   "community": 13,
+   "id": "app/config.py::Settings.webhook_url"
+  },
+  {
+   "label": "Settings.summary()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "method",
+   "line": 338,
+   "community": 13,
+   "id": "app/config.py::Settings.summary"
+  },
+  {
+   "label": "_needs_key()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 349,
+   "community": 0,
+   "id": "app/config.py::_needs_key"
+  },
+  {
+   "label": "problems()",
+   "file_type": "code",
+   "source_file": "app/config.py",
+   "kind": "function",
+   "line": 353,
+   "community": 0,
+   "id": "app/config.py::problems"
+  },
+  {
+   "label": "leads.py",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "module",
+   "community": 9,
+   "id": "app/leads.py"
+  },
+  {
+   "label": "Store",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "class",
+   "line": 30,
+   "community": 9,
+   "id": "app/leads.py::Store"
+  },
+  {
+   "label": "Store.save()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 45,
+   "community": 9,
+   "id": "app/leads.py::Store.save"
+  },
+  {
+   "label": "Store._row()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 61,
+   "community": 9,
+   "id": "app/leads.py::Store._row"
+  },
+  {
+   "label": "Store.list()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 67,
+   "community": 9,
+   "id": "app/leads.py::Store.list"
+  },
+  {
+   "label": "Store.get()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 72,
+   "community": 9,
+   "id": "app/leads.py::Store.get"
+  },
+  {
+   "label": "_fallback_extract()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "function",
+   "line": 79,
+   "community": 9,
+   "id": "app/leads.py::_fallback_extract"
+  },
+  {
+   "label": "clean_lead()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "function",
+   "line": 98,
+   "community": 9,
+   "id": "app/leads.py::clean_lead"
+  },
+  {
+   "label": "extract_lead()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "function",
+   "line": 114,
+   "community": 9,
+   "id": "app/leads.py::extract_lead"
+  },
+  {
+   "label": "Notifier",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "class",
+   "line": 135,
+   "community": 9,
+   "id": "app/leads.py::Notifier"
+  },
+  {
+   "label": "Notifier.build_message()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 140,
+   "community": 9,
+   "id": "app/leads.py::Notifier.build_message"
+  },
+  {
+   "label": "Notifier._smtp()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 173,
+   "community": 9,
+   "id": "app/leads.py::Notifier._smtp"
+  },
+  {
+   "label": "Notifier._webhook()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 194,
+   "community": 9,
+   "id": "app/leads.py::Notifier._webhook"
+  },
+  {
+   "label": "Notifier._resend()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 200,
+   "community": 9,
+   "id": "app/leads.py::Notifier._resend"
+  },
+  {
+   "label": "Notifier._outbox()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 220,
+   "community": 9,
+   "id": "app/leads.py::Notifier._outbox"
+  },
+  {
+   "label": "Notifier.order()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 227,
+   "community": 9,
+   "id": "app/leads.py::Notifier.order"
+  },
+  {
+   "label": "Notifier.send()",
+   "file_type": "code",
+   "source_file": "app/leads.py",
+   "kind": "method",
+   "line": 242,
+   "community": 9,
+   "id": "app/leads.py::Notifier.send"
+  },
+  {
+   "label": "main.py",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "module",
+   "community": 4,
+   "id": "app/main.py"
+  },
+  {
+   "label": "Ctx",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "class",
+   "line": 38,
+   "community": 4,
+   "id": "app/main.py::Ctx"
+  },
+  {
+   "label": "Ctx.spawn()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 49,
+   "community": 4,
+   "id": "app/main.py::Ctx.spawn"
+  },
+  {
+   "label": "Ctx.spawn_blocking()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 60,
+   "community": 4,
+   "id": "app/main.py::Ctx.spawn_blocking"
+  },
+  {
+   "label": "_SafeSend",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "class",
+   "line": 65,
+   "community": 4,
+   "id": "app/main.py::_SafeSend"
+  },
+  {
+   "label": "_SafeSend._text()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 66,
+   "community": 4,
+   "id": "app/main.py::_SafeSend._text"
+  },
+  {
+   "label": "TelnyxTransport",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "class",
+   "line": 73,
+   "community": 4,
+   "id": "app/main.py::TelnyxTransport"
+  },
+  {
+   "label": "TelnyxTransport.send_audio()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 79,
+   "community": 8,
+   "id": "app/main.py::TelnyxTransport.send_audio"
+  },
+  {
+   "label": "TelnyxTransport.clear()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 83,
+   "community": 4,
+   "id": "app/main.py::TelnyxTransport.clear"
+  },
+  {
+   "label": "TelnyxTransport.send_event()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 86,
+   "community": 4,
+   "id": "app/main.py::TelnyxTransport.send_event"
+  },
+  {
+   "label": "TelnyxTransport.hangup()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 89,
+   "community": 4,
+   "id": "app/main.py::TelnyxTransport.hangup"
+  },
+  {
+   "label": "WebTransport",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "class",
+   "line": 94,
+   "community": 4,
+   "id": "app/main.py::WebTransport"
+  },
+  {
+   "label": "WebTransport.send_audio()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 100,
+   "community": 4,
+   "id": "app/main.py::WebTransport.send_audio"
+  },
+  {
+   "label": "WebTransport.clear()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 108,
+   "community": 4,
+   "id": "app/main.py::WebTransport.clear"
+  },
+  {
+   "label": "WebTransport.send_event()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 111,
+   "community": 4,
+   "id": "app/main.py::WebTransport.send_event"
+  },
+  {
+   "label": "WebTransport.hangup()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "method",
+   "line": 114,
+   "community": 4,
+   "id": "app/main.py::WebTransport.hangup"
+  },
+  {
+   "label": "finalize_call()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "function",
+   "line": 119,
+   "community": 4,
+   "id": "app/main.py::finalize_call"
+  },
+  {
+   "label": "make_session()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "function",
+   "line": 134,
+   "community": 4,
+   "id": "app/main.py::make_session"
+  },
+  {
+   "label": "_admin_ok()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "function",
+   "line": 145,
+   "community": 4,
+   "id": "app/main.py::_admin_ok"
+  },
+  {
+   "label": "create_app()",
+   "file_type": "code",
+   "source_file": "app/main.py",
+   "kind": "function",
+   "line": 151,
+   "community": 4,
+   "id": "app/main.py::create_app"
+  },
+  {
+   "label": "prompt.py",
+   "file_type": "code",
+   "source_file": "app/prompt.py",
+   "kind": "module",
+   "community": 9,
+   "id": "app/prompt.py"
+  },
+  {
+   "label": "load_business()",
+   "file_type": "code",
+   "source_file": "app/prompt.py",
+   "kind": "function",
+   "line": 14,
+   "community": 9,
+   "id": "app/prompt.py::load_business"
+  },
+  {
+   "label": "build_system_prompt()",
+   "file_type": "code",
+   "source_file": "app/prompt.py",
+   "kind": "function",
+   "line": 26,
+   "community": 9,
+   "id": "app/prompt.py::build_system_prompt"
+  },
+  {
+   "label": "render_transcript()",
+   "file_type": "code",
+   "source_file": "app/prompt.py",
+   "kind": "function",
+   "line": 96,
+   "community": 9,
+   "id": "app/prompt.py::render_transcript"
+  },
+  {
+   "label": "parse_json_object()",
+   "file_type": "code",
+   "source_file": "app/prompt.py",
+   "kind": "function",
+   "line": 100,
+   "community": 9,
+   "id": "app/prompt.py::parse_json_object"
+  },
+  {
+   "label": "providers.py",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "module",
+   "community": 5,
+   "id": "app/providers.py"
+  },
+  {
+   "label": "ProviderError",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 26,
+   "community": 5,
+   "id": "app/providers.py::ProviderError"
+  },
+  {
+   "label": "_clip()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "function",
+   "line": 30,
+   "community": 5,
+   "id": "app/providers.py::_clip"
+  },
+  {
+   "label": "OpenAICompatLLM",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 35,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatLLM"
+  },
+  {
+   "label": "OpenAICompatLLM._headers()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 43,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatLLM._headers"
+  },
+  {
+   "label": "OpenAICompatLLM._url()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 52,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatLLM._url"
+  },
+  {
+   "label": "OpenAICompatLLM.complete()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 55,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatLLM.complete"
+  },
+  {
+   "label": "OpenAICompatLLM.stream()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 76,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatLLM.stream"
+  },
+  {
+   "label": "OpenAICompatTTS",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 153,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatTTS"
+  },
+  {
+   "label": "OpenAICompatTTS.build_payload()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 164,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatTTS.build_payload"
+  },
+  {
+   "label": "OpenAICompatTTS._request()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 170,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatTTS._request"
+  },
+  {
+   "label": "OpenAICompatTTS._to_pcm24k()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 189,
+   "community": 8,
+   "id": "app/providers.py::OpenAICompatTTS._to_pcm24k"
+  },
+  {
+   "label": "OpenAICompatTTS.synth()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 194,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatTTS.synth"
+  },
+  {
+   "label": "ElevenLabsTTS",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 201,
+   "community": 5,
+   "id": "app/providers.py::ElevenLabsTTS"
+  },
+  {
+   "label": "ElevenLabsTTS._request()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 207,
+   "community": 5,
+   "id": "app/providers.py::ElevenLabsTTS._request"
+  },
+  {
+   "label": "ElevenLabsTTS.synth()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 227,
+   "community": 5,
+   "id": "app/providers.py::ElevenLabsTTS.synth"
+  },
+  {
+   "label": "HFWhisperSTT",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 232,
+   "community": 5,
+   "id": "app/providers.py::HFWhisperSTT"
+  },
+  {
+   "label": "HFWhisperSTT.transcribe()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 239,
+   "community": 5,
+   "id": "app/providers.py::HFWhisperSTT.transcribe"
+  },
+  {
+   "label": "OpenAICompatSTT",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 264,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatSTT"
+  },
+  {
+   "label": "OpenAICompatSTT.transcribe()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 271,
+   "community": 5,
+   "id": "app/providers.py::OpenAICompatSTT.transcribe"
+  },
+  {
+   "label": "MockSTT",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 290,
+   "community": 5,
+   "id": "app/providers.py::MockSTT"
+  },
+  {
+   "label": "MockSTT.transcribe()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 297,
+   "community": 5,
+   "id": "app/providers.py::MockSTT.transcribe"
+  },
+  {
+   "label": "MockLLM",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 303,
+   "community": 5,
+   "id": "app/providers.py::MockLLM"
+  },
+  {
+   "label": "MockLLM.stream()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 311,
+   "community": 5,
+   "id": "app/providers.py::MockLLM.stream"
+  },
+  {
+   "label": "MockLLM.complete()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 319,
+   "community": 5,
+   "id": "app/providers.py::MockLLM.complete"
+  },
+  {
+   "label": "MockTTS",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 344,
+   "community": 5,
+   "id": "app/providers.py::MockTTS"
+  },
+  {
+   "label": "MockTTS.synth()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "method",
+   "line": 347,
+   "community": 5,
+   "id": "app/providers.py::MockTTS.synth"
+  },
+  {
+   "label": "Providers",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "class",
+   "line": 355,
+   "community": 5,
+   "id": "app/providers.py::Providers"
+  },
+  {
+   "label": "build_providers()",
+   "file_type": "code",
+   "source_file": "app/providers.py",
+   "kind": "function",
+   "line": 361,
+   "community": 5,
+   "id": "app/providers.py::build_providers"
+  },
+  {
+   "label": "s2s.py",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "module",
+   "community": 8,
+   "id": "app/s2s.py"
+  },
+  {
+   "label": "_default_connect()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "function",
+   "line": 25,
+   "community": 8,
+   "id": "app/s2s.py::_default_connect"
+  },
+  {
+   "label": "S2SSession",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "class",
+   "line": 33,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession"
+  },
+  {
+   "label": "S2SSession.start()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 48,
+   "community": 9,
+   "id": "app/s2s.py::S2SSession.start"
+  },
+  {
+   "label": "S2SSession._send()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 67,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession._send"
+  },
+  {
+   "label": "S2SSession.feed_pcm16k()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 70,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession.feed_pcm16k"
+  },
+  {
+   "label": "S2SSession.user_text()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 76,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession.user_text"
+  },
+  {
+   "label": "S2SSession._read_loop()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 81,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession._read_loop"
+  },
+  {
+   "label": "S2SSession._add()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 104,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession._add"
+  },
+  {
+   "label": "S2SSession.close()",
+   "file_type": "code",
+   "source_file": "app/s2s.py",
+   "kind": "method",
+   "line": 109,
+   "community": 8,
+   "id": "app/s2s.py::S2SSession.close"
+  },
+  {
+   "label": "session.py",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "module",
+   "community": 10,
+   "id": "app/session.py"
+  },
+  {
+   "label": "split_sentences()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "function",
+   "line": 35,
+   "community": 10,
+   "id": "app/session.py::split_sentences"
+  },
+  {
+   "label": "VoiceSession",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "class",
+   "line": 53,
+   "community": 10,
+   "id": "app/session.py::VoiceSession"
+  },
+  {
+   "label": "VoiceSession.start()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 87,
+   "community": 10,
+   "id": "app/session.py::VoiceSession.start"
+  },
+  {
+   "label": "VoiceSession.close()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 95,
+   "community": 10,
+   "id": "app/session.py::VoiceSession.close"
+  },
+  {
+   "label": "VoiceSession.feed_pcm16k()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 128,
+   "community": 10,
+   "id": "app/session.py::VoiceSession.feed_pcm16k"
+  },
+  {
+   "label": "VoiceSession.user_text()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 142,
+   "community": 10,
+   "id": "app/session.py::VoiceSession.user_text"
+  },
+  {
+   "label": "VoiceSession._record()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 152,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._record"
+  },
+  {
+   "label": "VoiceSession._speaking_now()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 155,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._speaking_now"
+  },
+  {
+   "label": "VoiceSession._interrupt()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 159,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._interrupt"
+  },
+  {
+   "label": "VoiceSession._say()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 174,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._say"
+  },
+  {
+   "label": "VoiceSession._play()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 183,
+   "community": 8,
+   "id": "app/session.py::VoiceSession._play"
+  },
+  {
+   "label": "VoiceSession._drain()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 195,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._drain"
+  },
+  {
+   "label": "VoiceSession._turn_from_audio()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 201,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._turn_from_audio"
+  },
+  {
+   "label": "VoiceSession._window()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 217,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._window"
+  },
+  {
+   "label": "VoiceSession._respond()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 220,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._respond"
+  },
+  {
+   "label": "VoiceSession._handle_failure()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 297,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._handle_failure"
+  },
+  {
+   "label": "VoiceSession._watchdog()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 308,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._watchdog"
+  },
+  {
+   "label": "VoiceSession._say_and_close()",
+   "file_type": "code",
+   "source_file": "app/session.py",
+   "kind": "method",
+   "line": 328,
+   "community": 10,
+   "id": "app/session.py::VoiceSession._say_and_close"
+  },
+  {
+   "label": "telnyx.py",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "module",
+   "community": 4,
+   "id": "app/telnyx.py"
+  },
+  {
+   "label": "TelnyxError",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "class",
+   "line": 18,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxError"
+  },
+  {
+   "label": "TelnyxClient",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "class",
+   "line": 22,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxClient"
+  },
+  {
+   "label": "TelnyxClient._post()",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "method",
+   "line": 26,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxClient._post"
+  },
+  {
+   "label": "TelnyxClient.answer()",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "method",
+   "line": 37,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxClient.answer"
+  },
+  {
+   "label": "TelnyxClient.streaming_start()",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "method",
+   "line": 40,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxClient.streaming_start"
+  },
+  {
+   "label": "TelnyxClient.hangup()",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "method",
+   "line": 55,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxClient.hangup"
+  },
+  {
+   "label": "TelnyxClient.dial()",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "method",
+   "line": 58,
+   "community": 4,
+   "id": "app/telnyx.py::TelnyxClient.dial"
+  },
+  {
+   "label": "verify_signature()",
+   "file_type": "code",
+   "source_file": "app/telnyx.py",
+   "kind": "function",
+   "line": 70,
+   "community": 4,
+   "id": "app/telnyx.py::verify_signature"
+  },
+  {
+   "label": "build_graph.py",
+   "file_type": "code",
+   "source_file": "scripts/build_graph.py",
+   "kind": "module",
+   "community": 14,
+   "id": "scripts/build_graph.py"
+  },
+  {
+   "label": "add_node()",
+   "file_type": "code",
+   "source_file": "scripts/build_graph.py",
+   "kind": "function",
+   "line": 23,
+   "community": 14,
+   "id": "scripts/build_graph.py::add_node"
+  },
+  {
+   "label": "add_edge()",
+   "file_type": "code",
+   "source_file": "scripts/build_graph.py",
+   "kind": "function",
+   "line": 28,
+   "community": 14,
+   "id": "scripts/build_graph.py::add_edge"
+  },
+  {
+   "label": "files()",
+   "file_type": "code",
+   "source_file": "scripts/build_graph.py",
+   "kind": "function",
+   "line": 33,
+   "community": 14,
+   "id": "scripts/build_graph.py::files"
+  },
+  {
+   "label": "label_for()",
+   "file_type": "code",
+   "source_file": "scripts/build_graph.py",
+   "kind": "function",
+   "line": 174,
+   "community": 14,
+   "id": "scripts/build_graph.py::label_for"
+  },
+  {
+   "label": "check_config.py",
+   "file_type": "code",
+   "source_file": "scripts/check_config.py",
+   "kind": "module",
+   "community": 0,
+   "id": "scripts/check_config.py"
+  },
+  {
+   "label": "main()",
+   "file_type": "code",
+   "source_file": "scripts/check_config.py",
+   "kind": "function",
+   "line": 17,
+   "community": 0,
+   "id": "scripts/check_config.py::main"
+  },
+  {
+   "label": "live_check.py",
+   "file_type": "code",
+   "source_file": "scripts/live_check.py",
+   "kind": "module",
+   "community": 0,
+   "id": "scripts/live_check.py"
+  },
+  {
+   "label": "report()",
+   "file_type": "code",
+   "source_file": "scripts/live_check.py",
+   "kind": "function",
+   "line": 30,
+   "community": 0,
+   "id": "scripts/live_check.py::report"
+  },
+  {
+   "label": "main_async()",
+   "file_type": "code",
+   "source_file": "scripts/live_check.py",
+   "kind": "function",
+   "line": 35,
+   "community": 0,
+   "id": "scripts/live_check.py::main_async"
+  },
+  {
+   "label": "make_buyer_kit.py",
+   "file_type": "code",
+   "source_file": "scripts/make_buyer_kit.py",
+   "kind": "module",
+   "community": 0,
+   "id": "scripts/make_buyer_kit.py"
+  },
+  {
+   "label": "make()",
+   "file_type": "code",
+   "source_file": "scripts/make_buyer_kit.py",
+   "kind": "function",
+   "line": 21,
+   "community": 0,
+   "id": "scripts/make_buyer_kit.py::make"
+  },
+  {
+   "label": "make_release.py",
+   "file_type": "code",
+   "source_file": "scripts/make_release.py",
+   "kind": "module",
+   "community": 0,
+   "id": "scripts/make_release.py"
+  },
+  {
+   "label": "build()",
+   "file_type": "code",
+   "source_file": "scripts/make_release.py",
+   "kind": "function",
+   "line": 21,
+   "community": 0,
+   "id": "scripts/make_release.py::build"
+  },
+  {
+   "label": "setup_telnyx.py",
+   "file_type": "code",
+   "source_file": "scripts/setup_telnyx.py",
+   "kind": "module",
+   "community": 0,
+   "id": "scripts/setup_telnyx.py"
+  },
+  {
+   "label": "write_env()",
+   "file_type": "code",
+   "source_file": "scripts/setup_telnyx.py",
+   "kind": "function",
+   "line": 23,
+   "community": 0,
+   "id": "scripts/setup_telnyx.py::write_env"
+  },
+  {
+   "label": "main()",
+   "file_type": "code",
+   "source_file": "scripts/setup_telnyx.py",
+   "kind": "function",
+   "line": 34,
+   "community": 0,
+   "id": "scripts/setup_telnyx.py::main"
+  },
+  {
+   "label": "simulate_call.py",
+   "file_type": "code",
+   "source_file": "scripts/simulate_call.py",
+   "kind": "module",
+   "community": 8,
+   "id": "scripts/simulate_call.py"
+  },
+  {
+   "label": "main()",
+   "file_type": "code",
+   "source_file": "scripts/simulate_call.py",
+   "kind": "function",
+   "line": 36,
+   "community": 8,
+   "id": "scripts/simulate_call.py::main"
+  },
+  {
+   "label": "fakes.py",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "module",
+   "community": 6,
+   "id": "tests/fakes.py"
+  },
+  {
+   "label": "make_mp3()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "function",
+   "line": 20,
+   "community": 6,
+   "id": "tests/fakes.py::make_mp3"
+  },
+  {
+   "label": "make_pcm()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "function",
+   "line": 27,
+   "community": 6,
+   "id": "tests/fakes.py::make_pcm"
+  },
+  {
+   "label": "FakeServices",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "class",
+   "line": 32,
+   "community": 6,
+   "id": "tests/fakes.py::FakeServices"
+  },
+  {
+   "label": "FakeServices.find()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "method",
+   "line": 158,
+   "community": 6,
+   "id": "tests/fakes.py::FakeServices.find"
+  },
+  {
+   "label": "FakeServices.stop()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "method",
+   "line": 161,
+   "community": 6,
+   "id": "tests/fakes.py::FakeServices.stop"
+  },
+  {
+   "label": "SMTPSink",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "class",
+   "line": 166,
+   "community": 6,
+   "id": "tests/fakes.py::SMTPSink"
+  },
+  {
+   "label": "SMTPSink.wait_for()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "method",
+   "line": 206,
+   "community": 6,
+   "id": "tests/fakes.py::SMTPSink.wait_for"
+  },
+  {
+   "label": "SMTPSink.stop()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "method",
+   "line": 212,
+   "community": 6,
+   "id": "tests/fakes.py::SMTPSink.stop"
+  },
+  {
+   "label": "message_text()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "function",
+   "line": 217,
+   "community": 6,
+   "id": "tests/fakes.py::message_text"
+  },
+  {
+   "label": "base_settings()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "function",
+   "line": 225,
+   "community": 6,
+   "id": "tests/fakes.py::base_settings"
+  },
+  {
+   "label": "tmpdir()",
+   "file_type": "code",
+   "source_file": "tests/fakes.py",
+   "kind": "function",
+   "line": 244,
+   "community": 6,
+   "id": "tests/fakes.py::tmpdir"
+  },
+  {
+   "label": "test_audio_and_providers.py",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "module",
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py"
+  },
+  {
+   "label": "run()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "function",
+   "line": 16,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::run"
+  },
+  {
+   "label": "AudioTests",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "class",
+   "line": 20,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests"
+  },
+  {
+   "label": "AudioTests.test_ulaw_roundtrip_is_accurate()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 21,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_ulaw_roundtrip_is_accurate"
+  },
+  {
+   "label": "AudioTests.test_ulaw_known_values()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 28,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_ulaw_known_values"
+  },
+  {
+   "label": "AudioTests.test_resample_lengths()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 32,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_resample_lengths"
+  },
+  {
+   "label": "AudioTests.test_vad_segments_one_utterance()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 38,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_vad_segments_one_utterance"
+  },
+  {
+   "label": "AudioTests.test_vad_ignores_blip_and_noise()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 51,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_vad_ignores_blip_and_noise"
+  },
+  {
+   "label": "AudioTests.test_ffmpeg_mp3_decode()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 62,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_ffmpeg_mp3_decode"
+  },
+  {
+   "label": "AudioTests.test_wav_header()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 67,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_wav_header"
+  },
+  {
+   "label": "AudioTests.test_spoken_email()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 70,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_spoken_email"
+  },
+  {
+   "label": "AudioTests.test_sentence_splitter()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 75,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_sentence_splitter"
+  },
+  {
+   "label": "AudioTests.test_prompt_contains_business_facts()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 83,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::AudioTests.test_prompt_contains_business_facts"
+  },
+  {
+   "label": "ProviderTests",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "class",
+   "line": 93,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests"
+  },
+  {
+   "label": "ProviderTests.setUpClass()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 95,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.setUpClass"
+  },
+  {
+   "label": "ProviderTests.tearDownClass()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 100,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.tearDownClass"
+  },
+  {
+   "label": "ProviderTests.setUp()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 103,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.setUp"
+  },
+  {
+   "label": "ProviderTests.test_tts_openrouter_request_shape_and_mp3_decode()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 108,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_tts_openrouter_request_shape_and_mp3_decode"
+  },
+  {
+   "label": "ProviderTests.test_tts_pcm_path_resamples_to_24k()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 117,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_tts_pcm_path_resamples_to_24k"
+  },
+  {
+   "label": "ProviderTests.test_tts_error_is_reported_without_key()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 123,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_tts_error_is_reported_without_key"
+  },
+  {
+   "label": "ProviderTests.test_fish_direct_uses_fish_model_and_key()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 131,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_fish_direct_uses_fish_model_and_key"
+  },
+  {
+   "label": "ProviderTests.test_llm_streams_tokens_and_falls_back()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 138,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_llm_streams_tokens_and_falls_back"
+  },
+  {
+   "label": "ProviderTests.test_llm_all_models_fail_raises()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 151,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_llm_all_models_fail_raises"
+  },
+  {
+   "label": "ProviderTests.test_llm_complete()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 160,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_llm_complete"
+  },
+  {
+   "label": "ProviderTests.test_hf_stt_sends_wav()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 164,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_hf_stt_sends_wav"
+  },
+  {
+   "label": "ProviderTests.test_fish_stt_multipart()",
+   "file_type": "code",
+   "source_file": "tests/test_audio_and_providers.py",
+   "kind": "method",
+   "line": 175,
+   "community": 7,
+   "id": "tests/test_audio_and_providers.py::ProviderTests.test_fish_stt_multipart"
+  },
+  {
+   "label": "test_calls.py",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "module",
+   "community": 3,
+   "id": "tests/test_calls.py"
+  },
+  {
+   "label": "tone()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "function",
+   "line": 22,
+   "community": 8,
+   "id": "tests/test_calls.py::tone"
+  },
+  {
+   "label": "silence()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "function",
+   "line": 27,
+   "community": 3,
+   "id": "tests/test_calls.py::silence"
+  },
+  {
+   "label": "PhoneCall",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "class",
+   "line": 31,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall"
+  },
+  {
+   "label": "PhoneCall._reader()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 44,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall._reader"
+  },
+  {
+   "label": "PhoneCall.speak()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 51,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall.speak"
+  },
+  {
+   "label": "PhoneCall.turn()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 57,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall.turn"
+  },
+  {
+   "label": "PhoneCall.hangup()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 62,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall.hangup"
+  },
+  {
+   "label": "PhoneCall.audio_bytes()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 66,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall.audio_bytes"
+  },
+  {
+   "label": "PhoneCall.wait()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 69,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneCall.wait"
+  },
+  {
+   "label": "mock_providers()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "function",
+   "line": 76,
+   "community": 3,
+   "id": "tests/test_calls.py::mock_providers"
+  },
+  {
+   "label": "PhoneFlowTests",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "class",
+   "line": 80,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneFlowTests"
+  },
+  {
+   "label": "PhoneFlowTests.test_full_call_greets_answers_hangs_up_and_stores_lead()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 81,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneFlowTests.test_full_call_greets_answers_hangs_up_and_stores_lead"
+  },
+  {
+   "label": "PhoneFlowTests.test_barge_in_clears_agent_audio()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 117,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneFlowTests.test_barge_in_clears_agent_audio"
+  },
+  {
+   "label": "PhoneFlowTests.test_silent_call_is_stored_but_not_emailed()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 127,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneFlowTests.test_silent_call_is_stored_but_not_emailed"
+  },
+  {
+   "label": "PhoneFlowTests.test_llm_outage_falls_back_politely_and_hangs_up()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 149,
+   "community": 3,
+   "id": "tests/test_calls.py::PhoneFlowTests.test_llm_outage_falls_back_politely_and_hangs_up"
+  },
+  {
+   "label": "EndToEndWithFakeServices",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "class",
+   "line": 166,
+   "community": 3,
+   "id": "tests/test_calls.py::EndToEndWithFakeServices"
+  },
+  {
+   "label": "EndToEndWithFakeServices.test_end_to_end()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 169,
+   "community": 3,
+   "id": "tests/test_calls.py::EndToEndWithFakeServices.test_end_to_end"
+  },
+  {
+   "label": "WebChannelTests",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "class",
+   "line": 220,
+   "community": 3,
+   "id": "tests/test_calls.py::WebChannelTests"
+  },
+  {
+   "label": "WebChannelTests.test_text_chat_over_websocket_and_lead_email()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 221,
+   "community": 3,
+   "id": "tests/test_calls.py::WebChannelTests.test_text_chat_over_websocket_and_lead_email"
+  },
+  {
+   "label": "WebChannelTests.test_web_voice_audio_is_pcm16_24k()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 249,
+   "community": 3,
+   "id": "tests/test_calls.py::WebChannelTests.test_web_voice_audio_is_pcm16_24k"
+  },
+  {
+   "label": "WebChannelTests.test_origin_allowlist()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 263,
+   "community": 3,
+   "id": "tests/test_calls.py::WebChannelTests.test_origin_allowlist"
+  },
+  {
+   "label": "RestApiTests",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "class",
+   "line": 274,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests"
+  },
+  {
+   "label": "RestApiTests.setUp()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 275,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.setUp"
+  },
+  {
+   "label": "RestApiTests.tearDown()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 281,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.tearDown"
+  },
+  {
+   "label": "RestApiTests.test_lead_form_emails_and_validates()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 285,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.test_lead_form_emails_and_validates"
+  },
+  {
+   "label": "RestApiTests.test_lead_form_rate_limit()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 297,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.test_lead_form_rate_limit"
+  },
+  {
+   "label": "RestApiTests.test_admin_auth()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 302,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.test_admin_auth"
+  },
+  {
+   "label": "RestApiTests.test_outbound_call_dials_via_telnyx()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 309,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.test_outbound_call_dials_via_telnyx"
+  },
+  {
+   "label": "RestApiTests.test_health_and_public_config()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 319,
+   "community": 3,
+   "id": "tests/test_calls.py::RestApiTests.test_health_and_public_config"
+  },
+  {
+   "label": "S2SEngineTests",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "class",
+   "line": 327,
+   "community": 3,
+   "id": "tests/test_calls.py::S2SEngineTests"
+  },
+  {
+   "label": "S2SEngineTests.test_bridges_audio_both_ways_and_barge_in()",
+   "file_type": "code",
+   "source_file": "tests/test_calls.py",
+   "kind": "method",
+   "line": 328,
+   "community": 3,
+   "id": "tests/test_calls.py::S2SEngineTests.test_bridges_audio_both_ways_and_barge_in"
+  },
+  {
+   "label": "test_config.py",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "module",
+   "community": 1,
+   "id": "tests/test_config.py"
+  },
+  {
+   "label": "load()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "function",
+   "line": 24,
+   "community": 1,
+   "id": "tests/test_config.py::load"
+  },
+  {
+   "label": "run()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "function",
+   "line": 33,
+   "community": 1,
+   "id": "tests/test_config.py::run"
+  },
+  {
+   "label": "find_secrets()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "function",
+   "line": 40,
+   "community": 1,
+   "id": "tests/test_config.py::find_secrets"
+  },
+  {
+   "label": "SwitchingProvidersTests",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "class",
+   "line": 55,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_shipped_defaults()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 56,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_shipped_defaults"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_changing_one_word_switches_provider_model_url_and_key()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 64,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_changing_one_word_switches_provider_model_url_and_key"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_openai_everything()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 76,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_openai_everything"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_custom_provider_uses_base_url_and_section_key()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 86,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_custom_provider_uses_base_url_and_section_key"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_aliases_and_case()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 93,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_aliases_and_case"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_key_lookup_order()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 97,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_key_lookup_order"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_env_beats_yaml_beats_default()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 104,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_env_beats_yaml_beats_default"
+  },
+  {
+   "label": "SwitchingProvidersTests.test_missing_file_uses_defaults_and_bad_yaml_is_explained()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 111,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchingProvidersTests.test_missing_file_uses_defaults_and_bad_yaml_is_explained"
+  },
+  {
+   "label": "ValidationTests",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "class",
+   "line": 119,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests"
+  },
+  {
+   "label": "ValidationTests.errors()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 120,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.errors"
+  },
+  {
+   "label": "ValidationTests.test_missing_keys_name_exactly_where_to_put_them()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 123,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_missing_keys_name_exactly_where_to_put_them"
+  },
+  {
+   "label": "ValidationTests.test_unknown_provider_lists_choices()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 130,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_unknown_provider_lists_choices"
+  },
+  {
+   "label": "ValidationTests.test_custom_needs_base_url()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 134,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_custom_needs_base_url"
+  },
+  {
+   "label": "ValidationTests.test_ollama_needs_no_key()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 138,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_ollama_needs_no_key"
+  },
+  {
+   "label": "ValidationTests.test_good_config_has_no_errors_and_warns_about_defaults()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 142,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_good_config_has_no_errors_and_warns_about_defaults"
+  },
+  {
+   "label": "ValidationTests.test_no_recipient_is_an_error()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 149,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_no_recipient_is_an_error"
+  },
+  {
+   "label": "ValidationTests.test_mock_mode_skips_provider_checks()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 152,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_mock_mode_skips_provider_checks"
+  },
+  {
+   "label": "ValidationTests.test_check_config_script()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 155,
+   "community": 12,
+   "id": "tests/test_config.py::ValidationTests.test_check_config_script"
+  },
+  {
+   "label": "BuildProvidersTests",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "class",
+   "line": 172,
+   "community": 1,
+   "id": "tests/test_config.py::BuildProvidersTests"
+  },
+  {
+   "label": "BuildProvidersTests.test_each_choice_builds_the_right_client()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 173,
+   "community": 1,
+   "id": "tests/test_config.py::BuildProvidersTests.test_each_choice_builds_the_right_client"
+  },
+  {
+   "label": "BuildProvidersTests.test_unknown_provider_raises_clear_error()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 184,
+   "community": 1,
+   "id": "tests/test_config.py::BuildProvidersTests.test_unknown_provider_raises_clear_error"
+  },
+  {
+   "label": "BuildProvidersTests.test_mock_mode()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 188,
+   "community": 1,
+   "id": "tests/test_config.py::BuildProvidersTests.test_mock_mode"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "class",
+   "line": 192,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.setUpClass()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 196,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.setUpClass"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.tearDownClass()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 200,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.tearDownClass"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.setUp()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 203,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.setUp"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.test_elevenlabs_request_shape()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 209,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_elevenlabs_request_shape"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.test_openai_tts_preset_sends_alloy_voice()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 218,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_openai_tts_preset_sends_alloy_voice"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.test_groq_style_stt_multipart()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 225,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_groq_style_stt_multipart"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.test_llm_on_custom_server_without_key_sends_no_auth_header()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 233,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_llm_on_custom_server_without_key_sends_no_auth_header"
+  },
+  {
+   "label": "SwitchedProvidersTalkToTheRightServers.test_llm_switch_to_openai_hits_that_base_url_with_that_key()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 241,
+   "community": 1,
+   "id": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_llm_switch_to_openai_hits_that_base_url_with_that_key"
+  },
+  {
+   "label": "EmailTests",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "class",
+   "line": 249,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests"
+  },
+  {
+   "label": "EmailTests.test_gmail_app_password_with_spaces_and_no_username()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 254,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests.test_gmail_app_password_with_spaces_and_no_username"
+  },
+  {
+   "label": "EmailTests.test_explicit_smtp_user_wins_and_other_hosts_are_untouched()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 263,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests.test_explicit_smtp_user_wins_and_other_hosts_are_untouched"
+  },
+  {
+   "label": "EmailTests.test_first_working_method_wins_without_duplicates()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 269,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests.test_first_working_method_wins_without_duplicates"
+  },
+  {
+   "label": "EmailTests.test_falls_through_smtp_to_resend_to_n8n_to_outbox()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 281,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests.test_falls_through_smtp_to_resend_to_n8n_to_outbox"
+  },
+  {
+   "label": "EmailTests.test_resend_request_shape()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 300,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests.test_resend_request_shape"
+  },
+  {
+   "label": "EmailTests.test_method_preference_reorders()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 314,
+   "community": 1,
+   "id": "tests/test_config.py::EmailTests.test_method_preference_reorders"
+  },
+  {
+   "label": "ShippedProjectTests",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "class",
+   "line": 324,
+   "community": 1,
+   "id": "tests/test_config.py::ShippedProjectTests"
+  },
+  {
+   "label": "ShippedProjectTests.test_uploaded_env_is_installed_and_consistent()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 325,
+   "community": 1,
+   "id": "tests/test_config.py::ShippedProjectTests.test_uploaded_env_is_installed_and_consistent"
+  },
+  {
+   "label": "ShippedProjectTests.test_buyer_kit_has_no_secrets_and_is_valid()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 342,
+   "community": 1,
+   "id": "tests/test_config.py::ShippedProjectTests.test_buyer_kit_has_no_secrets_and_is_valid"
+  },
+  {
+   "label": "ShippedProjectTests.test_release_zip_has_no_secrets_and_a_blank_agent_yaml()",
+   "file_type": "code",
+   "source_file": "tests/test_config.py",
+   "kind": "method",
+   "line": 363,
+   "community": 1,
+   "id": "tests/test_config.py::ShippedProjectTests.test_release_zip_has_no_secrets_and_a_blank_agent_yaml"
+  },
+  {
+   "label": "test_notify_telnyx.py",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "module",
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py"
+  },
+  {
+   "label": "NotifierTests",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "class",
+   "line": 28,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests"
+  },
+  {
+   "label": "NotifierTests.test_real_smtp_delivery_to_gmail_address()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 29,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests.test_real_smtp_delivery_to_gmail_address"
+  },
+  {
+   "label": "NotifierTests.test_n8n_webhook_gets_full_record()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 47,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests.test_n8n_webhook_gets_full_record"
+  },
+  {
+   "label": "NotifierTests.test_outbox_fallback_never_loses_lead()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 58,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests.test_outbox_fallback_never_loses_lead"
+  },
+  {
+   "label": "NotifierTests.test_smtp_failure_falls_back_to_outbox()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 65,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests.test_smtp_failure_falls_back_to_outbox"
+  },
+  {
+   "label": "NotifierTests.test_clean_lead_validates_email()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 71,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests.test_clean_lead_validates_email"
+  },
+  {
+   "label": "NotifierTests.test_store_roundtrip()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 76,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::NotifierTests.test_store_roundtrip"
+  },
+  {
+   "label": "TelnyxTests",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "class",
+   "line": 84,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::TelnyxTests"
+  },
+  {
+   "label": "TelnyxTests.test_signature_verification()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 85,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::TelnyxTests.test_signature_verification"
+  },
+  {
+   "label": "TelnyxTests.test_client_commands()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 95,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::TelnyxTests.test_client_commands"
+  },
+  {
+   "label": "TelnyxTests.test_client_surfaces_http_errors()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 117,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::TelnyxTests.test_client_surfaces_http_errors"
+  },
+  {
+   "label": "WebhookTests",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "class",
+   "line": 126,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests"
+  },
+  {
+   "label": "WebhookTests._wait()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 127,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests._wait"
+  },
+  {
+   "label": "WebhookTests.setUp()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 133,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests.setUp"
+  },
+  {
+   "label": "WebhookTests.tearDown()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 138,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests.tearDown"
+  },
+  {
+   "label": "WebhookTests._event()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 141,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests._event"
+  },
+  {
+   "label": "WebhookTests.test_incoming_call_is_answered_then_streamed()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 144,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests.test_incoming_call_is_answered_then_streamed"
+  },
+  {
+   "label": "WebhookTests.test_outgoing_initiated_is_not_answered()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 155,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests.test_outgoing_initiated_is_not_answered"
+  },
+  {
+   "label": "WebhookTests.test_bad_payload_and_signature()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 161,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests.test_bad_payload_and_signature"
+  },
+  {
+   "label": "WebhookTests.test_media_websocket_rejects_bad_token()",
+   "file_type": "code",
+   "source_file": "tests/test_notify_telnyx.py",
+   "kind": "method",
+   "line": 175,
+   "community": 11,
+   "id": "tests/test_notify_telnyx.py::WebhookTests.test_media_websocket_rejects_bad_token"
+  },
+  {
+   "label": "test_scripts_and_n8n.py",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "module",
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py"
+  },
+  {
+   "label": "load_script()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "function",
+   "line": 16,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::load_script"
+  },
+  {
+   "label": "SetupTelnyxTests",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "class",
+   "line": 23,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::SetupTelnyxTests"
+  },
+  {
+   "label": "SetupTelnyxTests.test_creates_app_and_attaches_number()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 24,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_creates_app_and_attaches_number"
+  },
+  {
+   "label": "SetupTelnyxTests.test_rejects_http_url()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 46,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_rejects_http_url"
+  },
+  {
+   "label": "SetupTelnyxTests.test_requires_credentials()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 52,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_requires_credentials"
+  },
+  {
+   "label": "SetupTelnyxTests.test_write_env_updates_and_appends()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 58,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_write_env_updates_and_appends"
+  },
+  {
+   "label": "N8nWorkflowTests",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "class",
+   "line": 71,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::N8nWorkflowTests"
+  },
+  {
+   "label": "N8nWorkflowTests.setUp()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 72,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::N8nWorkflowTests.setUp"
+  },
+  {
+   "label": "N8nWorkflowTests.test_structure()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 75,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::N8nWorkflowTests.test_structure"
+  },
+  {
+   "label": "N8nWorkflowTests.test_format_node_code_runs_in_node()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 89,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::N8nWorkflowTests.test_format_node_code_runs_in_node"
+  },
+  {
+   "label": "ProjectFilesTests",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "class",
+   "line": 107,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::ProjectFilesTests"
+  },
+  {
+   "label": "ProjectFilesTests.test_env_example_has_no_secrets()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 108,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::ProjectFilesTests.test_env_example_has_no_secrets"
+  },
+  {
+   "label": "ProjectFilesTests.test_gitignore_protects_env()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 114,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::ProjectFilesTests.test_gitignore_protects_env"
+  },
+  {
+   "label": "ProjectFilesTests.test_business_yaml_loads()",
+   "file_type": "code",
+   "source_file": "tests/test_scripts_and_n8n.py",
+   "kind": "method",
+   "line": 117,
+   "community": 6,
+   "id": "tests/test_scripts_and_n8n.py::ProjectFilesTests.test_business_yaml_loads"
+  },
+  {
+   "label": "BUYER_GUIDE.md",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "doc",
+   "community": 0,
+   "id": "BUYER_GUIDE.md"
+  },
+  {
+   "label": "1. Get your keys (10 minutes)",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#1. Get your keys (10 minutes)"
+  },
+  {
+   "label": "2. Fill in `agent.yaml`",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#2. Fill in `agent.yaml`"
+  },
+  {
+   "label": "3. Start it",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#3. Start it"
+  },
+  {
+   "label": "4. Connect the phone number",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#4. Connect the phone number"
+  },
+  {
+   "label": "5. Put it on your website",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#5. Put it on your website"
+  },
+  {
+   "label": "Changing the AI later",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#Changing the AI later"
+  },
+  {
+   "label": "If something is wrong",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#If something is wrong"
+  },
+  {
+   "label": "For the seller: hosting several buyers",
+   "file_type": "document",
+   "source_file": "BUYER_GUIDE.md",
+   "kind": "section",
+   "community": 0,
+   "id": "BUYER_GUIDE.md#For the seller: hosting several buyers"
+  },
+  {
+   "label": "INTEGRATION_PLAN.md",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "doc",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md"
+  },
+  {
+   "label": "0. Honest status (read this, it prevents wasted work)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#0. Honest status (read this, it prevents wasted work)"
+  },
+  {
+   "label": "1. Decision: who hosts the keys, models and numbers?",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#1. Decision: who hosts the keys, models and numbers?"
+  },
+  {
+   "label": "2. Architecture",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#2. Architecture"
+  },
+  {
+   "label": "3. Where to put things in the repo",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#3. Where to put things in the repo"
+  },
+  {
+   "label": "4. Environment variables",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#4. Environment variables"
+  },
+  {
+   "label": "5. Database (suggested; adapt names to what exists)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#5. Database (suggested; adapt names to what exists)"
+  },
+  {
+   "label": "6. Voice service contract (the website implements the server",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#6. Voice service contract (the website implements the server"
+  },
+  {
+   "label": "6.1 `GET /api/internal/voice/resolve?to=<E.164>`",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#6.1 `GET /api/internal/voice/resolve?to=<E.164>`"
+  },
+  {
+   "label": "6.2 `POST /api/voice/call-ended`",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#6.2 `POST /api/voice/call-ended`"
+  },
+  {
+   "label": "6.3 `POST /api/internal/voice/test-provider`",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#6.3 `POST /api/internal/voice/test-provider`"
+  },
+  {
+   "label": "6.4 `GET catalog/providers.json`",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#6.4 `GET catalog/providers.json`"
+  },
+  {
+   "label": "6.5 Voice service internals (build in `voice/app/tenancy.py`",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#6.5 Voice service internals (build in `voice/app/tenancy.py`"
+  },
+  {
+   "label": "7. Phone numbers from any provider",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#7. Phone numbers from any provider"
+  },
+  {
+   "label": "7.1 Twilio adapter (to build in `voice/app/carriers.py`)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#7.1 Twilio adapter (to build in `voice/app/carriers.py`)"
+  },
+  {
+   "label": "7.2 Compliance gates (do not skip)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#7.2 Compliance gates (do not skip)"
+  },
+  {
+   "label": "7.3 Connect-number endpoint (voice service)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#7.3 Connect-number endpoint (voice service)"
+  },
+  {
+   "label": "8. Dashboard pages to build (map to what already exists)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#8. Dashboard pages to build (map to what already exists)"
+  },
+  {
+   "label": "9. Security checklist",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#9. Security checklist"
+  },
+  {
+   "label": "10. Build order (about 12 working days, one coder)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#10. Build order (about 12 working days, one coder)"
+  },
+  {
+   "label": "11. Local development and testing",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#11. Local development and testing"
+  },
+  {
+   "label": "12. Acceptance checklist (the work is done only when all are",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#12. Acceptance checklist (the work is done only when all are"
+  },
+  {
+   "label": "13. Open questions the owner must answer (with defaults)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "section",
+   "community": 2,
+   "id": "INTEGRATION_PLAN.md#13. Open questions the owner must answer (with defaults)"
+  },
+  {
+   "label": "README.md",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "doc",
+   "community": 0,
+   "id": "README.md"
+  },
+  {
+   "label": "Everything is configured in ONE file: `agent.yaml`",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Everything is configured in ONE file: `agent.yaml`"
+  },
+  {
+   "label": "Quick start",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Quick start"
+  },
+  {
+   "label": "Lead emails: three ways, with automatic fallback",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Lead emails: three ways, with automatic fallback"
+  },
+  {
+   "label": "Add it to a website",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Add it to a website"
+  },
+  {
+   "label": "Selling this to buyers",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Selling this to buyers"
+  },
+  {
+   "label": "What was tested, and what was not",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#What was tested, and what was not"
+  },
+  {
+   "label": "Security",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Security"
+  },
+  {
+   "label": "Troubleshooting",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Troubleshooting"
+  },
+  {
+   "label": "Layout",
+   "file_type": "document",
+   "source_file": "README.md",
+   "kind": "section",
+   "community": 0,
+   "id": "README.md#Layout"
+  },
+  {
+   "label": "agent.yaml",
+   "file_type": "code",
+   "source_file": "agent.yaml",
+   "kind": "config",
+   "community": 2,
+   "id": "agent.yaml"
+  },
+  {
+   "label": "voice/app/tenancy.py (planned)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "voice service: resolve tenant, per-call keys, limits",
+   "community": 2,
+   "id": "plan:tenancy.py"
+  },
+  {
+   "label": "voice/app/carriers.py (planned)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "Twilio adapter",
+   "community": 2,
+   "id": "plan:carriers.py"
+  },
+  {
+   "label": "GET /api/internal/voice/resolve",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "website returns decrypted per-call config",
+   "community": 2,
+   "id": "plan:resolve"
+  },
+  {
+   "label": "POST /api/voice/call-ended",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "website stores call, lead, usage (idempotent)",
+   "community": 2,
+   "id": "plan:call-ended"
+  },
+  {
+   "label": "POST /api/internal/voice/test-provider",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "Test connection button",
+   "community": 2,
+   "id": "plan:test-provider"
+  },
+  {
+   "label": "POST /internal/connect-number",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "wire Telnyx/Twilio number",
+   "community": 2,
+   "id": "plan:connect-number"
+  },
+  {
+   "label": "catalog/providers.json",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "provider dropdowns for the UI",
+   "community": 2,
+   "id": "plan:catalog"
+  },
+  {
+   "label": "Dashboard: Keys",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "add/rotate/revoke, last4, audit",
+   "community": 2,
+   "id": "plan:keys-page"
+  },
+  {
+   "label": "Dashboard: Agent builder",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "pick model/voice/listening + key source",
+   "community": 2,
+   "id": "plan:agent-page"
+  },
+  {
+   "label": "Dashboard: Numbers",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "buy/connect/forward",
+   "community": 2,
+   "id": "plan:numbers-page"
+  },
+  {
+   "label": "Dashboard: Calls & usage",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "transcripts, leads, minutes",
+   "community": 2,
+   "id": "plan:calls-page"
+  },
+  {
+   "label": "Postgres (website-owned)",
+   "file_type": "document",
+   "source_file": "INTEGRATION_PLAN.md",
+   "kind": "planned",
+   "planned": true,
+   "note": "agents, provider_keys, phone_numbers, calls, leads, usage",
+   "community": 2,
+   "id": "plan:postgres"
+  }
+ ],
+ "links": [
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/__main__.py",
+   "target": "app/__main__.py::main"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/__main__.py",
+   "target": "app/config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/__main__.py",
+   "target": "app/main.py"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/__main__.py::main",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::_build_ulaw_decode"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::ulaw_decode"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::ulaw_encode"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::resample"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::Up2"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::pcm_array"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::to_wav"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::decode_with_ffmpeg"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::VAD"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/audio.py::normalize_spoken_email"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/leads.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/main.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/s2s.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "app/session.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "scripts/live_check.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "scripts/simulate_call.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "tests/test_audio_and_providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::ulaw_decode",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::ulaw_encode",
+   "target": "app/main.py::TelnyxTransport.send_audio"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::ulaw_encode",
+   "target": "scripts/simulate_call.py::main"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::resample",
+   "target": "app/providers.py::OpenAICompatTTS._to_pcm24k"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::resample",
+   "target": "app/s2s.py::S2SSession.feed_pcm16k"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::resample",
+   "target": "app/s2s.py::S2SSession._read_loop"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::resample",
+   "target": "app/session.py::VoiceSession._play"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::resample",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py::Up2",
+   "target": "app/audio.py::Up2.process"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::Up2",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::pcm_array",
+   "target": "app/audio.py::decode_with_ffmpeg"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::pcm_array",
+   "target": "app/main.py::TelnyxTransport.send_audio"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::pcm_array",
+   "target": "app/providers.py::OpenAICompatTTS._to_pcm24k"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::pcm_array",
+   "target": "app/s2s.py::S2SSession.feed_pcm16k"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::pcm_array",
+   "target": "app/s2s.py::S2SSession._read_loop"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::to_wav",
+   "target": "app/providers.py::HFWhisperSTT.transcribe"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::to_wav",
+   "target": "app/providers.py::OpenAICompatSTT.transcribe"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::to_wav",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::decode_with_ffmpeg",
+   "target": "app/providers.py::OpenAICompatTTS._to_pcm24k"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::decode_with_ffmpeg",
+   "target": "app/providers.py::ElevenLabsTTS.synth"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::decode_with_ffmpeg",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py::VAD",
+   "target": "app/audio.py::VAD.reset"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py::VAD",
+   "target": "app/audio.py::VAD.feed"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py::VAD",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/audio.py::VAD",
+   "target": "README.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::VAD.feed",
+   "target": "app/session.py::VoiceSession.feed_pcm16k"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::normalize_spoken_email",
+   "target": "app/leads.py::_fallback_extract"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/audio.py::normalize_spoken_email",
+   "target": "app/leads.py::clean_lead"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::ConfigError"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::_norm"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::_env"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::_truthy"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::_read_yaml"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::_dig"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::Settings"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::_needs_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/config.py::problems"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/leads.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/main.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/s2s.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/session.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "app/telnyx.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "scripts/check_config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "scripts/live_check.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "scripts/setup_telnyx.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "scripts/simulate_call.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "tests/fakes.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "tests/test_audio_and_providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "tests/test_config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "tests/test_scripts_and_n8n.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "generated_from",
+   "confidence": "INFERRED",
+   "source": "app/config.py",
+   "target": "plan:catalog"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/config.py::ConfigError",
+   "target": "app/config.py::_read_yaml"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/config.py::ConfigError",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.load"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.from_raw"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.smtp_login"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.smtp_configured"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.ws_secret"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.media_ws_url"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.webhook_url"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "app/config.py::Settings.summary"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/config.py::Settings",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/config.py::Settings.load",
+   "target": "app/config.py::Settings.from_raw"
+  },
+  {
+   "relation": "uses",
+   "confidence": "INFERRED",
+   "source": "app/config.py::Settings.from_raw",
+   "target": "plan:tenancy.py"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/config.py::Settings.summary",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/config.py::problems",
+   "target": "scripts/check_config.py::main"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/config.py::problems",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/leads.py::Store"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/leads.py::_fallback_extract"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/leads.py::clean_lead"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/leads.py::extract_lead"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/leads.py::Notifier"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/prompt.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "app/main.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "scripts/check_config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "scripts/live_check.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "tests/test_config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "tests/test_notify_telnyx.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Store",
+   "target": "app/leads.py::Store.save"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Store",
+   "target": "app/leads.py::Store._row"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Store",
+   "target": "app/leads.py::Store.list"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Store",
+   "target": "app/leads.py::Store.get"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::Store",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Store",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::clean_lead",
+   "target": "app/leads.py::extract_lead"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::clean_lead",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::extract_lead",
+   "target": "app/prompt.py::parse_json_object"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::extract_lead",
+   "target": "app/prompt.py::render_transcript"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::extract_lead",
+   "target": "app/main.py::finalize_call"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier.build_message"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier._smtp"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier._webhook"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier._resend"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier._outbox"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier.order"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/leads.py::Notifier.send"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::Notifier",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::Notifier",
+   "target": "scripts/check_config.py::main"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::Notifier",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::Notifier.build_message",
+   "target": "app/prompt.py::render_transcript"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/leads.py::Notifier.build_message",
+   "target": "app/leads.py::Notifier.send"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::Ctx"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::_SafeSend"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::TelnyxTransport"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::WebTransport"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::finalize_call"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::make_session"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::_admin_ok"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/prompt.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/s2s.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/session.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "app/telnyx.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "scripts/simulate_call.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "tests/test_notify_telnyx.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "extends",
+   "confidence": "INFERRED",
+   "source": "app/main.py",
+   "target": "plan:tenancy.py"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::Ctx",
+   "target": "app/main.py::Ctx.spawn"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::Ctx",
+   "target": "app/main.py::Ctx.spawn_blocking"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::Ctx",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::Ctx.spawn",
+   "target": "app/main.py::Ctx.spawn_blocking"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::Ctx.spawn",
+   "target": "app/main.py::make_session"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::Ctx.spawn_blocking",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::_SafeSend",
+   "target": "app/main.py::_SafeSend._text"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::TelnyxTransport",
+   "target": "app/main.py::TelnyxTransport.send_audio"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::TelnyxTransport",
+   "target": "app/main.py::TelnyxTransport.clear"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::TelnyxTransport",
+   "target": "app/main.py::TelnyxTransport.send_event"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::TelnyxTransport",
+   "target": "app/main.py::TelnyxTransport.hangup"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::TelnyxTransport",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::WebTransport",
+   "target": "app/main.py::WebTransport.send_audio"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::WebTransport",
+   "target": "app/main.py::WebTransport.clear"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::WebTransport",
+   "target": "app/main.py::WebTransport.send_event"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/main.py::WebTransport",
+   "target": "app/main.py::WebTransport.hangup"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::WebTransport",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::finalize_call",
+   "target": "app/main.py::make_session"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::make_session",
+   "target": "app/session.py::VoiceSession"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::make_session",
+   "target": "app/s2s.py::S2SSession"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::make_session",
+   "target": "app/main.py::create_app"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::create_app",
+   "target": "app/prompt.py::load_business"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::create_app",
+   "target": "app/telnyx.py::TelnyxClient"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::create_app",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::create_app",
+   "target": "app/telnyx.py::verify_signature"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/main.py::create_app",
+   "target": "scripts/simulate_call.py::main"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "app/prompt.py::load_business"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "app/prompt.py::build_system_prompt"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "app/prompt.py::render_transcript"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "app/prompt.py::parse_json_object"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "app/s2s.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "app/session.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "tests/test_audio_and_providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "tests/test_scripts_and_n8n.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/prompt.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/prompt.py::build_system_prompt",
+   "target": "app/s2s.py::S2SSession.start"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::ProviderError"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::_clip"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::OpenAICompatLLM"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::OpenAICompatTTS"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::ElevenLabsTTS"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::HFWhisperSTT"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::OpenAICompatSTT"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::MockSTT"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::MockLLM"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::MockTTS"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::Providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "app/session.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "scripts/live_check.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "tests/test_audio_and_providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "tests/test_config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "tests/test_notify_telnyx.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "uses",
+   "confidence": "INFERRED",
+   "source": "app/providers.py",
+   "target": "plan:test-provider"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ProviderError",
+   "target": "app/providers.py::OpenAICompatLLM.complete"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ProviderError",
+   "target": "app/providers.py::OpenAICompatLLM.stream"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ProviderError",
+   "target": "app/providers.py::OpenAICompatTTS._request"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ProviderError",
+   "target": "app/providers.py::ElevenLabsTTS._request"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ProviderError",
+   "target": "app/providers.py::HFWhisperSTT.transcribe"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ProviderError",
+   "target": "app/providers.py::OpenAICompatSTT.transcribe"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatLLM",
+   "target": "app/providers.py::OpenAICompatLLM._headers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatLLM",
+   "target": "app/providers.py::OpenAICompatLLM._url"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatLLM",
+   "target": "app/providers.py::OpenAICompatLLM.complete"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatLLM",
+   "target": "app/providers.py::OpenAICompatLLM.stream"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::OpenAICompatLLM",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatTTS",
+   "target": "app/providers.py::OpenAICompatTTS.build_payload"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatTTS",
+   "target": "app/providers.py::OpenAICompatTTS._request"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatTTS",
+   "target": "app/providers.py::OpenAICompatTTS._to_pcm24k"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatTTS",
+   "target": "app/providers.py::OpenAICompatTTS.synth"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::OpenAICompatTTS",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::OpenAICompatTTS.build_payload",
+   "target": "app/providers.py::OpenAICompatTTS._request"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::ElevenLabsTTS",
+   "target": "app/providers.py::ElevenLabsTTS._request"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::ElevenLabsTTS",
+   "target": "app/providers.py::ElevenLabsTTS.synth"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::ElevenLabsTTS",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::HFWhisperSTT",
+   "target": "app/providers.py::HFWhisperSTT.transcribe"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::HFWhisperSTT",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::OpenAICompatSTT",
+   "target": "app/providers.py::OpenAICompatSTT.transcribe"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::OpenAICompatSTT",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::MockSTT",
+   "target": "app/providers.py::MockSTT.transcribe"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::MockSTT",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::MockLLM",
+   "target": "app/providers.py::MockLLM.stream"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::MockLLM",
+   "target": "app/providers.py::MockLLM.complete"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::MockLLM",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/providers.py::MockTTS",
+   "target": "app/providers.py::MockTTS.synth"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::MockTTS",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::Providers",
+   "target": "app/providers.py::build_providers"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/providers.py::build_providers",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py",
+   "target": "app/s2s.py::_default_connect"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py",
+   "target": "app/s2s.py::S2SSession"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession.start"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession._send"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession.feed_pcm16k"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession.user_text"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession._read_loop"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession._add"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/s2s.py::S2SSession",
+   "target": "app/s2s.py::S2SSession.close"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py",
+   "target": "app/session.py::split_sentences"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py",
+   "target": "app/session.py::VoiceSession"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py",
+   "target": "tests/test_audio_and_providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/session.py::split_sentences",
+   "target": "app/session.py::VoiceSession._respond"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession.start"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession.close"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession.feed_pcm16k"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession.user_text"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._record"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._speaking_now"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._interrupt"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._say"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._play"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._drain"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._turn_from_audio"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._window"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._respond"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._handle_failure"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._watchdog"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/session.py::VoiceSession",
+   "target": "app/session.py::VoiceSession._say_and_close"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py",
+   "target": "app/telnyx.py::TelnyxError"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py",
+   "target": "app/telnyx.py::TelnyxClient"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py",
+   "target": "app/telnyx.py::verify_signature"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py",
+   "target": "tests/test_notify_telnyx.py"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "parallels",
+   "confidence": "INFERRED",
+   "source": "app/telnyx.py",
+   "target": "plan:carriers.py"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "app/telnyx.py::TelnyxError",
+   "target": "app/telnyx.py::TelnyxClient._post"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py::TelnyxClient",
+   "target": "app/telnyx.py::TelnyxClient._post"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py::TelnyxClient",
+   "target": "app/telnyx.py::TelnyxClient.answer"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py::TelnyxClient",
+   "target": "app/telnyx.py::TelnyxClient.streaming_start"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py::TelnyxClient",
+   "target": "app/telnyx.py::TelnyxClient.hangup"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "app/telnyx.py::TelnyxClient",
+   "target": "app/telnyx.py::TelnyxClient.dial"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/build_graph.py",
+   "target": "scripts/build_graph.py::add_node"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/build_graph.py",
+   "target": "scripts/build_graph.py::add_edge"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/build_graph.py",
+   "target": "scripts/build_graph.py::files"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/build_graph.py",
+   "target": "scripts/build_graph.py::label_for"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/check_config.py",
+   "target": "scripts/check_config.py::main"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/check_config.py",
+   "target": "BUYER_GUIDE.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/check_config.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/live_check.py",
+   "target": "scripts/live_check.py::report"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/live_check.py",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/live_check.py",
+   "target": "BUYER_GUIDE.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/live_check.py",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/live_check.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "scripts/live_check.py::report",
+   "target": "scripts/live_check.py::main_async"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/make_buyer_kit.py",
+   "target": "scripts/make_buyer_kit.py::make"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "scripts/make_buyer_kit.py::make",
+   "target": "scripts/make_release.py::build"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/make_release.py",
+   "target": "scripts/make_release.py::build"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/make_release.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/setup_telnyx.py",
+   "target": "scripts/setup_telnyx.py::write_env"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/setup_telnyx.py",
+   "target": "scripts/setup_telnyx.py::main"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/setup_telnyx.py",
+   "target": "BUYER_GUIDE.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/setup_telnyx.py",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/setup_telnyx.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "reuses",
+   "confidence": "INFERRED",
+   "source": "scripts/setup_telnyx.py",
+   "target": "plan:connect-number"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "scripts/setup_telnyx.py::write_env",
+   "target": "scripts/setup_telnyx.py::main"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "scripts/simulate_call.py",
+   "target": "scripts/simulate_call.py::main"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/simulate_call.py",
+   "target": "INTEGRATION_PLAN.md"
+  },
+  {
+   "relation": "documents",
+   "confidence": "EXTRACTED",
+   "source": "scripts/simulate_call.py",
+   "target": "README.md"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "scripts/simulate_call.py::main",
+   "target": "tests/test_calls.py::tone"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::make_mp3"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::make_pcm"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::FakeServices"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::SMTPSink"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::message_text"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::base_settings"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/fakes.py::tmpdir"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/test_audio_and_providers.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/test_calls.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/test_config.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/test_notify_telnyx.py"
+  },
+  {
+   "relation": "imports",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py",
+   "target": "tests/test_scripts_and_n8n.py"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py::FakeServices",
+   "target": "tests/fakes.py::FakeServices.find"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py::FakeServices",
+   "target": "tests/fakes.py::FakeServices.stop"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py::SMTPSink",
+   "target": "tests/fakes.py::SMTPSink.wait_for"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/fakes.py::SMTPSink",
+   "target": "tests/fakes.py::SMTPSink.stop"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py",
+   "target": "tests/test_audio_and_providers.py::run"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py",
+   "target": "tests/test_audio_and_providers.py::AudioTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py",
+   "target": "tests/test_audio_and_providers.py::ProviderTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_ulaw_roundtrip_is_accurate"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_ulaw_known_values"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_resample_lengths"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_vad_segments_one_utterance"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_vad_ignores_blip_and_noise"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_ffmpeg_mp3_decode"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_wav_header"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_spoken_email"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_sentence_splitter"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::AudioTests",
+   "target": "tests/test_audio_and_providers.py::AudioTests.test_prompt_contains_business_facts"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.setUpClass"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.tearDownClass"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.setUp"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_tts_openrouter_request_shape_and_mp3_decode"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_tts_pcm_path_resamples_to_24k"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_tts_error_is_reported_without_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_fish_direct_uses_fish_model_and_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_llm_streams_tokens_and_falls_back"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_llm_all_models_fail_raises"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_llm_complete"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_hf_stt_sends_wav"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_audio_and_providers.py::ProviderTests",
+   "target": "tests/test_audio_and_providers.py::ProviderTests.test_fish_stt_multipart"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::tone"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::silence"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::PhoneCall"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::mock_providers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::PhoneFlowTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::EndToEndWithFakeServices"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::WebChannelTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::RestApiTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py",
+   "target": "tests/test_calls.py::S2SEngineTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneCall",
+   "target": "tests/test_calls.py::PhoneCall._reader"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneCall",
+   "target": "tests/test_calls.py::PhoneCall.speak"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneCall",
+   "target": "tests/test_calls.py::PhoneCall.turn"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneCall",
+   "target": "tests/test_calls.py::PhoneCall.hangup"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneCall",
+   "target": "tests/test_calls.py::PhoneCall.audio_bytes"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneCall",
+   "target": "tests/test_calls.py::PhoneCall.wait"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneFlowTests",
+   "target": "tests/test_calls.py::PhoneFlowTests.test_full_call_greets_answers_hangs_up_and_stores_lead"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneFlowTests",
+   "target": "tests/test_calls.py::PhoneFlowTests.test_barge_in_clears_agent_audio"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneFlowTests",
+   "target": "tests/test_calls.py::PhoneFlowTests.test_silent_call_is_stored_but_not_emailed"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::PhoneFlowTests",
+   "target": "tests/test_calls.py::PhoneFlowTests.test_llm_outage_falls_back_politely_and_hangs_up"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::EndToEndWithFakeServices",
+   "target": "tests/test_calls.py::EndToEndWithFakeServices.test_end_to_end"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::WebChannelTests",
+   "target": "tests/test_calls.py::WebChannelTests.test_text_chat_over_websocket_and_lead_email"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::WebChannelTests",
+   "target": "tests/test_calls.py::WebChannelTests.test_web_voice_audio_is_pcm16_24k"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::WebChannelTests",
+   "target": "tests/test_calls.py::WebChannelTests.test_origin_allowlist"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.setUp"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.tearDown"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.test_lead_form_emails_and_validates"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.test_lead_form_rate_limit"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.test_admin_auth"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.test_outbound_call_dials_via_telnyx"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::RestApiTests",
+   "target": "tests/test_calls.py::RestApiTests.test_health_and_public_config"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_calls.py::S2SEngineTests",
+   "target": "tests/test_calls.py::S2SEngineTests.test_bridges_audio_both_ways_and_barge_in"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::load"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::run"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::find_secrets"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::SwitchingProvidersTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::ValidationTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::BuildProvidersTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::EmailTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py",
+   "target": "tests/test_config.py::ShippedProjectTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_shipped_defaults"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_changing_one_word_switches_provider_model_url_and_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_openai_everything"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_custom_provider_uses_base_url_and_section_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_aliases_and_case"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_key_lookup_order"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_env_beats_yaml_beats_default"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchingProvidersTests",
+   "target": "tests/test_config.py::SwitchingProvidersTests.test_missing_file_uses_defaults_and_bad_yaml_is_explained"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.errors"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_missing_keys_name_exactly_where_to_put_them"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_unknown_provider_lists_choices"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_custom_needs_base_url"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_ollama_needs_no_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_good_config_has_no_errors_and_warns_about_defaults"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_no_recipient_is_an_error"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_mock_mode_skips_provider_checks"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ValidationTests",
+   "target": "tests/test_config.py::ValidationTests.test_check_config_script"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::BuildProvidersTests",
+   "target": "tests/test_config.py::BuildProvidersTests.test_each_choice_builds_the_right_client"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::BuildProvidersTests",
+   "target": "tests/test_config.py::BuildProvidersTests.test_unknown_provider_raises_clear_error"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::BuildProvidersTests",
+   "target": "tests/test_config.py::BuildProvidersTests.test_mock_mode"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.setUpClass"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.tearDownClass"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.setUp"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_elevenlabs_request_shape"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_openai_tts_preset_sends_alloy_voice"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_groq_style_stt_multipart"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_llm_on_custom_server_without_key_sends_no_auth_header"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers",
+   "target": "tests/test_config.py::SwitchedProvidersTalkToTheRightServers.test_llm_switch_to_openai_hits_that_base_url_with_that_key"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::EmailTests",
+   "target": "tests/test_config.py::EmailTests.test_gmail_app_password_with_spaces_and_no_username"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::EmailTests",
+   "target": "tests/test_config.py::EmailTests.test_explicit_smtp_user_wins_and_other_hosts_are_untouched"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::EmailTests",
+   "target": "tests/test_config.py::EmailTests.test_first_working_method_wins_without_duplicates"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::EmailTests",
+   "target": "tests/test_config.py::EmailTests.test_falls_through_smtp_to_resend_to_n8n_to_outbox"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::EmailTests",
+   "target": "tests/test_config.py::EmailTests.test_resend_request_shape"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::EmailTests",
+   "target": "tests/test_config.py::EmailTests.test_method_preference_reorders"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ShippedProjectTests",
+   "target": "tests/test_config.py::ShippedProjectTests.test_uploaded_env_is_installed_and_consistent"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ShippedProjectTests",
+   "target": "tests/test_config.py::ShippedProjectTests.test_buyer_kit_has_no_secrets_and_is_valid"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_config.py::ShippedProjectTests",
+   "target": "tests/test_config.py::ShippedProjectTests.test_release_zip_has_no_secrets_and_a_blank_agent_yaml"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py",
+   "target": "tests/test_notify_telnyx.py::NotifierTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py",
+   "target": "tests/test_notify_telnyx.py::TelnyxTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py",
+   "target": "tests/test_notify_telnyx.py::WebhookTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::NotifierTests",
+   "target": "tests/test_notify_telnyx.py::NotifierTests.test_real_smtp_delivery_to_gmail_address"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::NotifierTests",
+   "target": "tests/test_notify_telnyx.py::NotifierTests.test_n8n_webhook_gets_full_record"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::NotifierTests",
+   "target": "tests/test_notify_telnyx.py::NotifierTests.test_outbox_fallback_never_loses_lead"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::NotifierTests",
+   "target": "tests/test_notify_telnyx.py::NotifierTests.test_smtp_failure_falls_back_to_outbox"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::NotifierTests",
+   "target": "tests/test_notify_telnyx.py::NotifierTests.test_clean_lead_validates_email"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::NotifierTests",
+   "target": "tests/test_notify_telnyx.py::NotifierTests.test_store_roundtrip"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::TelnyxTests",
+   "target": "tests/test_notify_telnyx.py::TelnyxTests.test_signature_verification"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::TelnyxTests",
+   "target": "tests/test_notify_telnyx.py::TelnyxTests.test_client_commands"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::TelnyxTests",
+   "target": "tests/test_notify_telnyx.py::TelnyxTests.test_client_surfaces_http_errors"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests._wait"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests.setUp"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests.tearDown"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests._event"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests.test_incoming_call_is_answered_then_streamed"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests.test_outgoing_initiated_is_not_answered"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests.test_bad_payload_and_signature"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_notify_telnyx.py::WebhookTests",
+   "target": "tests/test_notify_telnyx.py::WebhookTests.test_media_websocket_rejects_bad_token"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py",
+   "target": "tests/test_scripts_and_n8n.py::load_script"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py",
+   "target": "tests/test_scripts_and_n8n.py::SetupTelnyxTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py",
+   "target": "tests/test_scripts_and_n8n.py::N8nWorkflowTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py",
+   "target": "tests/test_scripts_and_n8n.py::ProjectFilesTests"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::SetupTelnyxTests",
+   "target": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_creates_app_and_attaches_number"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::SetupTelnyxTests",
+   "target": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_rejects_http_url"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::SetupTelnyxTests",
+   "target": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_requires_credentials"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::SetupTelnyxTests",
+   "target": "tests/test_scripts_and_n8n.py::SetupTelnyxTests.test_write_env_updates_and_appends"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::N8nWorkflowTests",
+   "target": "tests/test_scripts_and_n8n.py::N8nWorkflowTests.setUp"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::N8nWorkflowTests",
+   "target": "tests/test_scripts_and_n8n.py::N8nWorkflowTests.test_structure"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::N8nWorkflowTests",
+   "target": "tests/test_scripts_and_n8n.py::N8nWorkflowTests.test_format_node_code_runs_in_node"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::ProjectFilesTests",
+   "target": "tests/test_scripts_and_n8n.py::ProjectFilesTests.test_env_example_has_no_secrets"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::ProjectFilesTests",
+   "target": "tests/test_scripts_and_n8n.py::ProjectFilesTests.test_gitignore_protects_env"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "tests/test_scripts_and_n8n.py::ProjectFilesTests",
+   "target": "tests/test_scripts_and_n8n.py::ProjectFilesTests.test_business_yaml_loads"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#1. Get your keys (10 minutes)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#2. Fill in `agent.yaml`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#3. Start it"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#4. Connect the phone number"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#5. Put it on your website"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#Changing the AI later"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#If something is wrong"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "BUYER_GUIDE.md",
+   "target": "BUYER_GUIDE.md#For the seller: hosting several buyers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#0. Honest status (read this, it prevents wasted work)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#1. Decision: who hosts the keys, models and numbers?"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#2. Architecture"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#3. Where to put things in the repo"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#4. Environment variables"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#5. Database (suggested; adapt names to what exists)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#6. Voice service contract (the website implements the server"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#6.1 `GET /api/internal/voice/resolve?to=<E.164>`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#6.2 `POST /api/voice/call-ended`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#6.3 `POST /api/internal/voice/test-provider`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#6.4 `GET catalog/providers.json`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#6.5 Voice service internals (build in `voice/app/tenancy.py`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#7. Phone numbers from any provider"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#7.1 Twilio adapter (to build in `voice/app/carriers.py`)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#7.2 Compliance gates (do not skip)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#7.3 Connect-number endpoint (voice service)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#8. Dashboard pages to build (map to what already exists)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#9. Security checklist"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#10. Build order (about 12 working days, one coder)"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#11. Local development and testing"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#12. Acceptance checklist (the work is done only when all are"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "INTEGRATION_PLAN.md#13. Open questions the owner must answer (with defaults)"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:tenancy.py"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:carriers.py"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:resolve"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:call-ended"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:test-provider"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:connect-number"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:catalog"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:keys-page"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:agent-page"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:numbers-page"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:calls-page"
+  },
+  {
+   "relation": "specifies",
+   "confidence": "EXTRACTED",
+   "source": "INTEGRATION_PLAN.md",
+   "target": "plan:postgres"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Everything is configured in ONE file: `agent.yaml`"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Quick start"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Lead emails: three ways, with automatic fallback"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Add it to a website"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Selling this to buyers"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#What was tested, and what was not"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Security"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Troubleshooting"
+  },
+  {
+   "relation": "contains",
+   "confidence": "EXTRACTED",
+   "source": "README.md",
+   "target": "README.md#Layout"
+  },
+  {
+   "relation": "same_shape_as",
+   "confidence": "INFERRED",
+   "source": "agent.yaml",
+   "target": "plan:resolve"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "plan:tenancy.py",
+   "target": "plan:resolve"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "plan:tenancy.py",
+   "target": "plan:call-ended"
+  },
+  {
+   "relation": "used_by",
+   "confidence": "INFERRED",
+   "source": "plan:tenancy.py",
+   "target": "plan:carriers.py"
+  },
+  {
+   "relation": "reads",
+   "confidence": "INFERRED",
+   "source": "plan:resolve",
+   "target": "plan:postgres"
+  },
+  {
+   "relation": "writes",
+   "confidence": "INFERRED",
+   "source": "plan:call-ended",
+   "target": "plan:postgres"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "plan:test-provider",
+   "target": "plan:agent-page"
+  },
+  {
+   "relation": "calls",
+   "confidence": "INFERRED",
+   "source": "plan:connect-number",
+   "target": "plan:numbers-page"
+  },
+  {
+   "relation": "reads",
+   "confidence": "INFERRED",
+   "source": "plan:catalog",
+   "target": "plan:agent-page"
+  },
+  {
+   "relation": "writes",
+   "confidence": "INFERRED",
+   "source": "plan:keys-page",
+   "target": "plan:postgres"
+  },
+  {
+   "relation": "reads",
+   "confidence": "INFERRED",
+   "source": "plan:calls-page",
+   "target": "plan:postgres"
+  }
+ ]
+}

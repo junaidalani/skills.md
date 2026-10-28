@@ -1,0 +1,69 @@
+{
+  "name": "Voice agent lead to Gmail",
+  "nodes": [
+    {
+      "id": "b1f0c7d2-0001-4a00-9000-000000000001",
+      "name": "Voice agent webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [0, 0],
+      "webhookId": "voice-agent-lead",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "voice-agent-lead",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "b1f0c7d2-0002-4a00-9000-000000000002",
+      "name": "Format lead",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, 0],
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const r = $input.first().json.body || $input.first().json;\nconst lead = r.lead || {};\nconst esc = s => String(s ?? '').replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));\nconst rows = [['Name', lead.name], ['Phone', lead.phone], ['Email', lead.email], ['Interested in', lead.interest], ['Budget', lead.budget], ['Timeline', lead.timeline], ['Best callback time', lead.preferred_callback_time], ['Outcome', lead.outcome], ['Next step', lead.next_step], ['Channel', r.channel], ['Caller ID', r.caller], ['Duration (s)', r.duration]].filter(x => x[1]);\nconst transcript = (r.transcript || []).map(t => (t.role === 'user' ? 'Caller: ' : 'Agent: ') + t.text).join('\\n');\nconst html = `<h2>${esc(lead.summary)}</h2><table cellpadding=\"4\">${rows.map(x => `<tr><td><b>${esc(x[0])}</b></td><td>${esc(x[1])}</td></tr>`).join('')}</table><h3>Transcript</h3><pre style=\"white-space:pre-wrap\">${esc(transcript)}</pre>`;\nreturn [{ json: { subject: `[${r.company || 'Voice agent'}] New ${lead.outcome || 'lead'}: ${lead.name || r.caller || 'unknown caller'}`, html } }];"
+      }
+    },
+    {
+      "id": "b1f0c7d2-0003-4a00-9000-000000000003",
+      "name": "Send Gmail",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [480, 0],
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "sendTo": "junaidalani2001@gmail.com",
+        "subject": "={{ $json.subject }}",
+        "emailType": "html",
+        "message": "={{ $json.html }}",
+        "options": {}
+      },
+      "credentials": {
+        "gmailOAuth2": { "id": "REPLACE_ME", "name": "Gmail account (connect in n8n)" }
+      }
+    },
+    {
+      "id": "b1f0c7d2-0004-4a00-9000-000000000004",
+      "name": "Respond OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [720, 0],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ { ok: true } }}",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Voice agent webhook": { "main": [[{ "node": "Format lead", "type": "main", "index": 0 }]] },
+    "Format lead": { "main": [[{ "node": "Send Gmail", "type": "main", "index": 0 }]] },
+    "Send Gmail": { "main": [[{ "node": "Respond OK", "type": "main", "index": 0 }]] }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "tags": []
+}

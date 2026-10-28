@@ -1,0 +1,118 @@
+# =============================================================================
+#  AGENT SETTINGS - the ONLY file you need to edit.   Save it, then restart.
+#  Check your work any time with:   python scripts/check_config.py
+#  Lines starting with # are notes. Leave a value empty ("") to use the default.
+# =============================================================================
+
+# ---- 1. YOUR API KEYS --------------------------------------------------------
+# Only fill in the providers you actually use below. Keys can also come from
+# environment variables (OPENROUTER_API_KEY, GROQ_API_KEY, ...) instead of this file.
+keys:
+  openrouter: ""    # https://openrouter.ai/keys
+  huggingface: ""   # https://huggingface.co/settings/tokens
+  openai: ""        # https://platform.openai.com/api-keys
+  groq: ""          # https://console.groq.com/keys
+  elevenlabs: ""    # https://elevenlabs.io/app/settings/api-keys
+  fish: ""          # https://fish.audio  (Fish Audio account key)
+  together: ""
+  mistral: ""
+  deepseek: ""
+  resend: ""        # https://resend.com/api-keys   (only if email.method uses Resend)
+  telnyx: ""        # https://portal.telnyx.com  (API Keys)  - needed for the phone number
+
+# ---- 2. WHICH AI TO USE ------------------------------------------------------
+# To switch provider: change the word after "provider:" and the "model:" name.
+# The key is picked automatically from the keys: block above.
+
+llm:                          # the brain (what the agent says)
+  provider: openrouter        # openrouter | openai | groq | together | mistral | deepseek | ollama | custom
+  model: meta-llama/llama-3.3-70b-instruct:free
+  fallback_models:            # tried in order if the main model is down (openrouter only)
+    - google/gemma-3-27b-it:free
+    - openai/gpt-oss-20b:free
+  base_url: ""                # only for provider: custom, e.g. https://my-server/v1
+
+voice:                        # the agent's voice (text to speech)
+  provider: openrouter        # openrouter | fish | openai | elevenlabs | custom
+  model: fish-audio/s2.1-pro-free
+  voice: ""                   # voice id (empty = provider default)
+  base_url: ""                # only for provider: custom (OpenAI-compatible /audio/speech)
+
+listening:                    # understands the caller (speech to text)
+  provider: hf                # hf | openai | groq | fish | custom
+  model: openai/whisper-large-v3-turbo
+  base_url: ""                # only for provider: custom (OpenAI-compatible /audio/transcriptions)
+
+# ---- 3. PHONE NUMBER + SERVER ------------------------------------------------
+phone:
+  number: ""      # your Telnyx number (E.164 format)
+  connection_id: ""           # filled in automatically by scripts/setup_telnyx.py
+  public_key: ""              # optional: Telnyx webhook signing key
+
+server:
+  public_url: ""              # public https address of this server (see README step 3)
+  admin_token: "change-me-to-a-long-random-string"   # password for /admin - CHANGE IT
+  allowed_origins: "*"        # website addresses allowed to use the widget, e.g. https://mysite.com
+
+# ---- 4. WHERE LEADS GO -------------------------------------------------------
+email:
+  send_leads_to: ""           # the email address that receives every new lead
+  method: auto                # auto | smtp | resend | n8n   (auto = try what is configured; first that works wins)
+  # Gmail: turn on 2-step verification, create an App Password at
+  # https://myaccount.google.com/apppasswords and paste it here (spaces are fine).
+  smtp_user: ""               # your Gmail address (empty = use send_leads_to)
+  smtp_password: ""
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  n8n_webhook_url: ""         # optional: n8n workflow that sends the email (see n8n/lead-to-email.json)
+  from: ""                    # optional sender name/address
+
+# ---- 5. YOUR BUSINESS (what the agent knows and sells) ----------------------
+# The agent only quotes prices and facts that are written here.
+business:
+  company: Sunrise Solar
+  agent_name: Sam
+  business_hours: "Monday to Friday, 9am to 6pm Eastern"
+  greeting: "Thanks for calling Sunrise Solar, this is Sam, your virtual assistant. How can I help you today?"
+  goodbye: "Thanks for calling Sunrise Solar. Have a great day!"
+  personality: >
+    Warm, upbeat, concise and genuinely helpful. Sounds like a friendly human sales
+    consultant, never pushy. Uses plain everyday language.
+  about: >
+    Sunrise Solar designs and installs residential rooftop solar and home battery
+    systems. Free home assessments, financing available, 25 year panel warranty.
+  products:
+    - name: Starter Solar (3 kW)
+      price: "from $9,900 before incentives"
+      description: "Great for apartments and small homes, covers roughly 40 percent of average usage."
+    - name: Family Solar (6 kW)
+      price: "from $17,500 before incentives"
+      description: "Our most popular system, covers most of a typical family's electricity."
+    - name: Battery Backup (13.5 kWh)
+      price: "from $9,200 installed"
+      description: "Keeps lights, fridge and internet on during outages. Pairs with any system."
+  faq:
+    - q: Do you offer financing?
+      a: "Yes. Zero down loans with fixed rates, and a consultant explains the options during the free assessment."
+    - q: How long does installation take?
+      a: "Most installs take one to two days on site; the whole process from signing to switch-on is typically six to eight weeks."
+    - q: Is there a free quote?
+      a: "Yes, the home assessment and quote are completely free with no obligation."
+  policies:
+    - "Never promise exact savings; say it depends on the home and the assessment."
+    - "Do not quote prices or discounts that are not listed above."
+    - "If asked for a human, take a callback number and say a consultant will call within one business day."
+  collect:                     # details the agent gathers before wrapping up
+    - full name
+    - best phone number
+    - email address
+    - what they are interested in
+    - preferred time for a callback or home assessment
+  goal: "Book a free home assessment (collect details so a consultant can confirm the appointment)."
+
+# ---- 6. ADVANCED (leave alone unless you have a problem) ---------------------
+advanced:
+  vad_threshold: 400          # raise if the agent cuts itself off because of line noise
+  vad_end_ms: 700             # lower = agent answers sooner after you stop talking
+  idle_prompt_s: 12
+  max_call_s: 900

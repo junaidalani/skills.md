@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice Sales Agent demo</title>
+<style>
+  :root{--bg:#faf9f7;--ink:#1c1917;--muted:#57534e;--line:#e7e5e4;--accent:#b45309;--card:#fff}
+  @media (prefers-color-scheme:dark){:root{--bg:#1c1917;--ink:#fafaf9;--muted:#a8a29e;--line:#44403c;--accent:#f59e0b;--card:#292524}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+  main{max-width:760px;margin:0 auto;padding:48px 20px 120px}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 8px}
+  h2{font-size:1.2rem;margin:40px 0 8px}
+  p{color:var(--muted);margin:0 0 12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:12px}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85rem}
+  pre{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto;margin:0}
+  form{display:grid;gap:10px}
+  label{font-size:.85rem;color:var(--muted)}
+  input,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+  button.go{padding:11px 16px;border:0;border-radius:10px;background:var(--accent);color:#fff;font:inherit;cursor:pointer}
+  button.go:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+  .hp{position:absolute;left:-9999px}
+  #msg{min-height:1.4em;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <h1 id="co">Voice Sales Agent</h1>
+  <p>This page shows both ways customers reach your AI agent: the chat/voice button in the corner, and a plain contact form. Phone callers reach the same agent through your Telnyx number.</p>
+
+  <h2>1. Talk to the agent</h2>
+  <p>Click the round button at the bottom of the page. Type, or press <b>Talk</b> to speak.</p>
+
+  <h2>2. Put it on your website</h2>
+  <p>Paste one line before <code>&lt;/body&gt;</code> on any page:</p>
+  <pre id="snippet"></pre>
+
+  <h2>3. Contact form (goes straight to your email)</h2>
+  <div class="card">
+    <form id="f">
+      <div><label for="n">Name</label><input id="n" name="name" autocomplete="name"></div>
+      <div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email"></div>
+      <div><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel"></div>
+      <div><label for="m">How can we help?</label><textarea id="m" name="message" rows="3"></textarea></div>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="go" type="submit">Send</button>
+      <div id="msg" role="status"></div>
+    </form>
+  </div>
+</main>
+<script>
+  fetch('/api/config').then(function(r){return r.json()}).then(function(c){
+    document.getElementById('co').textContent = c.company + ' - AI voice agent';
+    document.title = c.company + ' - AI voice agent';
+  }).catch(function(){});
+  document.getElementById('snippet').textContent =
+    '<script src="' + location.origin + '/widget.js" data-title="Chat with us" async><' + '/script>';
+  document.getElementById('f').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var fd = new FormData(ev.target), body = {};
+    fd.forEach(function(v,k){ body[k] = v; });
+    var out = document.getElementById('msg');
+    out.textContent = 'Sending...';
+    fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+      .then(function(x){ out.textContent = x.ok ? 'Thanks! We will be in touch shortly.' : (x.j.error || 'Something went wrong.'); if (x.ok) ev.target.reset(); })
+      .catch(function(){ out.textContent = 'Network error, please try again.'; });
+  });
+</script>
+<script src="/widget.js" data-title="Chat with Sam" async></script>
+</body>
+</html>

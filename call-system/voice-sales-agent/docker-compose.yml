@@ -1,0 +1,26 @@
+services:
+  agent:
+    build: .
+    env_file: .env
+    ports: ["8000:8000"]
+    volumes:
+      - ./data:/srv/data
+      - ./config:/srv/config
+    restart: unless-stopped
+
+  # docker compose --profile tunnel up   -> prints a public https URL in the logs (no account needed)
+  tunnel:
+    profiles: ["tunnel"]
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate --url http://agent:8000
+    depends_on: [agent]
+
+  # docker compose --profile n8n up      -> n8n at http://localhost:5678 (import n8n/lead-to-email.json)
+  n8n:
+    profiles: ["n8n"]
+    image: n8nio/n8n:latest
+    ports: ["5678:5678"]
+    volumes: ["n8n_data:/home/node/.n8n"]
+
+volumes:
+  n8n_data:
