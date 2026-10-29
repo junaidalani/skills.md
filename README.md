@@ -25,7 +25,7 @@ Re-run `node scripts/seed-demo.mjs` to reset the password and refresh the sample
 
 ### Homepage sections
 
-1. Scroll-driven intro video (`public/media/a_Continue_from_the_pr.mp4`), with a reduced-motion player fallback.
+1. Scroll-driven intro video (`public/media/voice-agent-intro.mp4`), with a reduced-motion player fallback.
 2. Morphing industry gallery: the visible photo is a link to its industry guide (`/industries/[slug]`), with a visible “Explore …” affordance. Swiping changes slides without triggering navigation.
 3. Trust strip, video ad, ROI calculator, services, animated pricing plans (monthly/annual toggle), and closing CTA.
 

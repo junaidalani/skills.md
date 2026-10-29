@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: agent-caller-web
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npx next telemetry disable && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        sync: false # set your managed Postgres connection string in the Render dashboard
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: MASTER_ENCRYPTION_KEY
+        generateValue: true
+      - key: VOICE_WEBHOOK_SECRET
+        generateValue: true
+      - key: APP_URL
+        sync: false
+      # Optional platform-owned provider keys; workspace BYOK keys are stored encrypted instead
+      - key: PLATFORM_LLM_PROVIDER
+        sync: false
+      - key: PLATFORM_LLM_KEY
+        sync: false
+      - key: PLATFORM_STT_PROVIDER
+        sync: false
+      - key: PLATFORM_STT_KEY
+        sync: false
+      - key: PLATFORM_TTS_PROVIDER
+        sync: false
+      - key: PLATFORM_TTS_KEY
+        sync: false
+      - key: PLATFORM_TELEPHONY_KEY
+        sync: false
+      - key: PLATFORM_EMAIL_KEY
+        sync: false
+      - key: TELNYX_API_KEY
+        sync: false
+      - key: TELNYX_CONNECTION_ID
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false

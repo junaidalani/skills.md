@@ -30,7 +30,7 @@ export function VideoAd() {
   }, []);
 
   return (
-    <section className="video-story" ref={sectionRef} aria-labelledby="video-story-title">
+    <section className="video-story" id="demo-recording" ref={sectionRef} aria-labelledby="video-story-title">
       <div className="shell video-story__grid">
         <div className="video-story__copy">
           <span className="eyebrow eyebrow--light">A little less phone tag</span>
@@ -57,7 +57,7 @@ export function VideoAd() {
             onError={() => setVideoAvailable(false)}
             aria-label="Agent Caller voice agent video advertisement"
           />
-          {!videoAvailable && <div className="video-ad-frame__overlay"><span className="video-ad-frame__play" aria-hidden="true">▶</span><strong>Hear a calmer kind of first response.</strong><span>Drop your finished video at <code>public/media/voice-agent-demo.mp4</code> to play it here—with its original sound.</span></div>}
+          {!videoAvailable && <div className="video-ad-frame__overlay"><span className="video-ad-frame__play" aria-hidden="true">▶</span><strong>Hear a calmer kind of first response.</strong><span>Play the sample call to hear a warm greeting, clear questions, and the lead your team receives.</span></div>}
           <div className="video-ad-frame__badge"><span className="live-dot" /> ALWAYS READY TO ANSWER</div>
           <div className="video-ad-frame__caption"><span>YOUR CUSTOMER</span><strong>“Can someone help with the AC?”</strong><span className="caption-response">A friendly first response, even while your crew is on a job.</span></div>
         </div>

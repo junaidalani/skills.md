@@ -79,7 +79,7 @@ export function HeroIntro() {
         <div className="hero-intro__static-media">
           <video
             ref={videoRef}
-            src="/media/a_Continue_from_the_pr.mp4"
+            src="/media/voice-agent-intro.mp4"
             poster="/images/hero-hvac.jpg"
             controls
             playsInline
@@ -102,7 +102,7 @@ export function HeroIntro() {
           <ContainerInset className="hero-intro__frame">
             <HeroVideo
               ref={videoRef}
-              src="/media/a_Continue_from_the_pr.mp4"
+              src="/media/voice-agent-intro.mp4"
               poster="/images/hero-hvac.jpg"
               muted={muted}
               preload="metadata"

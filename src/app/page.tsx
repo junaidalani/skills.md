@@ -22,6 +22,16 @@ export default function HomePage() {
 
         <VideoAd />
 
+        <section className="content-section shell content-narrow" aria-label="Sample call output">
+          <span className="eyebrow">Sample output · illustrative</span>
+          <h2>What lands in your dashboard<br /><em>after one call.</em></h2>
+          <div className="steps-grid" style={{ marginTop: 30 }}>
+            <article className="step-card"><span className="step-card__num">CALL SUMMARY</span><h2>“My AC stopped cooling.”</h2><p><b>Jordan Lee · 3 min · callback requested.</b> Urgent repair request. Address and gate code captured; earliest visit window this week. Caller prefers late afternoon. Ready for dispatch.</p></article>
+            <article className="step-card"><span className="step-card__num">LEAD CARD</span><h2>New lead · status: new</h2><p>Jordan Lee · +1 (415) ••• ••63 · AC repair, urgent. After-hours call answered by the agent; homeowner confirmed the unit runs but the air is warm. Next step: call back to schedule the visit.</p></article>
+          </div>
+          <p style={{ marginTop: 20 }}>This is an illustrative example using sample data, not a customer record. Your dashboard shows live calls, transcripts, and leads for your own workspace.</p>
+        </section>
+
         <section className="roi-section">
           <div className="shell roi-section__intro"><div><span className="eyebrow eyebrow--light">A little math, a lot of clarity</span><h2>What could one more<br />answered call be worth?</h2><p>Use your own numbers. Adjust them any time—this is a planning tool, not a forecast.</p></div><div className="roi-stamp"><span>YOUR<br />NUMBERS</span><b>↘</b></div></div>
           <div className="shell"><RoiCalculator /></div>

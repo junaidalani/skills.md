@@ -26,9 +26,19 @@ export default function PricingPage() {
         <section className="content-section" style={{ background: "#eaf1f2" }}>
           <div className="shell industry-detail">
             <div>
+              <span className="eyebrow">What counts as a minute</span>
+              <h2>Time the caller is on the line.</h2>
+              <p>A minute is any part of a minute a caller spends connected to your agent, rounded up to the next whole minute in the usage meter. A 2-minute-10-second call counts as 3. Callers who are never answered count as zero. Overage beyond your plan’s allowance is billed at $0.20 per minute.</p>
+            </div>
+            <div>
+              <span className="eyebrow">Trial and billing</span>
+              <h2>No card needed to start.</h2>
+              <p>The 14-day trial needs no payment method—signup is email and a password. A paid subscription only begins after the account owner completes Stripe Checkout, and annual billing (the “Save 20%” toggle above) is billed once a year instead of monthly: Starter $79/mo, Growth $159/mo, Pro $319/mo.</p>
+            </div>
+            <div>
               <span className="eyebrow">Usage you can see</span>
               <h2>No “unlimited” surprises.</h2>
-              <p>Your dashboard tracks monthly minutes against the allowance on your plan. A call is rounded up in the usage meter; final billing terms depend on your account agreement and provider setup.</p>
+              <p>Your dashboard tracks monthly minutes against the allowance on your plan, so usage is visible before the bill arrives. Final billing terms depend on your account agreement and provider setup.</p>
             </div>
             <div>
               <span className="eyebrow">Illustrative only</span>

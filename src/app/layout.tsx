@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.APP_URL || "https://agent-caller.example"),
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: "Agent Caller — A better first hello for every call",
     template: "%s · Agent Caller",

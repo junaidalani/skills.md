@@ -313,7 +313,7 @@ export default function HalftoneWordmarkFooter({
         ))}
       </div>
       <div className="hwf-rule">
-        <span>Good work shouldn’t have to wait by the phone.</span>
+        <span>Good work shouldn’t have to wait by the phone.{" "}</span>
         {backToTop && <button type="button" className="hwf-up" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Back to top ↑</button>}
       </div>
     </footer>
