@@ -65,7 +65,7 @@ export function DashboardShell() {
   const [providers, setProviders] = useState<ProviderItem[]>(initialData.providerHealth);
   const [widget, setWidget] = useState<WidgetData>(null);
   const [auditEntries, setAuditEntries] = useState<Array<{ id: string; action: string; target: string | null; user: string; createdAt: string }>>([]);
-  const [appOrigin, setAppOrigin] = useState("https://your-domain.com");
+  const appOrigin = typeof window === "undefined" ? "" : window.location.origin;
   const [loading, setLoading] = useState(true);
   const [selectedCall, setSelectedCall] = useState<CallRow | null>(null);
   const [callDetail, setCallDetail] = useState<CallDetail | null>(null);
@@ -147,7 +147,7 @@ export function DashboardShell() {
     } finally { setLoading(false); }
   }, [showToast]);
 
-  useEffect(() => { setAppOrigin(window.location.origin); void refreshDashboard(); }, [refreshDashboard]);
+  useEffect(() => { queueMicrotask(() => void refreshDashboard()); }, [refreshDashboard]);
 
   const greetingName = useMemo(() => data.userName.split(" ")[0] || "there", [data.userName]);
   const currentProvider = modalKind ? providers.find((item) => item.kind === modalKind) : undefined;

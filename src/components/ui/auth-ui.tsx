@@ -79,8 +79,10 @@ export function AuthUI({ initialMode = "signin" }: { initialMode?: "signin" | "s
 
   useEffect(() => {
     const reason = new URLSearchParams(window.location.search).get("google");
-    if (reason === "unconfigured") setError("Google sign-in isn’t configured on this deployment yet. Use your email and password, or set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET.");
-    else if (reason) setError("Google sign-in couldn’t be completed. Try again or use your email and password.");
+    queueMicrotask(() => {
+      if (reason === "unconfigured") setError("Google sign-in isn’t configured on this deployment yet. Use your email and password, or set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET.");
+      else if (reason) setError("Google sign-in couldn’t be completed. Try again or use your email and password.");
+    });
   }, []);
 
   function switchMode(next: "signin" | "signup") {

@@ -14,3 +14,9 @@ voice/recordings/
 
 .vercel
 .env*
+
+# local-only large files
+/newvid.mp4
+/tmp
+/test-results/
+/playwright-report/

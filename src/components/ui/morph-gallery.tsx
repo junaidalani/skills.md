@@ -283,7 +283,9 @@ export default function MorphGallery({
   );
 
   const tuning = React.useRef({ duration, noiseScale, edge, drift, reduced });
-  tuning.current = { duration, noiseScale, edge, drift, reduced };
+  React.useEffect(() => {
+    tuning.current = { duration, noiseScale, edge, drift, reduced };
+  });
 
   const request = React.useRef<{ from: number; to: number } | null>(null);
   const previous = React.useRef(active);
