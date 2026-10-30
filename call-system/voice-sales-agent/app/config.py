@@ -61,16 +61,16 @@ class Settings:
     llm_fallback_models: list[str]
 
     # --- TTS (Fish Audio S2.1 Pro via OpenRouter, or Fish API directly)
-    tts_provider: str  # openrouter | fish
-    tts_model: str
+    tts_provider: str  # openrouter | fish | edge
     tts_voice: str
+    tts_model: str
     tts_format: str  # mp3 | pcm
     tts_pcm_rate: int
     fish_api_key: str
     fish_base_url: str
 
     # --- STT
-    stt_provider: str  # hf | fish
+    stt_provider: str  # hf | fish | local
     stt_model: str
     hf_token: str
     hf_base_url: str
@@ -101,7 +101,7 @@ class Settings:
         tts_provider = _env("TTS_PROVIDER", "openrouter").lower()
         default_tts_model = "fish-audio/s2.1-pro" if tts_provider == "fish" else "fish-audio/s2.1-pro-free"
         return cls(
-            public_base_url=_env("PUBLIC_BASE_URL").rstrip("/"),
+            public_base_url=_env("PUBLIC_BASE_URL", os.environ.get("RENDER_EXTERNAL_URL", "")).rstrip("/"),
             admin_token=_env("ADMIN_TOKEN", "change-me"),
             allowed_origins=_list("ALLOWED_ORIGINS", "*"),
             data_dir=Path(_env("DATA_DIR", str(ROOT / "data"))),
@@ -121,8 +121,8 @@ class Settings:
                 "LLM_FALLBACK_MODELS", "google/gemma-3-27b-it:free,openai/gpt-oss-20b:free"
             ),
             tts_provider=tts_provider,
+            tts_voice=_env("TTS_VOICE", "en-US-AvaNeural"),
             tts_model=_env("TTS_MODEL", default_tts_model),
-            tts_voice=_env("TTS_VOICE"),
             tts_format=_env("TTS_FORMAT", "mp3").lower(),
             tts_pcm_rate=int(_float("TTS_PCM_RATE", 44100)),
             fish_api_key=_env("FISH_API_KEY"),

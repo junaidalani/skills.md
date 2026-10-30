@@ -48,7 +48,7 @@ class OpenRouterLLM:
     def _url(self) -> str:
         return f"{self.s.openrouter_base_url}/chat/completions"
 
-    async def complete(self, messages: list[dict], max_tokens: int = 700, temperature: float = 0.1) -> str:
+    async def complete(self, messages: list[dict], max_tokens: int = 900, temperature: float = 0.1) -> str:
         def work() -> str:
             last = "no models tried"
             for model in self.models:
@@ -62,14 +62,21 @@ class OpenRouterLLM:
                     if r.status_code >= 400:
                         last = f"{model}: HTTP {r.status_code} {_clip(r.text)}"
                         continue
-                    return r.json()["choices"][0]["message"]["content"] or ""
+                    text = (r.json()["choices"][0]["message"].get("content") or "").strip()
+                    if not text:  # reasoning models can return content:null when the
+                        last = f"{model}: empty response"  # budget is spent on thinking
+                        continue
+                    return text
                 except Exception as e:  # noqa: BLE001
                     last = f"{model}: {type(e).__name__}: {e}"
             raise ProviderError(f"LLM failed on all models; last: {last}")
 
         return await asyncio.to_thread(work)
 
-    async def stream(self, messages: list[dict], max_tokens: int = 220, temperature: float = 0.6) -> AsyncIterator[str]:
+    async def stream(self, messages: list[dict], max_tokens: int = 700, temperature: float = 0.6) -> AsyncIterator[str]:
+        # 700 tokens: reasoning-capable free models spend 100-400 reasoning tokens
+        # before spoken content arrives in delta.content; smaller budgets truncate
+        # the whole reply, and the provider reports it as an empty response.
         loop = asyncio.get_running_loop()
         q: asyncio.Queue = asyncio.Queue()
         stop = threading.Event()
@@ -80,53 +87,63 @@ class OpenRouterLLM:
         def work():
             last = "no models tried"
             try:
-                for model in self.models:
+                for attempt_round in range(2):
                     if stop.is_set():
                         break
-                    yielded = False
-                    resp = None
-                    try:
-                        resp = requests.post(
-                            self._url(),
-                            headers=self._headers(),
-                            json={
-                                "model": model,
-                                "messages": messages,
-                                "max_tokens": max_tokens,
-                                "temperature": temperature,
-                                "stream": True,
-                            },
-                            stream=True,
-                            timeout=(10, 60),
-                        )
-                        if resp.status_code >= 400:
-                            last = f"{model}: HTTP {resp.status_code} {_clip(resp.text)}"
-                            continue
-                        for raw in resp.iter_lines(decode_unicode=True):
-                            if stop.is_set():
+                    if attempt_round:
+                        threading.Event().wait(2.0)  # retry only when every model streamed nothing
+                    empty_fail = False
+                    for model in self.models:
+                        if stop.is_set():
+                            break
+                        yielded = False
+                        resp = None
+                        try:
+                            resp = requests.post(
+                                self._url(),
+                                headers=self._headers(),
+                                json={
+                                    "model": model,
+                                    "messages": messages,
+                                    "max_tokens": max_tokens,
+                                    "temperature": temperature,
+                                    "stream": True,
+                                },
+                                stream=True,
+                                timeout=(10, 60),
+                            )
+                            if resp.status_code >= 400:
+                                last = f"{model}: HTTP {resp.status_code} {_clip(resp.text)}"
+                                empty_fail = False  # an outage must NOT trigger the retry round
+                                continue
+                            for raw in resp.iter_lines(decode_unicode=True):
+                                if stop.is_set():
+                                    return
+                                if not raw or not raw.startswith("data:"):
+                                    continue
+                                data = raw[5:].strip()
+                                if data == "[DONE]":
+                                    break
+                                try:
+                                    delta = json.loads(data)["choices"][0]["delta"].get("content")
+                                except (json.JSONDecodeError, KeyError, IndexError):
+                                    continue
+                                if delta:
+                                    yielded = True
+                                    put(delta)
+                            if yielded:
                                 return
-                            if not raw or not raw.startswith("data:"):
-                                continue
-                            data = raw[5:].strip()
-                            if data == "[DONE]":
-                                break
-                            try:
-                                delta = json.loads(data)["choices"][0]["delta"].get("content")
-                            except (json.JSONDecodeError, KeyError, IndexError):
-                                continue
-                            if delta:
-                                yielded = True
-                                put(delta)
-                        if yielded:
-                            return
-                        last = f"{model}: empty response"
-                    except Exception as e:  # noqa: BLE001
-                        last = f"{model}: {type(e).__name__}: {e}"
-                        if yielded:
-                            return
-                    finally:
-                        if resp is not None:
-                            resp.close()
+                            last = f"{model}: empty response"
+                            empty_fail = True  # flint-style reasoning models can stream nothing
+                        except Exception as e:  # noqa: BLE001
+                            last = f"{model}: {type(e).__name__}: {e}"
+                            if yielded:
+                                return
+                        finally:
+                            if resp is not None:
+                                resp.close()
+                    if not (empty_fail and attempt_round == 0):
+                        break
                 put(ProviderError(f"LLM failed on all models; last: {last}"))
             finally:
                 put(None)
@@ -192,6 +209,44 @@ class OpenAICompatTTS:
         return await asyncio.to_thread(work)
 
 
+class EdgeTTS:
+    """Microsoft Edge neural TTS (free, no API key) via the edge-tts package.
+
+    Uses the voice configured in TTS_VOICE / TTS_MODEL (e.g. en-US-AvaNeural).
+    Returns int16 mono PCM at CANONICAL_TTS_RATE, same contract as OpenAICompatTTS.
+    """
+
+    def __init__(self, voice: str):
+        self.voice = voice
+
+    async def synth(self, text: str) -> np.ndarray:
+        import io
+
+        import edge_tts
+        import websockets.exceptions  # noqa: F401  # edge-tts raises these
+
+        raw = b""
+        last_err = ""
+        for attempt in range(4):
+            try:
+                buf = io.BytesIO()
+                comm = edge_tts.Communicate(text, self.voice)
+                async for chunk in comm.stream():
+                    if chunk["type"] == "audio":
+                        buf.write(chunk["data"])
+                raw = buf.getvalue()
+                if raw:
+                    break
+                last_err = "edge-tts returned no audio"
+            except Exception as e:  # noqa: BLE001
+                last_err = f"{type(e).__name__}: {e}"
+            raw = b""
+            await asyncio.sleep(1.0 + attempt)
+        if not raw:
+            raise ProviderError(f"TTS failed after retries: {last_err}")
+        return decode_with_ffmpeg(raw, CANONICAL_TTS_RATE)
+
+
 # ------------------------------------------------------------------------ STT
 class HFWhisperSTT:
     """Hugging Face Inference (hf-inference) automatic speech recognition."""
@@ -221,6 +276,33 @@ class HFWhisperSTT:
                     continue
                 break
             raise ProviderError(f"STT failed: {last}")
+
+        return await asyncio.to_thread(work)
+
+
+class LocalWhisperSTT:
+    """Local CPU transcription with faster-whisper (no API token needed).
+
+    STT_MODEL names the faster-whisper model, e.g. ``base`` or ``small``.
+    The model downloads once on first use (~150 MB for base) and then runs offline.
+    """
+
+    def __init__(self, model: str):
+        self.model_name = model or "base"
+        self._model = None
+
+    async def transcribe(self, pcm16k: bytes, rate: int = 16000) -> str:
+        if self._model is None:
+            from faster_whisper import WhisperModel
+
+            self._model = await asyncio.to_thread(
+               lambda: WhisperModel(self.model_name, device="cpu", compute_type="int8")
+            )
+
+        def work() -> str:
+            audio = np.frombuffer(pcm16k, dtype=np.int16).astype(np.float32) / 32768.0
+            segments, _info = self._model.transcribe(audio, language="en", beam_size=1, vad_filter=True)
+            return " ".join(s.text for s in segments).strip()
 
         return await asyncio.to_thread(work)
 
@@ -343,7 +425,9 @@ def build_providers(s: Settings) -> Providers:
         )
 
     llm = OpenRouterLLM(s)
-    if s.tts_provider == "fish":
+    if s.tts_provider == "edge":
+        tts = EdgeTTS(s.tts_voice or s.tts_model or "en-US-AvaNeural")
+    elif s.tts_provider == "fish":
         tts = OpenAICompatTTS(s.fish_base_url, s.fish_api_key, s.tts_model, s.tts_voice, s.tts_format, s.tts_pcm_rate)
     else:
         tts = OpenAICompatTTS(
@@ -352,6 +436,8 @@ def build_providers(s: Settings) -> Providers:
         )
     if s.stt_provider == "fish":
         stt = FishCompatSTT(s.fish_base_url, s.fish_api_key)
+    elif s.stt_provider == "local":
+        stt = LocalWhisperSTT(s.stt_model)
     else:
         stt = HFWhisperSTT(s.hf_base_url, s.hf_token, s.stt_model)
     return Providers(stt=stt, llm=llm, tts=tts)

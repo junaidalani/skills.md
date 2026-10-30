@@ -1,0 +1,29 @@
+name: keep-alive
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 min; keeps the free Render instance awake
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: keep-alive
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping voice agent health endpoint
+        env:
+          URL: ${{ secrets.RENDER_HEALTH_URL }}
+        run: |
+          if [ -z "$URL" ]; then
+            echo "RENDER_HEALTH_URL secret not set yet — add https://<your-service>.onrender.com/health"
+            exit 0
+          fi
+          if curl -fsS --max-time 20 "$URL" > /dev/null; then
+            echo "ping OK"
+          else
+            echo "ping failed" >&2
+            exit 1
+          fi

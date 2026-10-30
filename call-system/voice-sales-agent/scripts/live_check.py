@@ -40,7 +40,7 @@ async def main_async(args) -> int:
     # 1. LLM
     try:
         t0 = time.time()
-        text = await prov.llm.complete([{"role": "user", "content": "Reply with exactly: ready"}], max_tokens=20)
+        text = await prov.llm.complete([{"role": "user", "content": "Reply with exactly: ready"}], max_tokens=200)
         report("LLM (OpenRouter)", bool(text.strip()), f"{text.strip()[:60]!r} in {time.time() - t0:.1f}s, model {s.llm_model}")
     except Exception as e:  # noqa: BLE001
         report("LLM (OpenRouter)", False, str(e)[:300])

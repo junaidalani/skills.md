@@ -1,46 +1,39 @@
+# Render Blueprint — deploys the voice agent for free (512 MB, sleeps when idle).
+# Deploy from https://dashboard.render.com → New + → Blueprint → pick this repo.
+# Values marked `sync: false` are prompted once, in the dashboard.
+# PUBLIC_BASE_URL: the app reads RENDER_EXTERNAL_URL automatically, no config needed.
 services:
   - type: web
-    name: agent-caller-web
-    runtime: node
-    plan: starter
-    buildCommand: npm ci && npx next telemetry disable && npm run build
-    startCommand: npm run start
-    healthCheckPath: /api/health
+    name: voice-sales-agent
+    runtime: docker
+    rootDir: call-system/voice-sales-agent
+    plan: free
+    region: oregon
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /health
     envVars:
-      - key: NODE_VERSION
-        value: "22"
-      - key: DATABASE_URL
-        sync: false # set your managed Postgres connection string in the Render dashboard
-      - key: SESSION_SECRET
-        generateValue: true
-      - key: MASTER_ENCRYPTION_KEY
-        generateValue: true
-      - key: VOICE_WEBHOOK_SECRET
-        generateValue: true
-      - key: APP_URL
+      - key: TTS_PROVIDER
+        value: edge            # free Microsoft neural TTS; Render's network can reach it
+      - key: TTS_VOICE
+        value: en-US-AvaNeural
+      - key: STT_PROVIDER
+        value: hf
+      - key: STT_MODEL
+        value: openai/whisper-large-v3-turbo
+      - key: LLM_MODEL
+        value: meta-llama/llama-3.3-70b-instruct:free
+      - key: LLM_FALLBACK_MODELS
+        value: google/gemma-3-27b-it:free,openai/gpt-oss-20b:free,google/gemini-2.5-flash
+      - key: ADMIN_TOKEN
         sync: false
-      # Optional platform-owned provider keys; workspace BYOK keys are stored encrypted instead
-      - key: PLATFORM_LLM_PROVIDER
+      - key: HF_TOKEN
         sync: false
-      - key: PLATFORM_LLM_KEY
-        sync: false
-      - key: PLATFORM_STT_PROVIDER
-        sync: false
-      - key: PLATFORM_STT_KEY
-        sync: false
-      - key: PLATFORM_TTS_PROVIDER
-        sync: false
-      - key: PLATFORM_TTS_KEY
-        sync: false
-      - key: PLATFORM_TELEPHONY_KEY
-        sync: false
-      - key: PLATFORM_EMAIL_KEY
+      - key: OPENROUTER_API_KEY
         sync: false
       - key: TELNYX_API_KEY
         sync: false
+      - key: TELNYX_PHONE_NUMBER
+        sync: false
       - key: TELNYX_CONNECTION_ID
-        sync: false
-      - key: STRIPE_SECRET_KEY
-        sync: false
-      - key: STRIPE_WEBHOOK_SECRET
         sync: false
