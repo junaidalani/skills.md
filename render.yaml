@@ -37,3 +37,7 @@ services:
         sync: false
       - key: TELNYX_CONNECTION_ID
         sync: false
+      - key: PLATFORM_BASE_URL
+        value: https://agent-caller-rho.vercel.app
+      - key: VOICE_WEBHOOK_SECRET
+        sync: false
