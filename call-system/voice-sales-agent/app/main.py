@@ -23,6 +23,7 @@ from starlette.websockets import WebSocket, WebSocketDisconnect
 from .audio import Up2, pcm_array, ulaw_decode, ulaw_encode
 from .config import ROOT, Settings
 from .leads import EMAIL_RE, Notifier, Store, clean_lead, extract_lead
+from .platform import TenantConfig, fetch_session_config, platform_ready, report_call_ended
 from .prompt import load_business
 from .providers import Providers, build_providers
 from .s2s import S2SSession
@@ -43,6 +44,7 @@ class Ctx:
     telnyx: TelnyxClient
     business: dict
     streaming_started: set = field(default_factory=set)
+    pending: dict = field(default_factory=dict)  # call_control_id -> TenantConfig
     tasks: set = field(default_factory=set)
     form_hits: dict = field(default_factory=lambda: defaultdict(deque))
 
@@ -73,8 +75,9 @@ class _SafeSend:
 class TelnyxTransport(_SafeSend):
     out_rate = 8000
 
-    def __init__(self, ws: WebSocket, ctx: Ctx, call_control_id: str | None):
+    def __init__(self, ws: WebSocket, ctx: Ctx, call_control_id: str | None, client: TelnyxClient | None = None):
         self.ws, self.ctx, self.cc = ws, ctx, call_control_id
+        self.client = client or ctx.telnyx
 
     async def send_audio(self, pcm16: bytes) -> None:
         payload = base64.b64encode(ulaw_encode(pcm_array(pcm16))).decode()
@@ -87,8 +90,8 @@ class TelnyxTransport(_SafeSend):
         return None
 
     async def hangup(self) -> None:
-        if self.cc and self.ctx.settings.telnyx_api_key:
-            await asyncio.to_thread(self.ctx.telnyx.hangup, self.cc)
+        if self.cc:
+            await asyncio.to_thread(self.client.hangup, self.cc)
 
 
 class WebTransport(_SafeSend):
@@ -116,30 +119,46 @@ class WebTransport(_SafeSend):
 
 
 # ------------------------------------------------------------------ helpers
-async def finalize_call(ctx: Ctx, result: dict) -> dict:
+async def finalize_call(ctx: Ctx, result: dict, tenant: TenantConfig | None = None) -> dict:
     """Extract lead data, store the call and email it. Runs after every call."""
     turns = result.get("transcript") or []
-    lead = await extract_lead(ctx.providers.llm, turns, result.get("caller"))
-    rec = {**result, "company": ctx.business.get("company"), "lead": lead,
+    llm = tenant.providers.llm if tenant and tenant.providers.llm else ctx.providers.llm
+    lead = await extract_lead(llm, turns, result.get("caller"))
+    company = (tenant.business.get("company") if tenant else None) or ctx.business.get("company")
+    rec = {**result, "company": company, "lead": lead,
            "summary": lead["summary"], "outcome": lead["outcome"]}
     spoke = any(t["role"] == "user" for t in turns)
-    rec["notify"] = (
-        await asyncio.to_thread(ctx.notifier.send, rec) if (spoke or ctx.settings.email_empty_calls) else {"skipped": "no caller speech"}
-    )
+    if tenant is not None:  # the platform stores leads/calls per tenant; skip local SMTP
+        rec["notify"] = {"skipped": "platform handles notifications"}
+        rec["platform_tenant_id"] = tenant.tenant_id
+    else:
+        rec["notify"] = (
+            await asyncio.to_thread(ctx.notifier.send, rec)
+            if (spoke or ctx.settings.email_empty_calls) else {"skipped": "no caller speech"}
+        )
     rec["id"] = ctx.store.save(rec)
+    if tenant is not None:
+        ctx.spawn_blocking(report_call_ended, ctx.settings, tenant, rec)
     log.info("call %s finalized: outcome=%s notify=%s", rec["id"], rec["outcome"], rec["notify"])
     return rec
 
 
-def make_session(ctx: Ctx, transport, channel: str, meta: dict):
+def make_session(ctx: Ctx, transport, channel: str, meta: dict, tenant: TenantConfig | None = None):
     async def on_finish(result: dict) -> None:
-        ctx.spawn(finalize_call(ctx, result))
+        ctx.spawn(finalize_call(ctx, result, tenant))
 
+    settings = tenant.settings if tenant else ctx.settings
+    providers = ctx.providers if tenant is None else Providers(
+        stt=tenant.providers.stt or ctx.providers.stt,
+        llm=tenant.providers.llm or ctx.providers.llm,
+        tts=tenant.providers.tts or ctx.providers.tts,
+    )
+    business = (tenant.business if tenant else ctx.business) or ctx.business
     if ctx.settings.engine == "s2s":
-        return S2SSession(settings=ctx.settings, transport=transport, business=ctx.business,
+        return S2SSession(settings=settings, transport=transport, business=business,
                           channel=channel, meta=meta, on_finish=on_finish)
-    return VoiceSession(settings=ctx.settings, providers=ctx.providers, transport=transport,
-                        business=ctx.business, channel=channel, meta=meta, on_finish=on_finish)
+    return VoiceSession(settings=settings, providers=providers, transport=transport,
+                        business=business, channel=channel, meta=meta, on_finish=on_finish)
 
 
 def _admin_ok(request: Request, ctx: Ctx) -> bool:
@@ -158,7 +177,8 @@ def create_app(settings: Settings | None = None, providers: Providers | None = N
         return JSONResponse({
             "ok": True, "engine": s.engine, "mock": s.mock_mode, "company": business["company"],
             "public_url_set": bool(s.public_base_url), "telnyx_configured": bool(s.telnyx_api_key),
-            "tts": s.tts_model, "stt": f"{s.stt_provider}:{s.stt_model}", "llm": s.llm_model,
+            "platform": platform_ready(s), "tts": s.tts_model, "stt": f"{s.stt_provider}:{s.stt_model}",
+            "llm": s.llm_model,
         })
 
     async def public_config(request: Request):
@@ -178,14 +198,34 @@ def create_app(settings: Settings | None = None, providers: Providers | None = N
             return JSONResponse({"error": "bad payload"}, status_code=400)
         et, p = data.get("event_type"), data.get("payload") or {}
         cc = p.get("call_control_id")
+
+        def handle_incoming() -> None:
+            to = str(p.get("to") or "")
+            tenant = fetch_session_config(s, to) if platform_ready(s) else None
+            client = tenant.telnyx if (tenant is not None and tenant.telnyx is not None) else ctx.telnyx
+            try:
+                client.answer(cc)
+            except Exception as e:  # noqa: BLE001
+                if client is not ctx.telnyx and s.telnyx_api_key:
+                    log.warning("tenant answer failed (%s); retrying with the platform key", e)
+                    tenant.telnyx = None
+                    ctx.telnyx.answer(cc)
+                else:
+                    raise
+            if tenant is not None:
+                ctx.pending[cc] = tenant
+
         if et == "call.initiated" and p.get("direction") == "incoming" and cc:
             log.info("incoming call %s -> %s", p.get("from"), p.get("to"))
-            ctx.spawn_blocking(ctx.telnyx.answer, cc)
+            ctx.spawn_blocking(handle_incoming)
         elif et == "call.answered" and cc and cc not in ctx.streaming_started:
             ctx.streaming_started.add(cc)
-            ctx.spawn_blocking(ctx.telnyx.streaming_start, cc)
+            tenant = ctx.pending.get(cc)
+            client = tenant.telnyx if (tenant and tenant.telnyx is not None) else ctx.telnyx
+            ctx.spawn_blocking(client.streaming_start, cc)
         elif et == "call.hangup" and cc:
             ctx.streaming_started.discard(cc)
+            ctx.pending.pop(cc, None)
         return JSONResponse({"ok": True})
 
     async def telnyx_media(ws: WebSocket):
@@ -204,8 +244,12 @@ def create_app(settings: Settings | None = None, providers: Providers | None = N
                     enc = (st.get("media_format") or {}).get("encoding", "PCMU")
                     if enc != "PCMU":
                         log.warning("unexpected media encoding %s (expected PCMU)", enc)
-                    meta = {"from": st.get("from"), "to": st.get("to"), "call_id": st.get("call_control_id")}
-                    session = make_session(ctx, TelnyxTransport(ws, ctx, st.get("call_control_id")), "phone", meta)
+                    cc = st.get("call_control_id")
+                    meta = {"from": st.get("from"), "to": st.get("to"), "call_id": cc}
+                    tenant = ctx.pending.pop(cc, None)
+                    if tenant is None and platform_ready(s):
+                        tenant = await asyncio.to_thread(fetch_session_config, s, st.get("to") or "")
+                    session = make_session(ctx, TelnyxTransport(ws, ctx, cc, tenant.telnyx if tenant else None), "phone", meta, tenant)
                     await session.start()
                 elif kind == "media" and session is not None:
                     m = ev.get("media") or {}

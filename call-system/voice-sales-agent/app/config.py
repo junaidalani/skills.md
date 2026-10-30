@@ -79,6 +79,10 @@ class Settings:
     s2s_url: str
     s2s_rate: int
 
+    # --- platform (multi-tenant bridge)
+    platform_base_url: str
+    voice_webhook_secret: str
+
     # --- VAD / call behaviour
     vad_threshold: float
     vad_end_ms: int
@@ -131,6 +135,8 @@ class Settings:
             stt_model=_env("STT_MODEL", "openai/whisper-large-v3-turbo"),
             hf_token=_env("HF_TOKEN"),
             hf_base_url=_env("HF_BASE_URL", "https://router.huggingface.co/hf-inference/models").rstrip("/"),
+            platform_base_url=_env("PLATFORM_BASE_URL").rstrip("/"),
+            voice_webhook_secret=_env("VOICE_WEBHOOK_SECRET"),
             s2s_url=_env("S2S_URL", "ws://localhost:8765/v1/realtime"),
             s2s_rate=int(_float("S2S_RATE", 24000)),
             vad_threshold=_float("VAD_THRESHOLD", 400.0),
